@@ -16,8 +16,34 @@ if($pos === false){
 	//mail_text($userid , $subj, $content);
 }
 
+
+
 if ($_GET['lan'] == 'cn') {
   include "lang/cn.php";
+}
+else if ($_GET['lan'] == 'de') {
+  include "lang/de.php";
+}
+else if ($_GET['lan'] == 'pt') {
+  include "lang/pt.php";
+}
+else if ($_GET['lan'] == 'pr') {
+  include "lang/pr.php";
+}
+else if ($_GET['lan'] == 'es') {
+  include "lang/es.php";
+}
+else if ($_GET['lan'] == 'ru') {
+  include "lang/ru.php";
+}
+else if ($_GET['lan'] == 'ar') {
+  include "lang/ar.php";
+}
+else if ($_GET['lan'] == 'it') {
+  include "lang/it.php";
+}
+else if ($_GET['lan'] == 'fr') {
+  include "lang/fr.php";
 }
 else
   include "lang/en.php";

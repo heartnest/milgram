@@ -105,9 +105,10 @@ function ajaxTrace(arg1,arg2,arg3){
         },
         contentType: 'application/x-www-form-urlencoded',
         success: function(x) {
-            //alert(x);
             
-            var lan = $.cookie('setting_lang');
+            var str =  window.document.location.href;
+            var array=str.split("?lan=");
+            var lan = array[1];
 
             if (lan == null) {
                 window.document.location.href='end.php'; //ricarica una pagina               

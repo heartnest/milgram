@@ -9,6 +9,46 @@ if ($_GET['lan'] == 'cn') {
 	$cacheEx = "$.cookie('setting_lang','cn');";
 	$lango = "<a href='form.php?lan=cn'>";
 }
+else if ($_GET['lan'] == 'it') {
+	include "lang/it.php";
+	$cacheEx = "$.cookie('setting_lang','it');";
+	$lango = "<a href='form.php?lan=it'>";
+}
+else if ($_GET['lan'] == 'fr') {
+	include "lang/fr.php";
+	$cacheEx = "$.cookie('setting_lang','fr');";
+	$lango = "<a href='form.php?lan=fr'>";
+}
+else if ($_GET['lan'] == 'pt') {
+	include "lang/pt.php";
+	$cacheEx = "$.cookie('setting_lang','pt');";
+	$lango = "<a href='form.php?lan=pt'>";
+}
+else if ($_GET['lan'] == 'es') {
+	include "lang/es.php";
+	$cacheEx = "$.cookie('setting_lang','es');";
+	$lango = "<a href='form.php?lan=es'>";
+}
+else if ($_GET['lan'] == 'de') {
+	include "lang/de.php";
+	$cacheEx = "$.cookie('setting_lang','de');";
+	$lango = "<a href='form.php?lan=de'>";
+}
+ else if ($_GET['lan'] == 'ru') {
+	include "lang/ru.php";
+	$cacheEx = "$.cookie('setting_lang','ru');";
+	$lango = "<a href='form.php?lan=ru'>";
+}
+else if ($_GET['lan'] == 'pr') {
+	include "lang/pr.php";
+	$cacheEx = "$.cookie('setting_lang','pr');";
+	$lango = "<a href='form.php?lan=pr'>";
+}
+else if ($_GET['lan'] == 'pt') {
+	include "lang/pt.php";
+	$cacheEx = "$.cookie('setting_lang','pt');";
+	$lango = "<a href='form.php?lan=pt'>";
+}
 else{
 	include "lang/en.php";
 	$cacheEx = "$.cookie('setting_lang','en');";
@@ -52,8 +92,16 @@ else{
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src='img/lang.png' alt='lang'><b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                      <li><a href="?lan=en" class=""><img class='flagimg' src='img/en.png'>  English</a></li>
-                      <li><a href="?lan=cn" class=""><img class='flagimg' src='img/cn.png'>  汉语</a></li>
+                      <li><a href="?lan=en" class=""><img class='flagimg' src='img/flags/en.png'>  English</a></li>
+                      <li><a href="?lan=it" class=""><img class='flagimg' src='img/flags/it.png'>  Italiano</a></li>
+                      <li><a href="?lan=de" class=""><img class='flagimg' src='img/flags/de.png'>  Deutsch</a></li>
+                      <li><a href="?lan=fr" class=""><img class='flagimg' src='img/flags/fr.png'>  Français</a></li>
+                      <li><a href="?lan=es" class=""><img class='flagimg' src='img/flags/es.png'>  Español</a></li>
+                      <li><a href="?lan=pt" class=""><img class='flagimg' src='img/flags/pt.png'>  Português</a></li>
+                      <li><a href="?lan=ru" class=""><img class='flagimg' src='img/flags/ru.png'>  Русский</a></li>
+                      <li><a href="?lan=pr" class=""><img class='flagimg' src='img/flags/pr.png'>  فارسی</a></li>
+                      <li><a href="?lan=ar" class=""><img class='flagimg' src='img/flags/ar.png'>  العربية</a></li>
+                      <li><a href="?lan=cn" class=""><img class='flagimg' src='img/flags/cn.png'>  汉语</a></li>
                     </ul>
                   </li>
               </ul>
