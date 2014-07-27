@@ -1,11 +1,44 @@
 <?php
+
+
+if ($_GET['lan'] == 'cn') {
+  include "lang/cn.php";
+}
+else if ($_GET['lan'] == 'de') {
+  include "lang/de.php";
+}
+else if ($_GET['lan'] == 'pt') {
+  include "lang/pt.php";
+}
+else if ($_GET['lan'] == 'pr') {
+  include "lang/pr.php";
+}
+else if ($_GET['lan'] == 'es') {
+  include "lang/es.php";
+}
+else if ($_GET['lan'] == 'ru') {
+  include "lang/ru.php";
+}
+else if ($_GET['lan'] == 'ar') {
+  include "lang/ar.php";
+}
+else if ($_GET['lan'] == 'it') {
+  include "lang/it.php";
+}
+else if ($_GET['lan'] == 'fr') {
+  include "lang/fr.php";
+}
+else
+  include "lang/en.php";
+
+
 ?>
 
 <!DOCTYPE html>
 <html>
 
 <head>
-	<title>We hope ... | Milgram Experiment Project | Disi Unibo</title>
+	<title><?php echo $PAGESTITLE; ?></title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,14 +58,14 @@
 	<div class='container'>
 
 		<div class="content">
-			<h2>We would appreciate if you can try to do it. Otherwise also, thanks anyways !</h2>
+			<h2><?php echo $PPPP_SORRYCONTENT;?></h2>
 		</div>
 
 	</div>
 
 	  <div id="footer">
     <div class="container">
-      <div class="text-muted pull-right">Copyright© 2014 Milgram Test CS UNIBO</div>
+      <div class="text-muted pull-right"><?php echo $FOOT_COPYRIGHT; ?></div>
 
     </div>
   </div>

@@ -1,32 +1,45 @@
 <?php
-session_start(); 
-include_once 'php/com.config.php';
-include_once 'php/com.utils.php';
 
 
-$html = "";
-$operation = "select senderid,receiverid,network,receiverip, time,ref_network from trace";
-$result = mysql_query($operation);
-$i = 0;
-while ($row = mysql_fetch_row($result)) {
-  $i ++;
-                    $ids = $row[0];
-                    $idr = $row[1];
-                    $ntk = $row[2];
-                    $ipr = $row[3];
-                    $tm = $row[4];
-                    $date = date('H:i d/m/Y',$tm);
-                    $rnt = $row[5];
-
-                    $html .= "<tr><td>$i</td><td>$ids</td><td>$idr</td><td>$ntk</td><td>$ipr</td><td>$date</td><td>$rnt</td></tr>";
+if ($_GET['lan'] == 'cn') {
+  include "lang/cn.php";
 }
+else if ($_GET['lan'] == 'de') {
+  include "lang/de.php";
+}
+else if ($_GET['lan'] == 'pt') {
+  include "lang/pt.php";
+}
+else if ($_GET['lan'] == 'pr') {
+  include "lang/pr.php";
+}
+else if ($_GET['lan'] == 'es') {
+  include "lang/es.php";
+}
+else if ($_GET['lan'] == 'ru') {
+  include "lang/ru.php";
+}
+else if ($_GET['lan'] == 'ar') {
+  include "lang/ar.php";
+}
+else if ($_GET['lan'] == 'it') {
+  include "lang/it.php";
+}
+else if ($_GET['lan'] == 'fr') {
+  include "lang/fr.php";
+}
+else
+  include "lang/en.php";
+
+
+
 ?>
 
 <!DOCTYPE html>
 <html>
 
 <head>
-  <title>Results | Milgram Experiment Project | Disi Unibo</title>
+  <title><?php echo $PAGEDRAWTITLE; ?></title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">

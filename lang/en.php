@@ -55,4 +55,32 @@ I&apos;m participating an experiment from the University of Bologna. We are tryi
 http://m.web.cs.unibo.it
 My ID is : ";
 $PPP_LAST = "We are forwarding the message to your email in case you forget. ";
+
+
+
+// NEW ADDED 27/07/2014
+
+
+/***************  PAGE SORRY ******************/
+
+$PPPP_SORRYCONTENT = "We would appreciate if you can try to do it. Otherwise also, thanks anyways !";
+
+
+
+/***************  SEO HTML TITLES ******************/
+$PAGE1TITLE = "Welcome | Milgram Experiment Project | Disi Unibo";
+$PAGE2TITLE = "Message | Milgram Experiment Project | Disi Unibo";
+$PAGE3TITLE = "Thank you | Milgram Experiment Project | Disi Unibo";
+$PAGESTITLE = "We hope ... | Milgram Experiment Project | Disi Unibo";
+$PAGEDRAWTITLE = "Lucky Draw | Milgram Experiment Project | Disi Unibo";
+
+/**************** LUCKY DRAW  *******************/
+
+$LUCKDRAWINSTRUCTIONS = "to do";
+
+/***************  JS ******************/
+
+$ERR_SENDER = "sender ID is NOT CORRECT please check it again from the message you received.";
+$ERR_FORMAT = "please insert a correct email address or cellphone number";
+
 ?>

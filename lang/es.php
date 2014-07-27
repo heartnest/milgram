@@ -19,7 +19,7 @@ $P_BODYPARAONE="The aim of this experiment is to understand the impact of techno
 With your help we are trying to reach the target &quot;<span id='targ' class='btn btn-default' data-placement='top' data-content='Target T is fashion designer XYZ.' data-original-title='About the target'>T</span>&quot;. In case you know him, please forward the message to T,
 otherwise,  <strong>please</strong> forward the message to your knowns who might know T <strong>directly or indirectly</strong>.
 			";
-$P_BODYPARATWO ="By participating you get a chance to win the <strong><a target='_blank' href='luckydraw.php'>LUCKY DRAW</a></strong>. You can contribute in this experiment by answering 
+$P_BODYPARATWO ="By participating you get a chance to win the <strong><a target='_blank' href='luckydraw.php?lan=es'>LUCKY DRAW</a></strong>. You can contribute in this experiment by answering 
 few questions, which takes 2 minutes (trust us). Your data will be stored anonymously and no data will be 
 made public in future.";
 $P_BODY_LOW = "Please feel free to contact us for any queries : <strong>connect@cs.unibo.it</strong> <br />We will more than happy to answer, even if it is just a hi comes from you.";
@@ -48,4 +48,30 @@ No es un experimento interesante en marcha en la Universidad de Bolonia. Lo buen
 http://m.web.cs.unibo.it
 My ID is :";
 $PPP_LAST = "Estamos de reenviar el mensaje a tu correo electrónico por si la olvida. ";
+
+
+// NEW ADDED 27/07/2014
+
+
+/***************  PAGE SORRY ******************/
+
+$PPPP_SORRYCONTENT = "to do ...";
+
+/***************  SEO HTML TITLES ******************/
+$PAGE1TITLE = "to do .. ";
+$PAGE2TITLE = "to do .. ";
+$PAGE3TITLE = "to do .. ";
+$PAGESTITLE = "to do ..  ";
+$PAGEDRAWTITLE = "to do .. ";
+
+/**************** LUCKY DRAW  *******************/
+
+$LUCKDRAWINSTRUCTIONS = "to do .. ";
+
+/***************  JS ******************/
+
+$ERR_SENDER = "to do ...";
+$ERR_FORMAT = "to do ...";
+
+
 ?>

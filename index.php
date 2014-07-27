@@ -7,57 +7,68 @@ $_SESSION['referer'] = isset($_SERVER['HTTP_REFERER'])? $_SERVER['HTTP_REFERER']
 if ($_GET['lan'] == 'cn') {
 	include "lang/cn.php";
 	$cacheEx = "$.cookie('setting_lang','cn');";
-	$lango = "<a href='form.php?lan=cn'>";
+	$lango = "form.php?lan=cn";
+	$langs = "sorry.php?lan=cn";
 }
 else if ($_GET['lan'] == 'it') {
 	include "lang/it.php";
 	$cacheEx = "$.cookie('setting_lang','it');";
-	$lango = "<a href='form.php?lan=it'>";
+	$lango = "form.php?lan=it";
+	$langs = "sorry.php?lan=it";
 }
 else if ($_GET['lan'] == 'fr') {
 	include "lang/fr.php";
 	$cacheEx = "$.cookie('setting_lang','fr');";
-	$lango = "<a href='form.php?lan=fr'>";
+	$lango = "form.php?lan=fr";
+	$langs = "sorry.php?lan=fr";
 }
 else if ($_GET['lan'] == 'pt') {
 	include "lang/pt.php";
 	$cacheEx = "$.cookie('setting_lang','pt');";
-	$lango = "<a href='form.php?lan=pt'>";
+	$lango = "form.php?lan=pt";
+	$langs = "sorry.php?lan=pt";
 }
 else if ($_GET['lan'] == 'es') {
 	include "lang/es.php";
 	$cacheEx = "$.cookie('setting_lang','es');";
-	$lango = "<a href='form.php?lan=es'>";
+	$lango = "form.php?lan=es";
+	$langs = "sorry.php?lan=es";
 }
 else if ($_GET['lan'] == 'de') {
 	include "lang/de.php";
 	$cacheEx = "$.cookie('setting_lang','de');";
-	$lango = "<a href='form.php?lan=de'>";
+	$lango = "form.php?lan=de";
+	$langs = "sorry.php?lan=de";
 }
  else if ($_GET['lan'] == 'ru') {
 	include "lang/ru.php";
 	$cacheEx = "$.cookie('setting_lang','ru');";
-	$lango = "<a href='form.php?lan=ru'>";
+	$lango = "form.php?lan=ru";
+	$langs = "sorry.php?lan=ru";
 }
 else if ($_GET['lan'] == 'pr') {
 	include "lang/pr.php";
 	$cacheEx = "$.cookie('setting_lang','pr');";
-	$lango = "<a href='form.php?lan=pr'>";
+	$lango = "form.php?lan=pr";
+	$langs = "sorry.php?lan=pr";
 }
 else if ($_GET['lan'] == 'pt') {
 	include "lang/pt.php";
 	$cacheEx = "$.cookie('setting_lang','pt');";
-	$lango = "<a href='form.php?lan=pt'>";
+	$lango = "form.php?lan=pt";
+	$langs = "sorry.php?lan=pt";
 }
 else if ($_GET['lan'] == 'ar') {
 	include "lang/ar.php";
 	$cacheEx = "$.cookie('setting_lang','ar');";
-	$lango = "<a href='form.php?lan=ar'>";
+	$lango = "form.php?lan=ar";
+	$langs = "sorry.php?lan=ar";
 }
 else{
 	include "lang/en.php";
 	$cacheEx = "$.cookie('setting_lang','en');";
-	$lango = "<a href='form.php?lan=en'>";
+	$lango = "form.php?lan=en";
+	$langs = "sorry.php?lan=en";
 }
 ?>
 
@@ -65,7 +76,7 @@ else{
 <html>
 
 <head>
-	<title>Welcome | Milgram Experiment Project | Disi Unibo</title>
+	<title><?php echo $PAGE1TITLE; ?></title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta charset="utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -128,10 +139,10 @@ else{
 		
 		 <div class="clearfix"></div>
 
-		
+
 	<div class='form-decision'>
-      <a href="sorry.php"><button  class="btn btn-danger pull-left" name="action" value="rf"><?php echo $P_BUTTON_REFUSE; ?></button></a>
-      <?php echo $lango; ?><button  class="btn btn-primary pull-right" name="action" value="ac"><?php echo $P_BUTTON_ACCEPT; ?></button></a>
+      <a href=<?php echo $langs; ?> ><button  class="btn btn-danger pull-left" name="action" value="rf"><?php echo $P_BUTTON_REFUSE; ?></button></a>
+      <a href=<?php echo $lango; ?> ><button  class="btn btn-primary pull-right" name="action" value="ac"><?php echo $P_BUTTON_ACCEPT; ?></button></a>
     </div>
     </div>
     <div class="clearfix"></div>

@@ -20,7 +20,7 @@ $P_BODYPARAONE="我们实验的目的是测量科技对我们沟通渠道的影�
 我们想请您帮助我们寻找一个人 &quot;<span id='targ' class='btn btn-default' data-placement='top' data-content='这个人是一个设计师 ，，， ' data-original-title='About the target'>T</span>&quot;. 如果你认识他，那就请把这个消息发给他,
 否则,  <strong>请</strong> 请把消息发给身边您觉得可能认识他的朋友.
 			";
-$P_BODYPARATWO ="参加我们的测试您就可以获得一个<strong><a target='_blank' href='luckydraw.php'>抽奖</a></strong>的机会. 在测验中您只需回答几个小问题 (非常简单). 您的个人信息会被安全保护，绝不外露。";
+$P_BODYPARATWO ="参加我们的测试您就可以获得一个<strong><a target='_blank' href='luckydraw.php?lan=cn'>抽奖</a></strong>的机会. 在测验中您只需回答几个小问题 (非常简单). 您的个人信息会被安全保护，绝不外露。";
 $P_BODY_LOW = "如果有问题就请联系我们 : <strong>connect@cs.unibo.it</strong> <br />我们会非常乐意的回答";
 
 
@@ -51,6 +51,27 @@ $PPP_LETTER = "姓名 ,
 http://m.web.cs.unibo.it
 我的账户ID是 :";
 $PPP_LAST = "我们同时也会给您发一封备忘邮件";
+
+
+// NEW ADDED 27/07/2014
+
+
+/***************  PAGE SORRY ******************/
+
+$PPPP_SORRYCONTENT = "填表其实非常简单，如果您能帮助我们的话，我们会非常感谢的。";
+
+
+
+/***************  SEO HTML TITLES ******************/
+$PAGE1TITLE = "网联项目简介 | Disi Unibo";
+$PAGE2TITLE = "接收问答 | Disi Unibo";
+$PAGE3TITLE = "最后一步 | Disi Unibo";
+$PAGESTITLE = "好遗憾 | Disi Unibo";
+$PAGEDRAWTITLE = "抽奖说明 | Disi Unibo";
+
+/**************** LUCKY DRAW  *******************/
+
+$LUCKDRAWINSTRUCTIONS = " to do ...";
 
 /***************  JS ******************/
 

@@ -2,9 +2,7 @@
 session_start(); 
 
 if ($_GET['lan'] == 'cn') {
-  include "lang/cn.php";
-
-  // $ERR_SENDER = 3; 
+  include "lang/cn.php"; 
 }
 else if ($_GET['lan'] == 'de') {
   include "lang/de.php";
@@ -50,7 +48,7 @@ if ($_GET['action'] == 'rf') {
 <html>
 
 <head>
-  <title>Message | Milgram Experiment Project | Disi Unibo</title>
+  <title><?php echo $PAGE2TITLE; ?></title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
