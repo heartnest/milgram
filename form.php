@@ -3,6 +3,8 @@ session_start();
 
 if ($_GET['lan'] == 'cn') {
   include "lang/cn.php";
+
+  // $ERR_SENDER = 3; 
 }
 else if ($_GET['lan'] == 'de') {
   include "lang/de.php";
@@ -320,5 +322,12 @@ if ($_GET['action'] == 'rf') {
 
     </div>
   </div>
+
+  <script>
+
+  msgSENDER = <?php echo json_encode($ERR_SENDER); ?>;
+  msgFORMAT = <?php echo json_encode($ERR_FORMAT); ?>;
+  //alert(msgSENDER+"  "+msgFORMAT)
+  </script>
 </body>
 </html>

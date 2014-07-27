@@ -49,6 +49,11 @@ else if ($_GET['lan'] == 'pt') {
 	$cacheEx = "$.cookie('setting_lang','pt');";
 	$lango = "<a href='form.php?lan=pt'>";
 }
+else if ($_GET['lan'] == 'ar') {
+	include "lang/ar.php";
+	$cacheEx = "$.cookie('setting_lang','ar');";
+	$lango = "<a href='form.php?lan=ar'>";
+}
 else{
 	include "lang/en.php";
 	$cacheEx = "$.cookie('setting_lang','en');";

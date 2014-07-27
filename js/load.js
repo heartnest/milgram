@@ -1,8 +1,8 @@
 $(function(){
 
-    msg_sendernotfound = "<span>sender ID is NOT CORRECT please check it again from the message you received.</span>"
-    + "<br /><span> FOR TESTing, PLEASE INSERT '1'</span>";
-    msg_formaterr = "<span>please insert a correct email address or cellphone number</span>";
+ //   msgSENDER = "<span>sender ID is NOT CORRECT please check it again from the message you received.</span>"
+ //   + "<br /><span> FOR TESTing, PLEASE INSERT '1'</span>";
+ //   msgFORMAT = "<span>please insert a correct email address or cellphone number</span>";
 
 
     $('#targ').popover();  
@@ -21,13 +21,13 @@ $(function(){
         if (!verify($("#whoareyou").val())) { 
             inputOK = false;
             $(".wru").addClass("has-error");
-            $(".warning1").append(msg_formaterr);
+            $(".warning1").append("<span>"+msgFORMAT+"</span>");
 
         }
         if(!verify($("#whosthat").val())){
             inputOK = false;
           $(".wst").addClass("has-error");
-          $(".warning2").append(msg_formaterr);
+          $(".warning2").append("<span>"+msgFORMAT+"</span>");
       }
       if (inputOK) {
         ajaxVerify($("#whosthat").val());
@@ -77,7 +77,7 @@ function ajaxVerify(arg){
         success: function(x) {
            // alert(x);
             if (x == 0) {
-                $(".warning2").append(msg_sendernotfound);
+                $(".warning2").append("<span>"+msgSENDER+"</span>");
                 $(".wst").addClass("has-error");
             }else if (x == 1) {
                 ajaxTrace($("#whoareyou").val(),$("#whosthat").val(),$("#whichnetwork").val());
