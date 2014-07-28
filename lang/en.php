@@ -39,7 +39,7 @@ $PP_QFIVE = "Who contacted you? (Insert the sender unique ID i.e. email or cellp
 $PP_QSIX = "Which networks are you going to use to move the message towards its destination?";
 $PP_OP1 = "Email";
 $PP_OP2 = "Face2Face";
-$PP_OP3 = "<input type='text' class='form-control' placeholder='others(optional)' />";
+$PP_OP3 = "others(optional)";
 $PP_BUTT1= "Back";
 $PP_BUTT2= "Next";
 

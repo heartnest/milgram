@@ -34,7 +34,7 @@ $PP_QFIVE = "Wer hat Sie kontaktiert? (Legen Sie die Absenderkennung, dh E-Mail 
 $PP_QSIX = "Welche Netzwerke Sie werden versuchen, diese Informationen für die Auswahl Ihrer Freunde weiterleiten";
 $PP_OP1 = "Email";
 $PP_OP2 = "Face2Face";
-$PP_OP3 = "<input type='text' class='form-control' placeholder='others(optional)' />";
+$PP_OP3 = "others(optional)";
 $PP_BUTT1= "zurück";
 $PP_BUTT2= "nächste";
 

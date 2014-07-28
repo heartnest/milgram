@@ -1,0 +1,20 @@
+1 facebook
+2 twitter
+3 tumblr
+4 linkedin
+5 whatsapp
+6 wechat
+7 skype
+8 telegram
+9 instagram
+10 foursquare
+11 email
+12 face2face
+13 gplus
+14 weibo
+15 renren
+16 optional
+17
+18
+19
+20
