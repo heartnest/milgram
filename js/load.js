@@ -110,8 +110,6 @@ function ajaxTrace(arg1,arg2,arg3){
         }
     })
 
-    //alert(socials)
-
     $.ajax({
         type: 'POST',
         url:  'php/trace.php',
@@ -123,16 +121,15 @@ function ajaxTrace(arg1,arg2,arg3){
         },
         contentType: 'application/x-www-form-urlencoded',
         success: function(x) {
-            //alert(x)
             var str =  window.document.location.href;
             var array=str.split("?lan=");
             var lan = array[1];
 
             if (lan == null) {
-               // window.document.location.href='end.php'; //ricarica una pagina               
+                window.document.location.href='end.php'; //ricarica una pagina               
             }
             else{
-                //window.document.location.href='end.php?lan='+lan;
+                window.document.location.href='end.php?lan='+lan;
             }
         },
         error: function(r) { 

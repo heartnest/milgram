@@ -5,7 +5,7 @@ include_once 'php/com.utils.php';
 
 
 $html = "";
-$operation = "select senderid,receiverid,network,receiverip, time,ref_network from trace";
+$operation = "select senderid,receiverid,network,receiverip, time,ref_network,socials from trace";
 $result = mysql_query($operation);
 $i = 0;
 while ($row = mysql_fetch_row($result)) {
@@ -17,8 +17,9 @@ while ($row = mysql_fetch_row($result)) {
                     $tm = $row[4];
                     $date = date('H:i d/m/Y',$tm);
                     $rnt = $row[5];
+                    $socials = $row[6];
 
-                    $html .= "<tr><td>$i</td><td>$ids</td><td>$idr</td><td>$ntk</td><td>$ipr</td><td>$date</td></tr>";
+                    $html .= "<tr><td>$i</td><td>$ids</td><td>$idr</td><td>$ntk</td><td>$ipr</td><td>$date</td><td>$socials</td></tr>";
 }
 ?>
 
@@ -55,8 +56,9 @@ while ($row = mysql_fetch_row($result)) {
   <td>Recv Network</td>
   <td>Recv IP</td>
   <td>Recv timestamp</td>
+  <td>Out going socials</td>
 </tr>
-<tr><td>$i</td><td>$ids</td><td>$idr</td><td>$ntk</td><td>$ipr</td><td>$date</td></tr>
+<tr><td>$i</td><td>$ids</td><td>$idr</td><td>$ntk</td><td>$ipr</td><td>$date</td><td>$socials</td></tr>
 <?php echo $html; ?>
 </table>
 </div>
