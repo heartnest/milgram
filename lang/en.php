@@ -1,4 +1,21 @@
 <?php
+session_start(); 
+
+/******** added 29/07/2014 *********/
+
+$targetid = $_SESSION['target_id'];
+
+if ($targetid == '123') {
+	$targ_description = "Target T is fashion designer XYZ.";
+	$targ_title = "About the target";
+}else if ($targetid == '321') {
+	$targ_description = "Target T is studente";
+	$targ_title = "About the target";
+}
+
+
+/******** end 29/07/2014 *********/
+
 
 
 /***************  COMMON ******************/
@@ -19,7 +36,7 @@ $P_BUTTON_ACCEPT = "Accept";
 
 $P_BODYPARAONE="Milgram 2014 experiment aims at understanding how contemporary ICTs have changed size and distances of our social network. 
 We would like to update the classic Milgram’s experiment from 1956 that is the root of the famous 6 degrees of separation theory.  
-With your help we are trying to reach the target &quot;<span id='targ' class='btn btn-default' data-placement='top' data-content='Target T is fashion designer XYZ.' data-original-title='About the target'>T</span>&quot;. In case you know him,
+With your help we are trying to reach the target &quot;<span id='targ' class='btn btn-default' data-placement='top' data-content='$targ_description' data-original-title='$targ_title'>T</span>&quot;. In case you know him,
  please forward the message to T, otherwise, <strong>please</strong> forward the message 
 to your friends or acquaintances that might know T directly or indirectly. ";
 
@@ -52,7 +69,7 @@ Although the following template is available, if you decide to send a personal m
 $PPP_NOTE = "Although the following template is available, why dont you send a personal message to your friends.";
 $PPP_LETTER = "Hi , 
 I&apos;m participating an experiment from the University of Bologna. We are trying to reach [T], can you help me?
-http://m.web.cs.unibo.it
+http://m.web.cs.unibo.it/?t=$targetid
 My ID is : ";
 $PPP_LAST = "We are forwarding the message to your email in case you forget. ";
 

@@ -1,5 +1,18 @@
 <?php
 
+/******** added 29/07/2014 *********/
+
+$targetid = $_SESSION['target_id'];
+
+if ($targetid == '123') {
+	$targ_description = "Target T is fashion designer XYZ.";
+	$targ_title = "About the target";
+}else if ($targetid == '321') {
+	$targ_description = "Target T is studente";
+	$targ_title = "About the target";
+}
+
+
 
 /***************  COMMON ******************/
 
@@ -17,7 +30,7 @@ $P_TITLE= "欢迎参加我们的测验";
 $P_BUTTON_REFUSE = "拒绝";
 $P_BUTTON_ACCEPT = "接受";
 $P_BODYPARAONE="我们实验的目的是测量科技对我们沟通渠道的影响。 
-我们想请您帮助我们寻找一个人 &quot;<span id='targ' class='btn btn-default' data-placement='top' data-content='这个人是一个设计师 ，，， ' data-original-title='About the target'>T</span>&quot;. 如果你认识他，那就请把这个消息发给他,
+我们想请您帮助我们寻找一个人 &quot;<span id='targ' class='btn btn-default' data-placement='top' data-content='$targ_description' data-original-title='$targ_title'>T</span>&quot;. 如果你认识他，那就请把这个消息发给他,
 否则,  <strong>请</strong> 请把消息发给身边您觉得可能认识他的朋友.
 			";
 $P_BODYPARATWO ="参加我们的测试您就可以获得一个<strong><a target='_blank' href='luckydraw.php?lan=cn'>抽奖</a></strong>的机会. 在测验中您只需回答几个小问题 (非常简单). 您的个人信息会被安全保护，绝不外露。";
@@ -48,7 +61,7 @@ $PPP_MAIN = "为了提高您的中奖概率，请您转发类似信息给朋友�
 $PPP_NOTE = "希望您修改下面的样本";
 $PPP_LETTER = "姓名 , 
 博洛尼亚大学正在做一项有趣的实验. 他们设置了2个抽奖，只要你帮助我们寻找目标就可以参加. 下面就是实验的连接. 快来看看吧，祝我们好运哦！ 
-http://m.web.cs.unibo.it
+http://m.web.cs.unibo.it/?t=$targetid
 我的账户ID是 :";
 $PPP_LAST = "我们同时也会给您发一封备忘邮件";
 

@@ -1,5 +1,21 @@
 <?php
 
+session_start(); 
+
+/******** added 29/07/2014 *********/
+
+$targetid = $_SESSION['target_id'];
+
+if ($targetid == '123') {
+	$targ_description = "Target T is fashion designer XYZ.";
+	$targ_title = "About the target";
+}else if ($targetid == '321') {
+	$targ_description = "Target T is studente";
+	$targ_title = "About the target";
+}
+
+
+/******** end 29/07/2014 *********/
 
 /***************  COMMON ******************/
 
@@ -16,7 +32,7 @@ $P_TITLE= "Добро пожаловать на проект Мильграма"
 $P_BUTTON_REFUSE = "отказываться";
 $P_BUTTON_ACCEPT = "принимать";
 $P_BODYPARAONE="The aim of this experiment is to understand the impact of technology on our communication channels. 
-With your help we are trying to reach the target &quot;<span id='targ' class='btn btn-default' data-placement='top' data-content='Target T is fashion designer XYZ.' data-original-title='About the target'>T</span>&quot;. In case you know him, please forward the message to T,
+With your help we are trying to reach the target &quot;<span id='targ' class='btn btn-default' data-placement='top' data-content='$targ_description' data-original-title='$targ_title'>T</span>&quot;. In case you know him, please forward the message to T,
 otherwise,  <strong>please</strong> forward the message to your knowns who might know T <strong>directly or indirectly</strong>.
 			";
 $P_BODYPARATWO ="By participating you get a chance to win the <strong><a target='_blank' href='luckydraw.php?lan=ru'>LUCKY DRAW</a></strong>. You can contribute in this experiment by answering 
@@ -47,7 +63,7 @@ $PPP_MAIN = "Чтобы убедиться, что вы становитесь �
 $PPP_NOTE = "Хотя следующий шаблон доступен, почему бы вам не отправить личное сообщение своим друзьям.";
 $PPP_LETTER = "Привет  , 
 Существует интересный эксперимент происходит в университете Болоньи. Хорошо, есть лотерея (2 приза), если вы участвуете и направить его своим друзьям. Ниже приводится ссылка на участие в проекте. Пожалуйста, примите участие и давайте выиграть призы :)
-http://m.web.cs.unibo.it
+http://m.web.cs.unibo.it/?t=$targetid
 My ID is :";
 $PPP_LAST = "Мы пересылки сообщения на адрес электронной почты, если вы забыли.";
 

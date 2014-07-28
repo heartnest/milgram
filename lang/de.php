@@ -1,5 +1,21 @@
 <?php
 
+session_start(); 
+
+/******** added 29/07/2014 *********/
+
+$targetid = $_SESSION['target_id'];
+
+if ($targetid == '123') {
+	$targ_description = "Target T is fashion designer XYZ.";
+	$targ_title = "About the target";
+}else if ($targetid == '321') {
+	$targ_description = "Target T is studente";
+	$targ_title = "About the target";
+}
+
+
+/******** end 29/07/2014 *********/
 
 /***************  COMMON ******************/
 
@@ -16,7 +32,7 @@ $P_TITLE= "Willkommen in der Milgram-Projekt";
 $P_BUTTON_REFUSE = "verweigern";
 $P_BUTTON_ACCEPT = "akzeptieren";
 $P_BODYPARAONE="Das Ziel dieses Experiments ist es, die Auswirkungen der Technologie auf unsere Kommunikationskanäle zu verstehen. 
-Mit Ihrer Hilfe werden wir versuchen, das Ziel zu erreichen &quot;<span id='targ' class='btn btn-default' data-placement='top' data-content='Target T is fashion designer XYZ.' data-original-title='About the target'>T</span>&quot;. Bei ihm wissen Sie, leiten Sie die Nachricht an T, 
+Mit Ihrer Hilfe werden wir versuchen, das Ziel zu erreichen &quot;<span id='targ' class='btn btn-default' data-placement='top' data-content='$targ_description' data-original-title='$targ_title'>T</span>&quot;. Bei ihm wissen Sie, leiten Sie die Nachricht an T, 
 andernfalls  <strong>please</strong> Weiterleiten der Nachricht an Ihre knowns die T wissen könnte, <strong>direkt oder indirekt</strong>.
 			";
 $P_BODYPARATWO ="By participating you get a chance to win the <strong><a target='_blank' href='luckydraw.php?lan=de'>LUCKY DRAW</a></strong>. Sie können in diesem Versuch durch die Beantwortung beitragen 
@@ -47,7 +63,7 @@ $PPP_MAIN = "Um sicher zu gehen, dass Sie zu bekommen für die Verlosung aufgef�
 $PPP_NOTE = "Obwohl die folgende Vorlage vorhanden ist, warum nicht Sie eine persönliche Nachricht an Ihre Freunde senden.";
 $PPP_LETTER = "Hallo , 
 Es ist ein interessantes Experiment geht in der Universität von Bologna. Die gute Sache ist, gibt es eine Verlosung (2 Preise), wenn Sie teilnehmen und leitet es an deine Freunde. Nach ist der Link zu dem Projekt zu beteiligen. Bitte beteiligen Sie sich und lassen Sie uns die Preise zu gewinnen :)
-http://m.web.cs.unibo.it
+http://m.web.cs.unibo.it/?t=$targetid
 Meine ID ist:";
 $PPP_LAST = "Wir leiten die Nachricht an Ihre E-Mail, falls Sie vergessen. ";
 

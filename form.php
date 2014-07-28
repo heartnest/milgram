@@ -1,6 +1,8 @@
 <?php
 session_start(); 
 
+
+
 if ($_GET['lan'] == 'cn') {
   include "lang/cn.php"; 
 }

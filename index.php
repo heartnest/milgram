@@ -3,70 +3,87 @@ session_start();
 
 $_SESSION['referer'] = isset($_SERVER['HTTP_REFERER'])? $_SERVER['HTTP_REFERER'] : "Not Detected";
 
+if (!isset($_SESSION['target_id'])) {
+	$_SESSION['target_id'] = $_GET['t'];
+	$targetid = $_GET['t'];
+}
+
+
 
 if ($_GET['lan'] == 'cn') {
 	include "lang/cn.php";
-	$cacheEx = "$.cookie('setting_lang','cn');";
+	//$cacheEx = "$.cookie('setting_lang','cn');";
+	//$langt = "?lan=cn&&t=$targetid";
 	$lango = "form.php?lan=cn";
 	$langs = "sorry.php?lan=cn";
 }
 else if ($_GET['lan'] == 'it') {
 	include "lang/it.php";
-	$cacheEx = "$.cookie('setting_lang','it');";
+	//$cacheEx = "$.cookie('setting_lang','it');";
+	//$langt = "?lan=it&&t=$targetid";
 	$lango = "form.php?lan=it";
 	$langs = "sorry.php?lan=it";
 }
 else if ($_GET['lan'] == 'fr') {
 	include "lang/fr.php";
-	$cacheEx = "$.cookie('setting_lang','fr');";
+	//$cacheEx = "$.cookie('setting_lang','fr');";
+	//$langt = "?lan=fr&&t=$targetid";
 	$lango = "form.php?lan=fr";
 	$langs = "sorry.php?lan=fr";
 }
 else if ($_GET['lan'] == 'pt') {
 	include "lang/pt.php";
-	$cacheEx = "$.cookie('setting_lang','pt');";
+	//$cacheEx = "$.cookie('setting_lang','pt');";
+	//$langt = "?lan=pt&&t=$targetid";
 	$lango = "form.php?lan=pt";
 	$langs = "sorry.php?lan=pt";
 }
 else if ($_GET['lan'] == 'es') {
 	include "lang/es.php";
-	$cacheEx = "$.cookie('setting_lang','es');";
+	//$cacheEx = "$.cookie('setting_lang','es');";
+	//$langt = "?lan=es&&t=$targetid";
 	$lango = "form.php?lan=es";
 	$langs = "sorry.php?lan=es";
 }
 else if ($_GET['lan'] == 'de') {
 	include "lang/de.php";
-	$cacheEx = "$.cookie('setting_lang','de');";
+	//$cacheEx = "$.cookie('setting_lang','de');";
+	//$langt = "?lan=de&&t=$targetid";
 	$lango = "form.php?lan=de";
 	$langs = "sorry.php?lan=de";
 }
  else if ($_GET['lan'] == 'ru') {
 	include "lang/ru.php";
-	$cacheEx = "$.cookie('setting_lang','ru');";
+	//$cacheEx = "$.cookie('setting_lang','ru');";
+	//$langt = "?lan=ru&&t=$targetid";
 	$lango = "form.php?lan=ru";
 	$langs = "sorry.php?lan=ru";
 }
 else if ($_GET['lan'] == 'pr') {
 	include "lang/pr.php";
-	$cacheEx = "$.cookie('setting_lang','pr');";
+	//$cacheEx = "$.cookie('setting_lang','pr');";
+	//$langt = "?lan=pr&&t=$targetid";
 	$lango = "form.php?lan=pr";
 	$langs = "sorry.php?lan=pr";
 }
 else if ($_GET['lan'] == 'pt') {
 	include "lang/pt.php";
-	$cacheEx = "$.cookie('setting_lang','pt');";
+	//$cacheEx = "$.cookie('setting_lang','pt');";
+	//$langt = "?lan=pt&&t=$targetid";
 	$lango = "form.php?lan=pt";
 	$langs = "sorry.php?lan=pt";
 }
 else if ($_GET['lan'] == 'ar') {
 	include "lang/ar.php";
-	$cacheEx = "$.cookie('setting_lang','ar');";
+	//$cacheEx = "$.cookie('setting_lang','ar');";
+	//$langt = "?lan=ar&&t=$targetid";
 	$lango = "form.php?lan=ar";
 	$langs = "sorry.php?lan=ar";
 }
 else{
 	include "lang/en.php";
-	$cacheEx = "$.cookie('setting_lang','en');";
+	//$cacheEx = "$.cookie('setting_lang','en');";
+	//$langt = "?lan=en&&t=$targetid";
 	$lango = "form.php?lan=en";
 	$langs = "sorry.php?lan=en";
 }
