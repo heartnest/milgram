@@ -69,6 +69,11 @@ function ValidPhone(v) {
     return false;
 }
 
+function validSocial(v) {
+    var r = new RegExp("^[a-zA-Z'_ ]*$");
+    return (v.match(r) == null) ? false : true;
+}
+
 
 function ajaxVerify(arg){
     var trimed = $.trim(arg);
@@ -109,6 +114,10 @@ function ajaxTrace(arg1,arg2,arg3){
             socials += val + ";";
         }
     })
+
+    var altSocial = $.trim($(".alt_social").val());
+    if (altSocial != "" && validSocial(altSocial) ) { socials += altSocial + ";"; };
+    
 
     $.ajax({
         type: 'POST',
