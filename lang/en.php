@@ -4,6 +4,7 @@ session_start();
 /******** added 29/07/2014 *********/
 
 $targetid = $_SESSION['target_id'];
+ $uid = $_SESSION['userid'];
 
 if ($targetid == '123') {
 	$targ_description = "Target T is fashion designer XYZ.";
@@ -34,24 +35,19 @@ $P_BUTTON_REFUSE = "Refuse";
 $P_BUTTON_ACCEPT = "Accept";
 
 
-$P_BODYPARAONE="Milgram 2014 experiment aims at understanding how contemporary ICTs have changed size and distances of our social network. 
-We would like to update the classic Milgram’s experiment from 1956 that is the root of the famous 6 degrees of separation theory.  
-With your help we are trying to reach the target &quot;<span id='targ' class='btn btn-default' data-placement='top' data-content='$targ_description' data-original-title='$targ_title'>T</span>&quot;. In case you know him,
- please forward the message to T, otherwise, <strong>please</strong> forward the message 
-to your friends or acquaintances that might know T directly or indirectly. ";
+$P_BODYPARAONE="With your help we are trying to reach the target &quot;<span id='targ' class='btn btn-default' data-placement='top' data-content='".$targ_description."' data-original-title='".$targ_title."'>T</span>&quot;.  In case you
+know him personally please forward the message to T, otherwise, please forward the message to someone you know personally who might know T (directly or indirectly). Then go to the next page.";
 
-$P_BODYPARATWO ="By participating you get a chance to win the <strong><a target='_blank' href='luckydraw.php'>LUCKY DRAW</a></strong>. You can contribute in this experiment by answering 
-few questions, which takes no more than 2 minutes. Your data will be stored anonymously and no data will be 
-released in future.";
+$P_BODYPARATWO ="(learn more about this experiment),(learn more about the original experiment),By participating you get a chance to win an iPad Air.";
 
 $P_BODY_LOW = "Please feel free to contact us for any question : <strong>connect@cs.unibo.it</strong> ";
 
 /***************  PAGE TWO ******************/
 
 $PP_QONE = "Please tell us how you received the message";
-$PP_QTWO = "Who are you? (Please insert your email or mobile phone number as your ID)";
-$PP_QTHREE = "If you use your real information, we will be able to contact you for the results of our lucky draw.";
-$PP_QFOUR = "Select one out of the networks from where you received the message.";
+$PP_QTWO = "Please insert your email or mobile phone number";
+$PP_QTHREE = "We will use this information to contact you for the results of our lucky draw.";
+$PP_QFOUR = "Select the network(s) from where you received the message.";
 $PP_QFIVE = "Who contacted you? (Insert the sender unique ID i.e. email or cellphone please)";
 $PP_QSIX = "Which networks are you going to use to move the message towards its destination?";
 $PP_OP1 = "Email";
@@ -62,16 +58,15 @@ $PP_BUTT2= "Next";
 
 /***************  PAGE THREE ******************/
 
-$PPP_FIRST = "Thank you ! One Last favor...";
-$PPP_MAIN = "Please copy &amp; paste the following message template to your friends or acquaintances that might help us reaching to target T. 
-Although the following template is available, if you decide to send a personal message please share your unique ID.
+$PPP_FIRST = "You are almost done!";
+$PPP_MAIN = "Please copy &amp; paste the following message and send it to your contacts through your preferred network(s). Feel free to edit the message (but do not remove the link!).
 ";
 $PPP_NOTE = "Although the following template is available, why dont you send a personal message to your friends.";
 $PPP_LETTER = "Hi , 
 I&apos;m participating an experiment from the University of Bologna. We are trying to reach [T], can you help me?
-http://m.web.cs.unibo.it/?t=$targetid
+http://m.web.cs.unibo.it/?t=$targetid&&my=$uid
 My ID is : ";
-$PPP_LAST = "We are forwarding the message to your email in case you forget. ";
+$PPP_LAST = "Thank you for your help! (and good luck)";
 
 
 

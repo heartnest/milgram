@@ -93,36 +93,7 @@ if ($_GET['action'] == 'rf') {
               <div class="form-group">
                 <label  class="control-label"><?php echo $PP_QFOUR; ?></label>
                 <div class="">
-                  <select id="whichnetwork" name="network" class="form-control">
-                    <option value="1">Facebook</option>
-                    <option value="2">Twitter</option>
-                    <option value="3">Tumblr</option>
-                    <option value="4">Linkedin</option>
-                    <option value="5">Whatsapp</option>
-                    <option value="6">Wechat</option>
-                    <option value="7">Skype</option>
-                    <option value="8">Telegram</option>
-                    <option value="9">Instagram</option>
-                    <option value="10">Foursquare</option>
-                    <option value="11">Email</option>
-                    <option value="12">face2face</option>
-                    <option value="13">GooglePlus</option>
-                    <option value="14">Weibo</option>
-                    <option value="15">Renren</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group wst">
-                <label for="whosthat"><?php echo $PP_QFIVE;?></label>
-                
-                <input id="whosthat" type="email" class="form-control" name="senderid" placeholder="Enter her/his email/ cellphone">
-                <div><small class="alert-warning warning2"></small></div>
-              </div>
-
-
-              <div class="form-group">
-              <label><?php echo $PP_QSIX; ?></label>
-         <div class="table-responsive q2s2">
+                  <div class="table-responsive q2s2">
         <table class="table">
 
           <tr>
@@ -304,8 +275,14 @@ if ($_GET['action'] == 'rf') {
         
       </table>
     </div><!-- /.table-responsive -->
-
-    </div>
+                </div>
+              </div>
+              <div class="form-group wst">
+                <label for="whosthat"><?php echo $PP_QFIVE;?></label>
+                
+                <input id="whosthat" type="email" class="form-control" name="senderid" placeholder="Enter her/his email/ cellphone">
+                <div><small class="alert-warning warning2"></small></div>
+              </div>
 
     <div class="form-group">
               <a href ="index.php"><button type="button" class="btn btn-success"><?php echo $PP_BUTT1; ?></button></a>

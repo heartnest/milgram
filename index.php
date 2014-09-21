@@ -122,6 +122,7 @@ else{
                 <li class="active"><?php echo $HEAD_TITLE_RIGHT_INTRO; ?></li>
                 <li><?php echo $HEAD_TITLE_RIGHT_REPLY; ?></li>
                 <li><?php echo $HEAD_TITLE_RIGHT_END; ?></li>
+                <li>Legal</li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src='img/lang.png' alt='lang'><b class="caret"></b></a>
                     <ul class="dropdown-menu">
