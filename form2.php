@@ -92,6 +92,7 @@ please continue.
                 <input id="whoareyou" type="text" class="form-control"  placeholder="example 1978" name="yourid">
 
                 <br />
+                <form>
                 <label for="whoareyou">Gender</label>
                 <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
                 Man
@@ -101,9 +102,10 @@ please continue.
                 <input type="text" />
                 <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
                 Prefer not to disclose
-
+              </form>
                 <br />
 
+                <form>
                 <label>Ethnic</label>
                 <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
                 Caucasian
@@ -123,6 +125,7 @@ please continue.
                 Mixed
                 <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
                 Other
+              </form>
                 <br />
               </div>
               <div class="form-group">
