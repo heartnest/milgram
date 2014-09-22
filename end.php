@@ -104,7 +104,7 @@ else
   </div>
 </div>
   <div class="clearfix"></div>
-  <div class="page_num pull-right">3/3</div>
+  <div class="page_num pull-right">4/4</div>
 </div>
 
 </div>

@@ -81,17 +81,53 @@ if ($_GET['action'] == 'rf') {
             
       </div>
   <div class="content">
-          <h3 class="form1-heading"><?php echo $PP_QONE; ?></h3>
+          <h3 class="form1-heading">If you want to increase your chance of winning an iPad please also answer the next few questions. It will only take 2 minutes, your data will be stored
+anonymously (and no data will be released in future). Otherwise,
+please continue.
+</h3>
           <div>
             <form id = "form1" role="form" action="end.php" method="POST">
               <div class="form-group wru">
-                <label for="whoareyou"><?php echo $PP_QTWO; ?></label>
-                <div><small class="smallnotice"><?php echo $PP_QTHREE; ?></small></div>
-                <input id="whoareyou" type="text" class="form-control"  placeholder="my@email.com or 00393232222222" name="yourid">
-                <div><small class="alert-warning warning1"></small></div>
+                <label for="whoareyou">In which year are you born?</label>
+                <input id="whoareyou" type="text" class="form-control"  placeholder="example 1978" name="yourid">
+
+                <br />
+                <label for="whoareyou">Gender</label>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                Man
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                Woman
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                <input type="text" />
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                Prefer not to disclose
+
+                <br />
+
+                <label>Ethnic</label>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                Caucasian
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                 Latino/Hispanic
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                Middle Eastern
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                African
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                Caribbean
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                South Asian
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                East Asian
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                Mixed
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                Other
+                <br />
               </div>
               <div class="form-group">
-                <label  class="control-label"><?php echo $PP_QFOUR; ?></label>
+                <label  class="control-label">￼Which networks are you going to use to move the message towards its destination?
+</label>
                 <div class="">
                   <div class="table-responsive q2s2">
         <table class="table">
@@ -277,16 +313,11 @@ if ($_GET['action'] == 'rf') {
     </div><!-- /.table-responsive -->
                 </div>
               </div>
-              <div class="form-group wst">
-                <label for="whosthat"><?php echo $PP_QFIVE;?></label>
-                
-                <input id="whosthat" type="email" class="form-control" name="senderid" placeholder="Enter her/his email/ cellphone">
-                <div><small class="alert-warning warning2"></small></div>
-              </div>
+
 
     <div class="form-group">
-              <a href ="index.php"><button type="button" class="btn btn-success"><?php echo $PP_BUTT1; ?></button></a>
-              <button id="go1" type="submit" class="pull-right btn btn-primary" name="button" value='next' ><?php echo $PP_BUTT2; ?></button>
+              <a href ="form.php"><button type="button" class="btn btn-success"><?php echo $PP_BUTT1; ?></button></a>
+              <button id="go2" type="submit" class="pull-right btn btn-primary" name="button" value='next' ><?php echo $PP_BUTT2; ?></button>
             </form>
       </div>
   </div>
@@ -295,7 +326,7 @@ if ($_GET['action'] == 'rf') {
 
   </div>
   <div class="clearfix"></div>
-  <div class="page_num pull-right">2/4</div>
+  <div class="page_num pull-right">3/4</div>
   </div>
 
   <div id="footer">

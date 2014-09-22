@@ -164,7 +164,7 @@ else{
     </div>
     </div>
     <div class="clearfix"></div>
-    <div class="page_num pull-right">1/3</div>
+    <div class="page_num pull-right">1/4</div>
 	</div>
 
 	<div id="footer">
