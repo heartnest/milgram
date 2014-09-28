@@ -4,12 +4,16 @@ session_start();
 /******** added 29/07/2014 *********/
 
 $targetid = $_SESSION['target_id'];
- $uid = $_SESSION['userid'];
+$uid = $_SESSION['userid'];
+$uidCoded = $_SESSION['useridcoded'];
 
-if ($targetid == '123') {
+if ($targetid == '1') {
+
+
 	$targ_description = "Target T is fashion designer XYZ.";
 	$targ_title = "About the target";
 }else if ($targetid == '321') {
+
 	$targ_description = "Target T is studente";
 	$targ_title = "About the target";
 }
@@ -22,7 +26,7 @@ if ($targetid == '123') {
 /***************  COMMON ******************/
 
 $lan = 'en';
-$HEAD_TITLE_LEFT = "Milgram Reloaded !";
+
 $HEAD_TITLE_RIGHT_INTRO = "Intro";
 $HEAD_TITLE_RIGHT_REPLY = "Reply";
 $HEAD_TITLE_RIGHT_END = "End";
@@ -30,7 +34,7 @@ $FOOT_COPYRIGHT = "Copyright© 2014 Milgram Test CSE UNIBO";
 
 /***************  PAGE ONE ******************/
 
-$P_TITLE= "Welcome to the Milgram project";
+$P_TITLE= "Welcome to Milgram Reloaded";
 $P_BUTTON_REFUSE = "Refuse";
 $P_BUTTON_ACCEPT = "Accept";
 
@@ -38,7 +42,7 @@ $P_BUTTON_ACCEPT = "Accept";
 $P_BODYPARAONE="With your help we are trying to reach the target &quot;<span id='targ' class='btn btn-default' data-placement='top' data-content='".$targ_description."' data-original-title='".$targ_title."'>T</span>&quot;.  In case you
 know him personally please forward the message to T, otherwise, please forward the message to someone you know personally who might know T (directly or indirectly). Then go to the next page.";
 
-$P_BODYPARATWO ="(learn more about this experiment),(learn more about the original experiment),By participating you get a chance to win an iPad Air.";
+$P_BODYPARATWO ="(learn more about this experiment),(learn more about the <a href='http://en.wikipedia.org/wiki/Small-world_experiment'>original experiment</a>),By participating you get a chance to win an iPad Air.";
 
 $P_BODY_LOW = "Please feel free to contact us for any question : <strong>connect@cs.unibo.it</strong> ";
 
@@ -64,8 +68,7 @@ $PPP_MAIN = "Please copy &amp; paste the following message and send it to your c
 $PPP_NOTE = "Although the following template is available, why dont you send a personal message to your friends.";
 $PPP_LETTER = "Hi , 
 I&apos;m participating an experiment from the University of Bologna. We are trying to reach [T], can you help me?
-http://m.web.cs.unibo.it/?t=$targetid&&my=$uid
-My ID is : ";
+http://m.web.cs.unibo.it/?t=$targetid&&my=$uidCoded";
 $PPP_LAST = "Thank you for your help! (and good luck)";
 
 

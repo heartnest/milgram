@@ -72,7 +72,7 @@ if ($_GET['action'] == 'rf') {
   <div class='container'>
     <div class="head clearfix">
 
-              <h3 class="brand"><?php echo $HEAD_TITLE_LEFT; ?></h3>
+              <h3 class="brand"><img src='img/unibo.png' alt='unibo logo' /></h3>
               <ul class="nav">
                 <li><?php echo $HEAD_TITLE_RIGHT_INTRO; ?></li>
                 <li class="active"><?php echo $HEAD_TITLE_RIGHT_REPLY; ?></li>
@@ -81,7 +81,7 @@ if ($_GET['action'] == 'rf') {
             
       </div>
   <div class="content">
-          <h3 class="form1-heading"><?php echo $PP_QONE; ?></h3>
+          <h3 class="form1-heading text-center"><?php echo $PP_QONE; ?></h3>
           <div>
             <form id = "form1" role="form" action="end.php" method="POST">
               <div class="form-group wru">
@@ -300,8 +300,8 @@ if ($_GET['action'] == 'rf') {
 
   <div id="footer">
     <div class="container">
+      <div class="text-muted pull-left"><a href='#'>Legal</a> | <a href='#'>Milgram</a> | <a href='#'>Milgram Reloaded</a></div>
       <div class="text-muted pull-right"><?php echo $FOOT_COPYRIGHT; ?></div>
-
     </div>
   </div>
 

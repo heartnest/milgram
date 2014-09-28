@@ -116,13 +116,12 @@ else{
 	<div class='container'>
 		<div class="head clearfix">
 
-              <h3 class="brand"><?php echo $HEAD_TITLE_LEFT; ?></h3>
+              <h3 class="brand"><img src='img/unibo.png' /></h3>
 
               <ul class="nav">
                 <li class="active"><?php echo $HEAD_TITLE_RIGHT_INTRO; ?></li>
                 <li><?php echo $HEAD_TITLE_RIGHT_REPLY; ?></li>
                 <li><?php echo $HEAD_TITLE_RIGHT_END; ?></li>
-                <li>Legal</li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src='img/lang.png' alt='lang'><b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -169,6 +168,7 @@ else{
 
 	<div id="footer">
 		<div class="container">
+			<div class="text-muted pull-left"><a href='#'>Legal</a> | <a href='#'>Milgram</a> | <a href='#'>Milgram Reloaded</a></div>
 			<div class="text-muted pull-right"><?php echo $FOOT_COPYRIGHT; ?></div>
 		</div>
 	</div>

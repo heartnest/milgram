@@ -26,7 +26,7 @@ body {
   height:100%;
 } 
 .content{
- margin-top: 20px;
+ margin-top: -15px;
  margin-bottom: 20px;
 }
 
@@ -75,10 +75,11 @@ body {
   padding-top:20px;
   height: 60px;
 }
+/**
 #footer .container{
   background-image: url("../img/unibo.png");
   background-repeat:no-repeat;
-}
+}**/
 .text-muted {
   margin: 20px 0;
 }

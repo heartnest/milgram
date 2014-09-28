@@ -75,8 +75,8 @@ else
 <body >
   <div class="container">
     <div class="head clearfix">
-      <h3 class="brand"><?php echo $HEAD_TITLE_LEFT; ?></h3>
-              <ul class="nav">
+      <h3 class="brand"><img src='img/unibo.png' alt='unibo logo' /></h3>
+               <ul class="nav">
                 <li><?php echo $HEAD_TITLE_RIGHT_INTRO; ?></li>
                 <li><?php echo $HEAD_TITLE_RIGHT_REPLY; ?></li>
                 <li class="active" ><?php echo $HEAD_TITLE_RIGHT_END; ?></li>
@@ -84,17 +84,16 @@ else
       </ul>
     </div>
     <div class="content">
-
       <div class="contents">
       <div class="inner cover">
-
-       <h1 class="form1-heading"><?php echo $PPP_FIRST; ?></h1>
-       <P class="lead">
+       <h1 class="form1-heading text-center"><?php echo $PPP_FIRST; ?></h1>
+       <h3>
         <?php echo $PPP_MAIN; ?>
-        </P>
+
+        </h3>
         <p>
       <?php echo $PPP_NOTE; ?></P>
-        <textarea class="form-control" rows="6"><?php echo $PPP_LETTER; ?> &quot;<?php echo $userid ?>&quot;
+        <textarea class="form-control" rows="6"><?php echo $PPP_LETTER; ?>
 </textarea>
         <br />
 
@@ -110,7 +109,8 @@ else
 </div>
 <div id="footer">
   <div class="container">
-    <div class="text-muted pull-right"><?php echo $FOOT_COPYRIGHT; ?></div>
+      <div class="text-muted pull-left"><a href='#'>Legal</a> | <a href='#'>Milgram</a> | <a href='#'>Milgram Reloaded</a></div>
+      <div class="text-muted pull-right"><?php echo $FOOT_COPYRIGHT; ?></div>
   </div>
 </div>
 

@@ -37,12 +37,15 @@ $(function(){
 })
 
         $("#go2").click(function(e){
-      
-                  if (lan == null) {
-                window.document.location.href='end.php'; //ricarica una pagina               
-            }
-            else{
-                window.document.location.href='end.php?lan='+lan;
+   
+                    if (typeof lan === 'undefined') {
+                       
+                  window.document.location.href='end.php'; //ricarica una pagina               
+                   
+              }
+              else{
+     
+                 window.document.location.href='end.php?lan='+lan;
             }
 })
   
