@@ -75,7 +75,7 @@ else
 <body >
   <div class="container">
     <div class="head clearfix">
-      <h3 class="brand"><img src='img/unibo.png' alt='unibo logo' /></h3>
+      <h3 class="brand"><a href="http://unibo.it" target='_blank'><img src='img/unibo.png' alt='unibo logo' /></a></h3>
                <ul class="nav">
                 <li><?php echo $HEAD_TITLE_RIGHT_INTRO; ?></li>
                 <li><?php echo $HEAD_TITLE_RIGHT_REPLY; ?></li>
@@ -91,8 +91,7 @@ else
         <?php echo $PPP_MAIN; ?>
 
         </h3>
-        <p>
-      <?php echo $PPP_NOTE; ?></P>
+
         <textarea class="form-control" rows="6"><?php echo $PPP_LETTER; ?>
 </textarea>
         <br />
@@ -109,7 +108,7 @@ else
 </div>
 <div id="footer">
   <div class="container">
-      <div class="text-muted pull-left"><a href='#'>Legal</a> | <a href='#'>Milgram</a> | <a href='#'>Milgram Reloaded</a></div>
+      <div class="text-muted pull-left"><a href='#'>Legal</a> | <a href='http://en.wikipedia.org/wiki/Small-world_experiment' target='_blank'>Milgram</a> | <a href='#'>Milgram Reloaded</a></div>
       <div class="text-muted pull-right"><?php echo $FOOT_COPYRIGHT; ?></div>
   </div>
 </div>

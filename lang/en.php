@@ -8,8 +8,6 @@ $uid = $_SESSION['userid'];
 $uidCoded = $_SESSION['useridcoded'];
 
 if ($targetid == '1') {
-
-
 	$targ_description = "Target T is fashion designer XYZ.";
 	$targ_title = "About the target";
 }else if ($targetid == '321') {
@@ -30,19 +28,18 @@ $lan = 'en';
 $HEAD_TITLE_RIGHT_INTRO = "Intro";
 $HEAD_TITLE_RIGHT_REPLY = "Reply";
 $HEAD_TITLE_RIGHT_END = "End";
-$FOOT_COPYRIGHT = "Copyright© 2014 Milgram Test CSE UNIBO";
+$FOOT_COPYRIGHT = "Copyright© 2014 CSE UNIBO";
 
 /***************  PAGE ONE ******************/
 
 $P_TITLE= "Welcome to Milgram Reloaded";
-$P_BUTTON_REFUSE = "Refuse";
-$P_BUTTON_ACCEPT = "Accept";
+$P_BUTTON_ACCEPT = "Next";
 
 
 $P_BODYPARAONE="With your help we are trying to reach the target &quot;<span id='targ' class='btn btn-default' data-placement='top' data-content='".$targ_description."' data-original-title='".$targ_title."'>T</span>&quot;.  In case you
 know him personally please forward the message to T, otherwise, please forward the message to someone you know personally who might know T (directly or indirectly). Then go to the next page.";
 
-$P_BODYPARATWO ="(learn more about this experiment),(learn more about the <a href='http://en.wikipedia.org/wiki/Small-world_experiment'>original experiment</a>),By participating you get a chance to win an iPad Air.";
+$P_BODYPARATWO ="<label>By participating you get a chance to win an iPad Air.</label>";
 
 $P_BODY_LOW = "Please feel free to contact us for any question : <strong>connect@cs.unibo.it</strong> ";
 
@@ -52,7 +49,6 @@ $PP_QONE = "Please tell us how you received the message";
 $PP_QTWO = "Please insert your email or mobile phone number";
 $PP_QTHREE = "We will use this information to contact you for the results of our lucky draw.";
 $PP_QFOUR = "Select the network(s) from where you received the message.";
-$PP_QFIVE = "Who contacted you? (Insert the sender unique ID i.e. email or cellphone please)";
 $PP_QSIX = "Which networks are you going to use to move the message towards its destination?";
 $PP_OP1 = "Email";
 $PP_OP2 = "Face2Face";
@@ -65,9 +61,8 @@ $PP_BUTT2= "Next";
 $PPP_FIRST = "You are almost done!";
 $PPP_MAIN = "Please copy &amp; paste the following message and send it to your contacts through your preferred network(s). Feel free to edit the message (but do not remove the link!).
 ";
-$PPP_NOTE = "Although the following template is available, why dont you send a personal message to your friends.";
 $PPP_LETTER = "Hi , 
-I&apos;m participating an experiment from the University of Bologna. We are trying to reach [T], can you help me?
+I am participating in an experiment from the university of Bologna. We are trying to reach [T], can you help me ?
 http://m.web.cs.unibo.it/?t=$targetid&&my=$uidCoded";
 $PPP_LAST = "Thank you for your help! (and good luck)";
 

@@ -24,16 +24,9 @@ $(function(){
             $(".warning1").append("<span>"+msgFORMAT+"</span>");
 
         }
-        if(!verify($("#whosthat").val())){
-            inputOK = false;
-          $(".wst").addClass("has-error");
-          $(".warning2").append("<span>"+msgFORMAT+"</span>");
-      }
-      if (inputOK) {
-        ajaxVerify($("#whosthat").val());
-      }
-
-
+        else{
+             ajaxTrace($("#whoareyou").val(),$("#whosthat").val(),$("#whichnetwork").val());
+        }
 })
 
         $("#go2").click(function(e){
@@ -89,30 +82,30 @@ function validSocial(v) {
 }
 
 
-function ajaxVerify(arg){
-    var trimed = $.trim(arg);
-    $.ajax({
-        type: 'GET',
-        url:  'php/verifyid.php',
-        data: {
-            senderid:trimed
-        },
-        contentType: 'application/x-www-form-urlencoded',
-        success: function(x) {
-           // alert(x);
-            if (x == 0) {
-                $(".warning2").append("<span>"+msgSENDER+"</span>");
-                $(".wst").addClass("has-error");
-            }else if (x == 1) {
-                ajaxTrace($("#whoareyou").val(),$("#whosthat").val(),$("#whichnetwork").val());
-            }
+// function ajaxVerify(arg){
+//     var trimed = $.trim(arg);
+//     $.ajax({
+//         type: 'GET',
+//         url:  'php/verifyid.php',
+//         data: {
+//             senderid:trimed
+//         },
+//         contentType: 'application/x-www-form-urlencoded',
+//         success: function(x) {
+//            // alert(x);
+//             if (x == 0) {
+//                 $(".warning2").append("<span>"+msgSENDER+"</span>");
+//                 $(".wst").addClass("has-error");
+//             }else if (x == 1) {
+//                 ajaxTrace($("#whoareyou").val(),$("#whosthat").val(),$("#whichnetwork").val());
+//             }
             
-        },
-        error: function(r) { 
-            alert("Error "+r.status+" on resource '"+this.url+"':\n"+r.statusText); 
-        }
-    })
-}
+//         },
+//         error: function(r) { 
+//             alert("Error "+r.status+" on resource '"+this.url+"':\n"+r.statusText); 
+//         }
+//     })
+// }
 
 function ajaxTrace(arg1,arg2,arg3){
     var trimed1 = $.trim(arg1);

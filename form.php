@@ -72,10 +72,10 @@ if ($_GET['action'] == 'rf') {
   <div class='container'>
     <div class="head clearfix">
 
-              <h3 class="brand"><img src='img/unibo.png' alt='unibo logo' /></h3>
+              <h3 class="brand"><a href="http://unibo.it" target='_blank'><img src='img/unibo.png' alt='unibo logo' /></a></h3>
               <ul class="nav">
                 <li><?php echo $HEAD_TITLE_RIGHT_INTRO; ?></li>
-                <li class="active"><?php echo $HEAD_TITLE_RIGHT_REPLY; ?></li>
+                <li class="active"><?php echo $HEAD_TITLE_RIGHT_REPLY; ?>1/2</li>
                 <li><?php echo $HEAD_TITLE_RIGHT_END; ?></li>
               </ul>
             
@@ -277,12 +277,7 @@ if ($_GET['action'] == 'rf') {
     </div><!-- /.table-responsive -->
                 </div>
               </div>
-              <div class="form-group wst">
-                <label for="whosthat"><?php echo $PP_QFIVE;?></label>
-                
-                <input id="whosthat" type="email" class="form-control" name="senderid" placeholder="Enter her/his email/ cellphone">
-                <div><small class="alert-warning warning2"></small></div>
-              </div>
+
 
     <div class="form-group">
               <a href ="index.php"><button type="button" class="btn btn-success"><?php echo $PP_BUTT1; ?></button></a>
@@ -300,7 +295,7 @@ if ($_GET['action'] == 'rf') {
 
   <div id="footer">
     <div class="container">
-      <div class="text-muted pull-left"><a href='#'>Legal</a> | <a href='#'>Milgram</a> | <a href='#'>Milgram Reloaded</a></div>
+      <div class="text-muted pull-left"><a href='#'>Legal</a> | <a href='http://en.wikipedia.org/wiki/Small-world_experiment' target='_blank'>Milgram</a> | <a href='#'>Milgram Reloaded</a></div>
       <div class="text-muted pull-right"><?php echo $FOOT_COPYRIGHT; ?></div>
     </div>
   </div>

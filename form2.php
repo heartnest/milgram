@@ -72,16 +72,16 @@ if ($_GET['action'] == 'rf') {
   <div class='container'>
     <div class="head clearfix">
 
-      <h3 class="brand"><img src='img/unibo.png' alt='unibo logo' /></h3>
+      <h3 class="brand"><a href="http://unibo.it" target='_blank'><img src='img/unibo.png' alt='unibo logo' /></a></h3>
       <ul class="nav">
         <li><?php echo $HEAD_TITLE_RIGHT_INTRO; ?></li>
-        <li class="active"><?php echo $HEAD_TITLE_RIGHT_REPLY; ?></li>
+        <li class="active"><?php echo $HEAD_TITLE_RIGHT_REPLY; ?>2/2</li>
         <li><?php echo $HEAD_TITLE_RIGHT_END; ?></li>
       </ul>
 
     </div>
     <div class="content">
-      <h3 class="form1-heading">If you want to increase your chance of winning an iPad please also answer the next few questions. It will only take 2 minutes, your data will be stored
+      <h3 class="form1-heading text-center">If you want to increase your chance of winning an iPad please also answer the next few questions.<br/> It will only take 2 minutes, your data will be stored
         anonymously (and no data will be released in future). Otherwise,
         please continue.
       </h3>
@@ -103,7 +103,7 @@ if ($_GET['action'] == 'rf') {
                     </td>
                     <td>   
                       <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                      Man   
+                      Woman   
                     </td>
                     <td>
                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
@@ -373,7 +373,7 @@ if ($_GET['action'] == 'rf') {
 
 <div id="footer">
   <div class="container">
-      <div class="text-muted pull-left"><a href='#'>Legal</a> | <a href='#'>Milgram</a> | <a href='#'>Milgram Reloaded</a></div>
+      <div class="text-muted pull-left"><a href='#'>Legal</a> | <a href='http://en.wikipedia.org/wiki/Small-world_experiment' target='_blank'>Milgram</a> | <a href='#'>Milgram Reloaded</a></div>
       <div class="text-muted pull-right"><?php echo $FOOT_COPYRIGHT; ?></div>
   </div>
 </div>
