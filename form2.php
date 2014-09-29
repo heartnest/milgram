@@ -63,7 +63,7 @@ if ($_GET['action'] == 'rf') {
   <script type='text/javascript' src='js/lib/jquery-1.7.2.min.js'></script>
   <script type='text/javascript' src='js/lib/bootstrap.min.js'></script>
   <script type='text/javascript' src='js/lib/jquery.cookie.js'></script>
-  <script type='text/javascript' src='js/load.js'></script>
+  <script type='text/javascript' src='js/form2.js'></script>
   <link type='text/css' href='css/bootstrap.css' rel='stylesheet' />
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -88,8 +88,8 @@ if ($_GET['action'] == 'rf') {
       <div>
         <form id = "form1" role="form" action="end.php" method="POST">
           <div class="form-group wru">
-            <label for="whoareyou">In which year are you born?</label>
-            <input id="whoareyou" type="text" class="form-control"  placeholder="1978" name="yourid">
+            <label for="howoldareyou">In which year are you born?</label>
+            <input id="howoldareyou" type="text" class="form-control"  placeholder="1978" name="yourid">
 
             <br />
             <form>
@@ -98,16 +98,16 @@ if ($_GET['action'] == 'rf') {
                 <table class="table">
                   <tr>
                     <td>   
-                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                      Man             
+                      <input id='gen1' type="radio" name="optionsRadios" class="genderradio" value="male">
+                      <label for='gen1' >Male</label>             
                     </td>
                     <td>   
-                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                      Woman   
+                      <input id='gen2' type="radio" name="optionsRadios" class="genderradio" value="female">
+                      <label for='gen2' >Female</label>   
                     </td>
                     <td>
-                     <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                     Prefer not to disclose
+                     <input id='gen3' type="radio" name="optionsRadios" class="genderradio" value="dis">
+                     <label for='gen3' >Prefer not to disclose</label>
                    </td>
                  </tr>
                </table>
@@ -120,47 +120,47 @@ if ($_GET['action'] == 'rf') {
               <table class="table">
                 <tr>
                   <td>   
-                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                    Caucasian            
+                    <input id='eth1' type="radio" name="optionsRadios" class="ethnicradio" value="caucasian">
+                    <label for='eth1' >Caucasian </label>           
                   </td>
                   <td>   
-                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                    Latino/Hispanic
+                    <input id='eth2' type="radio" name="optionsRadios" class="ethnicradio"  value="latino/hispanic">
+                    <label for='eth2' >Latino/Hispanic</label>
                   </td>
                   <td>
-                   <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                   Middle Eastern
+                   <input id='eth3' type="radio" name="optionsRadios" class="ethnicradio"  value="middle eastern">
+                  <label for='eth3' > Middle Eastern</label>
                  </td>
                  <td>
-                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                  African
+                  <input id='eth4' type="radio" name="optionsRadios" class="ethnicradio"  value="african">
+                  <label for='eth4' >African</label>
                 </td>
 
               </tr>
               <tr>
                 <td>
-                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                  African
+                  <input id='eth5' type="radio" name="optionsRadios" class="ethnicradio"  value="east asian">
+                  <label for='eth5' >East Asian</label>
                 </td>
                 <td>
 
-                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                  South Asian
+                  <input id='eth6' type="radio" name="optionsRadios" class="ethnicradio"  value="south asian">
+                  <label for='eth6' >South Asian</label>
                 </td>
                 <td>
-                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                  Caribbean
+                  <input id='eth7' type="radio" name="optionsRadios" class="ethnicradio"  value="caribbean">
+                 <label for='eth7' > Caribbean</label>
                 </td>
                 <td>
-                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                  Mixed
+                  <input id='eth8' type="radio" name="optionsRadios" class="ethnicradio" value="mixed">
+                  <label for='eth8' >Mixed</label>
 
                 </td>
               </tr>
               <tr>
                 <td>
-                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                  Other
+                  <input id='eth9' type="radio" name="optionsRadios" class="ethnicradio"  value="other">
+                 <label for='eth9' > Other</label>
                 </td>
               </tr>
             </table>

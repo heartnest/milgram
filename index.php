@@ -3,11 +3,15 @@ session_start();
 
 $_SESSION['referer'] = isset($_SERVER['HTTP_REFERER'])? $_SERVER['HTTP_REFERER'] : "Not Detected";
 
-if (!isset($_SESSION['target_id'])) {
+if (isset($_GET['t'])) {
 	$_SESSION['target_id'] = $_GET['t'];
 	$targetid = $_GET['t'];
 }
 
+if (isset($_GET['my'])) {
+	$_SESSION['sender_id'] = $_GET['my'];
+	//$senderid = $_GET['my'];
+}
 
 
 if ($_GET['lan'] == 'cn') {

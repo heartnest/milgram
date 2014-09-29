@@ -1,0 +1,39 @@
+CREATE TABLE trace(id int not null AUTO_INCREMENT,senderid varchar(50),receiverid varchar(50),
+receiveridoriginal varchar(7),
+receiverip  varchar(16),network  varchar(50),
+socials varchar(50),
+ref_network varchar(50),time int,PRIMARY KEY(id)
+)
+
+CREATE TABLE targets(
+id varchar(50) unique,
+name varchar(50) unique,
+description varchar(50),
+socials varchar(80),
+PRIMARY KEY(id)
+)
+
+CREATE TABLE targets( id varchar(50) unique, name varchar(50) unique, description varchar(50), socials varchar(80), PRIMARY KEY(id) )
+
+CREATE TABLE session(
+id int not null AUTO_INCREMENT,realid varchar(50),createdby varchar(50),
+createdip varchar(16),
+time int,PRIMARY KEY(id)
+)
+
+CREATE TABLE trace2(
+id int not null AUTO_INCREMENT,realid varchar(50),
+gender varchar(40),
+ethnic varchar(40),
+born varchar(40),socials varchar(50),PRIMARY KEY(id)
+)
+
+alter table trace add socials varchar(80);
+
+
+insert into targets (id, name) values (“a2xa1”,”alice”)
+
+
+alter table trace add receiveridoriginal varchar(7);
+alter table trace add socialout varchar(50);
+
