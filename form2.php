@@ -99,15 +99,15 @@ if ($_GET['action'] == 'rf') {
                   <tr>
                     <td>   
                       <input id='gen1' type="radio" name="optionsRadios" class="genderradio" value="male">
-                      <label for='gen1' >Male</label>             
+                      <label for='gen1' class='pointable'>Male</label>             
                     </td>
                     <td>   
                       <input id='gen2' type="radio" name="optionsRadios" class="genderradio" value="female">
-                      <label for='gen2' >Female</label>   
+                      <label for='gen2' class='pointable'>Female</label>   
                     </td>
                     <td>
                      <input id='gen3' type="radio" name="optionsRadios" class="genderradio" value="dis">
-                     <label for='gen3' >Prefer not to disclose</label>
+                     <label for='gen3' class='pointable'>Prefer not to disclose</label>
                    </td>
                  </tr>
                </table>
@@ -121,46 +121,46 @@ if ($_GET['action'] == 'rf') {
                 <tr>
                   <td>   
                     <input id='eth1' type="radio" name="optionsRadios" class="ethnicradio" value="caucasian">
-                    <label for='eth1' >Caucasian </label>           
+                    <label for='eth1' class='pointable'>Caucasian </label>           
                   </td>
                   <td>   
                     <input id='eth2' type="radio" name="optionsRadios" class="ethnicradio"  value="latino/hispanic">
-                    <label for='eth2' >Latino/Hispanic</label>
+                    <label for='eth2' class='pointable'>Latino/Hispanic</label>
                   </td>
                   <td>
                    <input id='eth3' type="radio" name="optionsRadios" class="ethnicradio"  value="middle eastern">
-                  <label for='eth3' > Middle Eastern</label>
+                  <label for='eth3' class='pointable'> Middle Eastern</label>
                  </td>
                  <td>
                   <input id='eth4' type="radio" name="optionsRadios" class="ethnicradio"  value="african">
-                  <label for='eth4' >African</label>
+                  <label for='eth4' class='pointable'>African</label>
                 </td>
 
               </tr>
               <tr>
                 <td>
                   <input id='eth5' type="radio" name="optionsRadios" class="ethnicradio"  value="east asian">
-                  <label for='eth5' >East Asian</label>
+                  <label for='eth5'class='pointable' >East Asian</label>
                 </td>
                 <td>
 
                   <input id='eth6' type="radio" name="optionsRadios" class="ethnicradio"  value="south asian">
-                  <label for='eth6' >South Asian</label>
+                  <label for='eth6' class='pointable'>South Asian</label>
                 </td>
                 <td>
                   <input id='eth7' type="radio" name="optionsRadios" class="ethnicradio"  value="caribbean">
-                 <label for='eth7' > Caribbean</label>
+                 <label for='eth7'class='pointable' > Caribbean</label>
                 </td>
                 <td>
                   <input id='eth8' type="radio" name="optionsRadios" class="ethnicradio" value="mixed">
-                  <label for='eth8' >Mixed</label>
+                  <label for='eth8' class='pointable'>Mixed</label>
 
                 </td>
               </tr>
               <tr>
                 <td>
                   <input id='eth9' type="radio" name="optionsRadios" class="ethnicradio"  value="other">
-                 <label for='eth9' > Other</label>
+                 <label for='eth9' class='pointable'> Other</label>
                 </td>
               </tr>
             </table>

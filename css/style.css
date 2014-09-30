@@ -155,6 +155,6 @@ body {
 /* Form 2
 --------------------------- */
 /* labels  */
-label{
+.pointable{
   cursor: pointer;
 }
