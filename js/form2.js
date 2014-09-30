@@ -37,10 +37,10 @@ var ethnic = $('.ethnicradio:checked').val();
 //     return false;
 // }
 
-function validSocial(v) {
-    var r = new RegExp("^[a-zA-Z'_ ]*$");
-    return (v.match(r) == null) ? false : true;
-}
+// function validSocial(v) {
+//     var r = new RegExp("^[a-zA-Z'_ ]*$");
+//     return (v.match(r) == null) ? false : true;
+// }
 
 
 function ajaxTrace(yearborn,gender,ethnic){
@@ -56,7 +56,7 @@ function ajaxTrace(yearborn,gender,ethnic){
     })
 
     var altSocial = $.trim($(".alt_social").val());
-    if (altSocial != "" && validSocial(altSocial) ) { socials += altSocial + ";"; };
+    if (altSocial != "") { socials += normalize(altSocial) + ";"; };
     
 //alert(socials)
     $.ajax({
@@ -96,3 +96,12 @@ function ajaxTrace(yearborn,gender,ethnic){
     })
 }
 
+function normalize(str){
+    var s = str;
+    if(str != null && str !=undefined){
+        s= str.replace(/&/g,"&amp;");
+        s= s.replace(/'/g,"&apos;");
+        s= s.replace(/"/g,"&quot;");
+    }
+    return s;
+}

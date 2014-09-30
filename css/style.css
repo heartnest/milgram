@@ -151,3 +151,10 @@ body {
 #form1 .form-group{
   margin-top: 30px;
 }
+
+/* Form 2
+--------------------------- */
+/* labels  */
+label{
+  cursor: pointer;
+}

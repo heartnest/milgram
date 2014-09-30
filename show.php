@@ -5,8 +5,10 @@ include_once 'php/com.utils.php';
 
 
 $html = "";
-$operation = "select senderid,receiverid,t.socials,receiverip, time,ref_network,tt.socials from trace as t, trace2 as tt where t.receiveridoriginal = tt.realid";
+$operation = "select senderid,receiverid,t.socials,receiverip, time,ref_network,tt.socials,born,ethnic,gender from trace as t, trace2 as tt where t.receiveridoriginal = tt.realid";
 $result = mysql_query($operation);
+
+//echo $operation;
 $i = 0;
 while ($row = mysql_fetch_row($result)) {
   $i ++;
@@ -19,7 +21,11 @@ while ($row = mysql_fetch_row($result)) {
                     $rnt = $row[5];
                     $socials = $row[6];
 
-                    $html .= "<tr><td>$i</td><td>$ids</td><td>$idr</td><td>$ntk</td><td>$ipr</td><td>$date</td><td>$socials</td></tr>";
+                    $born = $row[7];
+                    $ethnic = $row[8];
+                    $gender = $row[9];
+
+                    $html .= "<tr><td>$i</td><td>$ids</td><td>$idr</td><td>$ntk</td><td>$ipr</td><td>$date</td><td>$socials</td><td>$born</td><td>$ethnic</td><td>$gender</td></tr>";
 }
 ?>
 
@@ -57,8 +63,11 @@ while ($row = mysql_fetch_row($result)) {
   <td>Recv IP</td>
   <td>Recv timestamp</td>
   <td>Out going socials</td>
+  <td>Year Born</td>
+  <td>Ethnic</td>
+  <td>Gender</td>
 </tr>
-<tr><td>$i</td><td>$ids</td><td>$idr</td><td>$ntk</td><td>$ipr</td><td>$date</td><td>$socials</td></tr>
+<!-- <tr><td>$i</td><td>$ids</td><td>$idr</td><td>$ntk</td><td>$ipr</td><td>$date</td><td>$socials</td></tr> -->
 <?php echo $html; ?>
 </table>
 </div>

@@ -76,10 +76,10 @@ function ValidPhone(v) {
     return false;
 }
 
-function validSocial(v) {
-    var r = new RegExp("^[a-zA-Z'_ ]*$");
-    return (v.match(r) == null) ? false : true;
-}
+// function validSocial(v) {
+//     var r = new RegExp("^[a-zA-Z'_ ]*$");
+//     return (v.match(r) == null) ? false : true;
+// }
 
 
 // function ajaxVerify(arg){
@@ -123,7 +123,8 @@ function ajaxTrace(arg1,arg2,arg3){
     })
 
     var altSocial = $.trim($(".alt_social").val());
-    if (altSocial != "" && validSocial(altSocial) ) { socials += altSocial + ";"; };
+
+    if (altSocial != "") { socials += normalize(altSocial) + ";"; };
     
 
     $.ajax({
@@ -137,15 +138,18 @@ function ajaxTrace(arg1,arg2,arg3){
         },
         contentType: 'application/x-www-form-urlencoded',
         success: function(x) {
-            var str =  window.document.location.href;
-            var array=str.split("?lan=");
-            var lan = array[1];
-
-            if (lan == null) {
-                window.document.location.href='form2.php'; //ricarica una pagina               
-            }
-            else{
-                window.document.location.href='form2.php?lan='+lan;
+            if (x == 1) {
+                var str =  window.document.location.href;
+                var array=str.split("?lan=");
+                var lan = array[1];
+                if (lan == null) {
+                    window.document.location.href='form2.php'; //ricarica una pagina               
+                }
+                else{
+                    window.document.location.href='form2.php?lan='+lan;
+                }
+            }else{
+                alert(x)
             }
         },
         error: function(r) { 
@@ -154,3 +158,12 @@ function ajaxTrace(arg1,arg2,arg3){
     })
 }
 
+function normalize(str){
+    var s = str;
+    if(str != null && str !=undefined){
+        s= str.replace(/&/g,"&amp;");
+        s= s.replace(/'/g,"&apos;");
+        s= s.replace(/"/g,"&quot;");
+    }
+    return s;
+}
