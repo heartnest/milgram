@@ -7,16 +7,7 @@ $(function(){
 var yearborn = $("#howoldareyou").val();
 var gender = $('.genderradio:checked').val();
 var ethnic = $('.ethnicradio:checked').val();
-   //alert(ethnic)
-            //         if (typeof lan === 'undefined') {
-                       
-            //       window.document.location.href='end.php'; //ricarica una pagina               
-                   
-            //   }
-            //   else{
-     
-            //      window.document.location.href='end.php?lan='+lan;
-            // }
+
        ajaxTrace(yearborn,gender,ethnic);
 })
   
@@ -79,7 +70,15 @@ function ajaxTrace(yearborn,gender,ethnic){
         },
         contentType: 'application/x-www-form-urlencoded',
         success: function(x) {
-            alert(x)
+            if (typeof lan === 'undefined') {       
+                window.document.location.href='end.php'; //ricarica una pagina                      
+            }
+            else{
+     
+                window.document.location.href='end.php?lan='+lan;
+            }
+
+            //alert(x)
             // var str =  window.document.location.href;
             // var array=str.split("?lan=");
             // var lan = array[1];

@@ -2,7 +2,8 @@ CREATE TABLE trace(id int not null AUTO_INCREMENT,senderid varchar(50),receiv
 receiveridoriginal varchar(7),
 receiverip  varchar(16),network  varchar(50),
 socials varchar(50),
-ref_network varchar(50),time int,PRIMARY KEY(id)
+ref_network varchar(50),time int,
+receiveridoriginal varchar(7);PRIMARY KEY(id)
 )
 
 CREATE TABLE targets(

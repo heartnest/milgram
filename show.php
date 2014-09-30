@@ -5,7 +5,7 @@ include_once 'php/com.utils.php';
 
 
 $html = "";
-$operation = "select senderid,receiverid,network,receiverip, time,ref_network,socials from trace";
+$operation = "select senderid,receiverid,t.socials,receiverip, time,ref_network,tt.socials from trace as t, trace2 as tt where t.receiveridoriginal = tt.realid";
 $result = mysql_query($operation);
 $i = 0;
 while ($row = mysql_fetch_row($result)) {
