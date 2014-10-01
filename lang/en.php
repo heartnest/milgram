@@ -37,7 +37,7 @@ $P_BUTTON_ACCEPT = "Next";
 
 
 $P_BODYPARAONE="With your help we are trying to reach the target &quot;<span id='targ' class='btn btn-default' data-placement='top' data-content='".$targ_description."' data-original-title='".$targ_title."'>T</span>&quot;.  In case you
-know him personally please forward the message to T, otherwise, please forward the message to someone you know personally who might know T (directly or indirectly). Then go to the next page.";
+know him personally please forward the message to T, otherwise, please forward the message to someone you know personally who might know T (directly or indirectly). If you agree, then please click the Next Button.";
 
 $P_BODYPARATWO ="<label>By participating you get a chance to win an iPad Air.</label>";
 
@@ -45,8 +45,8 @@ $P_BODY_LOW = "Please feel free to contact us for any question : <strong>connect
 
 /***************  PAGE TWO ******************/
 
-$PP_QONE = "Please tell us how you received the message";
-$PP_QTWO = "Please insert your email or mobile phone number";
+$PP_QONE = "Please tell us how you received the message.";
+$PP_QTWO = "Please enter your email or mobile phone number.";
 $PP_QTHREE = "We will use this information to contact you for the results of our lucky draw.";
 $PP_QFOUR = "Select the network(s) from where you received the message.";
 $PP_QSIX = "Which networks are you going to use to move the message towards its destination?";
@@ -59,7 +59,7 @@ $PP_BUTT2= "Next";
 /***************  PAGE THREE ******************/
 
 $PPP_FIRST = "You are almost done!";
-$PPP_MAIN = "Please copy &amp; paste the following message and send it to your contacts through your preferred network(s). Feel free to edit the message (but do not remove the link!).
+$PPP_MAIN = "Please copy and paste the following message and send it to your contacts through your preferred network(s). Feel free to edit the message (but do not remove the link!).
 ";
 $PPP_LETTER = "Hi , 
 I am participating in an experiment from the university of Bologna. We are trying to reach [T], can you help me ?

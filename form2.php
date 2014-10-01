@@ -83,7 +83,7 @@ if ($_GET['action'] == 'rf') {
     <div class="content">
       <h3 class="form1-heading text-center">If you want to increase your chance of winning an iPad please also answer the next few questions.<br/> It will only take 2 minutes, your data will be stored
         anonymously (and no data will be released in future). Otherwise,
-        please continue.
+        please click the Next button.
       </h3>
       <div>
         <form id = "form1" role="form" action="end.php" method="POST">
