@@ -32,7 +32,7 @@ $FOOT_COPYRIGHT = "Copyright© 2014 CSE UNIBO";
 
 /***************  PAGE ONE ******************/
 
-$P_TITLE= "Welcome to Milgram Reloaded";
+$P_TITLE= "Welcome to Milgram Reloaded!";
 $P_BUTTON_ACCEPT = "Next";
 
 
