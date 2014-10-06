@@ -1,6 +1,84 @@
 <?php
 
+if ($_GET['lan'] == 'cn') {
+	include "lang/cn.php";
+	//$cacheEx = "$.cookie('setting_lang','cn');";
+	//$langt = "?lan=cn&&t=$targetid";
+	$lango = "form.php?lan=cn";
+	$langs = "sorry.php?lan=cn";
+}
+else if ($_GET['lan'] == 'it') {
+	include "lang/it.php";
+	//$cacheEx = "$.cookie('setting_lang','it');";
+	//$langt = "?lan=it&&t=$targetid";
+	$lango = "form.php?lan=it";
+	$langs = "sorry.php?lan=it";
+}
+else if ($_GET['lan'] == 'fr') {
+	include "lang/fr.php";
+	//$cacheEx = "$.cookie('setting_lang','fr');";
+	//$langt = "?lan=fr&&t=$targetid";
+	$lango = "form.php?lan=fr";
+	$langs = "sorry.php?lan=fr";
+}
+else if ($_GET['lan'] == 'pt') {
+	include "lang/pt.php";
+	//$cacheEx = "$.cookie('setting_lang','pt');";
+	//$langt = "?lan=pt&&t=$targetid";
+	$lango = "form.php?lan=pt";
+	$langs = "sorry.php?lan=pt";
+}
+else if ($_GET['lan'] == 'es') {
+	include "lang/es.php";
+	//$cacheEx = "$.cookie('setting_lang','es');";
+	//$langt = "?lan=es&&t=$targetid";
+	$lango = "form.php?lan=es";
+	$langs = "sorry.php?lan=es";
+}
+else if ($_GET['lan'] == 'de') {
+	include "lang/de.php";
+	//$cacheEx = "$.cookie('setting_lang','de');";
+	//$langt = "?lan=de&&t=$targetid";
+	$lango = "form.php?lan=de";
+	$langs = "sorry.php?lan=de";
+}
+ else if ($_GET['lan'] == 'ru') {
+	include "lang/ru.php";
+	//$cacheEx = "$.cookie('setting_lang','ru');";
+	//$langt = "?lan=ru&&t=$targetid";
+	$lango = "form.php?lan=ru";
+	$langs = "sorry.php?lan=ru";
+}
+else if ($_GET['lan'] == 'pr') {
+	include "lang/pr.php";
+	//$cacheEx = "$.cookie('setting_lang','pr');";
+	//$langt = "?lan=pr&&t=$targetid";
+	$lango = "form.php?lan=pr";
+	$langs = "sorry.php?lan=pr";
+}
+else if ($_GET['lan'] == 'pt') {
+	include "lang/pt.php";
+	//$cacheEx = "$.cookie('setting_lang','pt');";
+	//$langt = "?lan=pt&&t=$targetid";
+	$lango = "form.php?lan=pt";
+	$langs = "sorry.php?lan=pt";
+}
+else if ($_GET['lan'] == 'ar') {
+	include "lang/ar.php";
+	//$cacheEx = "$.cookie('setting_lang','ar');";
+	//$langt = "?lan=ar&&t=$targetid";
+	$lango = "form.php?lan=ar";
+	$langs = "sorry.php?lan=ar";
+}
+else{
+	include "lang/en.php";
+	//$cacheEx = "$.cookie('setting_lang','en');";
+	//$langt = "?lan=en&&t=$targetid";
+	$lango = "form.php?lan=en";
+	$langs = "sorry.php?lan=en";
+}
 ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -24,13 +102,17 @@
   li{
   	list-style-type: none;
   }
+  .texth:hover,.texth{
+  	color:black;
+  	text-decoration: none;
+  }
   </style>
 </head>
 
 <body >
  <div class="container">
- 	<h1 class="text-center">Welcome to Milgram Reloaded!</h1>
- 	<div>
+ 	<h1 class="text-center"><a href='index.php' class='texth'>Welcome to Milgram Reloaded!</a></h1>
+
  		<p class="text-center lead">
 Thank you for participating in the experiment.
 	</p>
@@ -118,7 +200,13 @@ Please indicate that you understand the information presented above, and consent
 <li>[5] Rui Chen, Noman Mohammed, Benjamin C. M. Fung, Bipin C. Desai, and Li Xiong. Publishing Set-Valued Data via Differential Privacy. PVLDB 4(11), 2011.</li>
 </ul>
 </p>
- 	</div>
+ 		<div id="footer">
+		<div class="container">
+			<div class="text-muted pull-left"><a href='#'>Legal</a> | <a href='http://en.wikipedia.org/wiki/Small-world_experiment' target='_blank'>Milgram</a> | <a href='info.php'>Milgram Reloaded</a></div>
+			<div class="text-muted pull-right"><?php echo $FOOT_COPYRIGHT; ?></div>
+		</div>
+	</div>
 </div>
+
 </body>
 </html>
