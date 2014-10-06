@@ -108,7 +108,7 @@ else
 </div>
 <div id="footer">
   <div class="container">
-      <div class="text-muted pull-left"><a href='#'>Legal</a> | <a href='http://en.wikipedia.org/wiki/Small-world_experiment' target='_blank'>Milgram</a> | <a href='#'>Milgram Reloaded</a></div>
+      <div class="text-muted pull-left"><a href='#'>Legal</a> | <a href='http://en.wikipedia.org/wiki/Small-world_experiment' target='_blank'>Milgram</a> | <a href='info.php'>Milgram Reloaded</a></div>
       <div class="text-muted pull-right"><?php echo $FOOT_COPYRIGHT; ?></div>
   </div>
 </div>
