@@ -18,14 +18,36 @@ $(function(){
 
         e.preventDefault();
 
+
+        var socials = "";
+
+        $(".checkbox").find("input").each(function(){
+            if ($(this).attr('checked')) {
+                var val = $(this).attr('value');
+                //alert(val)
+                socials += val + ";";
+            }
+        })
+
+        var altSocial = $.trim($(".alt_social").val());
+
+        if (altSocial != "") { socials += normalize(altSocial) + ";"; };
+        
+        var checkCkbox = socials.indexOf(";");
+
         if (!verify($("#whoareyou").val())) { 
             inputOK = false;
             $(".wru").addClass("has-error");
             $(".warning1").append("<span>"+msgFORMAT+"</span>");
 
+        }else if(checkCkbox == -1){
+            $(".warning2").removeClass("hidden");
+            $(".q2s2").addClass("bs-callout-warning")
         }
         else{
-             ajaxTrace($("#whoareyou").val(),$("#whosthat").val(),$("#whichnetwork").val());
+            $(".q2s2").removeClass("bs-callout-warning")
+            $(".warning2").addClass("hidden");
+             ajaxTrace($("#whoareyou").val(),$("#whosthat").val(),$("#whichnetwork").val(),socials);
         }
 })
 
@@ -42,15 +64,6 @@ $(function(){
             }
 })
   
-  // $(".checkbox").click(function(e){
-  //   if($(event.target).is("label") ){
-  //       if($(this).find("input").attr('checked')) {
-  //       alert(33)
-  //   }else {
-  //       alert(44)
-  //   }
-  //   }
-  // })  
 })
 
 function verify(arg){
@@ -107,25 +120,11 @@ function ValidPhone(v) {
 //     })
 // }
 
-function ajaxTrace(arg1,arg2,arg3){
+function ajaxTrace(arg1,arg2,arg3,socials){
     var trimed1 = $.trim(arg1);
     var trimed2 = $.trim(arg2);
     var trimed3 = $.trim(arg3);
 
-    var socials = "";
-
-    $(".checkbox").find("input").each(function(){
-        if ($(this).attr('checked')) {
-            var val = $(this).attr('value');
-            //alert(val)
-            socials += val + ";";
-        }
-    })
-
-    var altSocial = $.trim($(".alt_social").val());
-
-    if (altSocial != "") { socials += normalize(altSocial) + ";"; };
-    
 
     $.ajax({
         type: 'POST',

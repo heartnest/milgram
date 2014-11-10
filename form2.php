@@ -66,6 +66,14 @@ if ($_GET['action'] == 'rf') {
   <script type='text/javascript' src='js/form2.js'></script>
   <link type='text/css' href='css/bootstrap.css' rel='stylesheet' />
   <link href="css/style.css" rel="stylesheet">
+  <style>
+  .formtitle{
+    color: orange;
+    margin-bottom: 5px;
+  }
+
+  </style>
+
 </head>
 
 <body >
@@ -80,9 +88,11 @@ if ($_GET['action'] == 'rf') {
       </ul>
 
     </div>
+
     <div class="content">
-      <h3 class="form1-heading text-center">If you want to increase your chance of winning an iPad please also answer the next few questions.<br/> It will only take 2 minutes, your data will be stored
-        anonymously (and no data will be released in the future). Otherwise,
+      <h2 class='text-center formtitle'>Optional Form</h2>
+      <h3 class="form1-heading text-center"><br />If you want to increase your chance of winning an iPad please also answer the next few questions.<br/> It will only take 2 minutes, your data will be stored
+        anonymously. Otherwise,
         please click the Next button.
       </h3>
       <div>
@@ -373,7 +383,7 @@ if ($_GET['action'] == 'rf') {
 
 <div id="footer">
   <div class="container">
-      <div class="text-muted pull-left"><a href='#'>Legal</a> | <a href='http://en.wikipedia.org/wiki/Small-world_experiment' target='_blank'>Milgram</a> | <a href='info.php'>Milgram Reloaded</a></div>
+      <div class="text-muted pull-left"><a href='#'>Legal</a> | <a href='http://en.wikipedia.org/wiki/Small-world_experiment' target='_blank'>Milgram</a> | <a href='info.php' target='_blank'>Milgram Reloaded</a></div>
       <div class="text-muted pull-right"><?php echo $FOOT_COPYRIGHT; ?></div>
   </div>
 </div>

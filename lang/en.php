@@ -37,7 +37,7 @@ $P_BUTTON_ACCEPT = "Next";
 
 
 $P_BODYPARAONE="With your help we are trying to reach the target &quot;<span id='targ' class='btn btn-default' data-placement='top' data-content='".$targ_description."' data-original-title='".$targ_title."'>T</span>&quot;.  In case you
-know him personally please forward the message to T, otherwise, please forward the message to someone you know personally who might know T (directly or indirectly). If you agree, then please click the Next Button.";
+know him personally please forward the message to T, otherwise, please forward the message to someone you know personally who might know T (directly or indirectly).";
 
 $P_BODYPARATWO ="<label>By participating you get a chance to win an iPad Air.</label>";
 

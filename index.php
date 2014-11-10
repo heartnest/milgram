@@ -113,6 +113,9 @@ else{
 		.flagimg{
 			width: 40px;
 		}
+		.agreeCheckBox{
+			font-size:200%;
+		}
 	</style>
 </head>
 
@@ -155,15 +158,33 @@ else{
 			<p class="lead">
 				<?php echo $P_BODYPARATWO;?>
 			</p>
-			<p class="pull-right"><?php echo $P_BODY_LOW; ?></p>
+			
+
+
 			</div>
-		
+
+					<div class="text-justify">Taking part in this study is entirely up to you. You have the right to refuse to participate in this study. If you decide to take part, you may choose to pull out of the study at any time without giving a reason and without any negative impact. If you choose to participate in the survey, you understand that your responses to the survey questions will be stored in the severs of the University of Bologna. All information is kept confidential. That means it is accessible only by the investigators (i.e., password-protected) and is not published. Your anonymity will be achieved by not associating your name with data collected during the study. Participants will not be identified in any reports or publications.
+				<br />
+By completing the survey you are providing your consent to use the data for purposes of research.
+ 				<br />
+Please indicate that you understand the information presented above, and consent to participate in this study.
+				</div>
+
 		 <div class="clearfix"></div>
 
 
+
 	<div class='form-decision'>
-      <a href=<?php echo $lango; ?> ><button  class="btn btn-primary pull-right" name="action" value="ac"><?php echo $P_BUTTON_ACCEPT; ?></button></a>
+		<label>
+      <input class="agreeCheckBox" type="checkbox"> I understand and consent to participate in this study.
+    </label>
+      <a href=<?php echo $lango; ?> ><button  class="nextbutton btn btn-primary pull-right disabled" name="action" value="ac"><?php echo $P_BUTTON_ACCEPT; ?></button></a>
     </div>
+
+    <div class="clearfix"></div>
+
+<p class="text-center"><?php echo $P_BODY_LOW; ?></p>
+
     </div>
     <div class="clearfix"></div>
     <div class="page_num pull-right">1/4</div>
@@ -171,7 +192,7 @@ else{
 
 	<div id="footer">
 		<div class="container">
-			<div class="text-muted pull-left"><a href='#'>Legal</a> | <a href='http://en.wikipedia.org/wiki/Small-world_experiment' target='_blank'>Milgram</a> | <a href='info.php'>Milgram Reloaded</a></div>
+			<div class="text-muted pull-left"><a href='#'>Legal</a> | <a href='http://en.wikipedia.org/wiki/Small-world_experiment' target='_blank'>Milgram</a> | <a href='info.php' target='_blank'>Milgram Reloaded</a></div>
 			<div class="text-muted pull-right"><?php echo $FOOT_COPYRIGHT; ?></div>
 		</div>
 	</div>
@@ -187,6 +208,16 @@ else{
 
 var lan = <?php echo  json_encode($lan);?>;
 $.cookie('setting_lang',lan);
+$(".agreeCheckBox").click(function(){
+	if ($(".nextbutton").hasClass("disabled")) {
+		$(".nextbutton").removeClass("disabled");
+	}else{
+		$(".nextbutton").addClass("disabled");
+	}
+
+	
+})
+
 
 </script>
  

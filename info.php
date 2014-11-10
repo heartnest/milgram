@@ -125,7 +125,7 @@ Thank you for participating in the experiment.
 <ul>
 <li>Danilo Montessi, Professor, University of Bologna. Email: danilo.montesi@unibo.it</li>
 <li>Matteo Magnani, Associate Professor, Uppsala University. Email:matteo.magnani@it.uu.se</li>
-<li>Luca Rossi, Associate Professor, Uppsala University. Email:lucr@itu.dk</li>
+<li>Luca Rossi, Associate Professor, IT University of Copenhagen. Email:lucr@itu.dk</li>
 <li>Rajesh Sharma, Research Fellow, University of Bologna. Email: rajesh.sharma@unibo.it</li>
 <li>Tong Liu, Master student, University of Bologna. Email: tong.liu2@studio.unibo.it</li>
 </ul>

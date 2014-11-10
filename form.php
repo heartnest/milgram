@@ -66,6 +66,17 @@ if ($_GET['action'] == 'rf') {
   <script type='text/javascript' src='js/load.js'></script>
   <link type='text/css' href='css/bootstrap.css' rel='stylesheet' />
   <link href="css/style.css" rel="stylesheet">
+  <style>
+  .bs-callout-warning{
+    border-color: #eee;
+    border-left-color: #d9534f;
+    border-style: solid;
+     border-width: 1px 1px 1px 5px;
+     padding: 20px;
+    /* margin: 20px 0;*/
+  }
+
+  </style>
 </head>
 
 <body >
@@ -92,6 +103,7 @@ if ($_GET['action'] == 'rf') {
               </div>
               <div class="form-group">
                 <label  class="control-label"><?php echo $PP_QFOUR; ?></label>
+                <div><small class="alert-warning warning2 hidden">Please select at least one network on which you received the message.</small></div>
                 <div class="">
                   <div class="table-responsive q2s2">
         <table class="table">
@@ -295,7 +307,7 @@ if ($_GET['action'] == 'rf') {
 
   <div id="footer">
     <div class="container">
-      <div class="text-muted pull-left"><a href='#'>Legal</a> | <a href='http://en.wikipedia.org/wiki/Small-world_experiment' target='_blank'>Milgram</a> | <a href='info.php'>Milgram Reloaded</a></div>
+      <div class="text-muted pull-left"><a href='#'>Legal</a> | <a href='http://en.wikipedia.org/wiki/Small-world_experiment' target='_blank'>Milgram</a> | <a href='info.php' target='_blank'>Milgram Reloaded</a></div>
       <div class="text-muted pull-right"><?php echo $FOOT_COPYRIGHT; ?></div>
     </div>
   </div>
