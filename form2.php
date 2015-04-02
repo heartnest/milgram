@@ -124,58 +124,7 @@ if ($_GET['action'] == 'rf') {
              </div>
            </form>
 
-           <form>
-            <div class="table-responsive q2s2">
-              <label for="whoareyou">Ethnic</label>
-              <table class="table">
-                <tr>
-                  <td>   
-                    <input id='eth1' type="radio" name="optionsRadios" class="ethnicradio" value="caucasian">
-                    <label for='eth1' class='pointable'>Caucasian </label>           
-                  </td>
-                  <td>   
-                    <input id='eth2' type="radio" name="optionsRadios" class="ethnicradio"  value="latino/hispanic">
-                    <label for='eth2' class='pointable'>Latino/Hispanic</label>
-                  </td>
-                  <td>
-                   <input id='eth3' type="radio" name="optionsRadios" class="ethnicradio"  value="middle eastern">
-                  <label for='eth3' class='pointable'> Middle Eastern</label>
-                 </td>
-                 <td>
-                  <input id='eth4' type="radio" name="optionsRadios" class="ethnicradio"  value="african">
-                  <label for='eth4' class='pointable'>African</label>
-                </td>
 
-              </tr>
-              <tr>
-                <td>
-                  <input id='eth5' type="radio" name="optionsRadios" class="ethnicradio"  value="east asian">
-                  <label for='eth5'class='pointable' >East Asian</label>
-                </td>
-                <td>
-
-                  <input id='eth6' type="radio" name="optionsRadios" class="ethnicradio"  value="south asian">
-                  <label for='eth6' class='pointable'>South Asian</label>
-                </td>
-                <td>
-                  <input id='eth7' type="radio" name="optionsRadios" class="ethnicradio"  value="caribbean">
-                 <label for='eth7'class='pointable' > Caribbean</label>
-                </td>
-                <td>
-                  <input id='eth8' type="radio" name="optionsRadios" class="ethnicradio" value="mixed">
-                  <label for='eth8' class='pointable'>Mixed</label>
-
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <input id='eth9' type="radio" name="optionsRadios" class="ethnicradio"  value="other">
-                 <label for='eth9' class='pointable'> Other</label>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </form>
       </div>
       <div class="form-group">
         <label  class="control-label">￼Which networks are you going to use to move the message towards its destination?

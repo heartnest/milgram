@@ -288,6 +288,229 @@ if ($_GET['action'] == 'rf') {
       </table>
     </div><!-- /.table-responsive -->
                 </div>
+                <div>
+        <form id = "form1" role="form" action="end.php" method="POST">
+          <div class="form-group wru">
+            <label for="howoldareyou">In which year are you born?</label>
+            <input id="howoldareyou" type="text" class="form-control"  placeholder="1978" name="yourid">
+
+            <br />
+            <form>
+              <div class="table-responsive q2s2">
+                <label for="whoareyou">Gender</label>
+                <table class="table">
+                  <tr>
+                    <td>   
+                      <input id='gen1' type="radio" name="optionsRadios" class="genderradio" value="male">
+                      <label for='gen1' class='pointable'>Male</label>             
+                    </td>
+                    <td>   
+                      <input id='gen2' type="radio" name="optionsRadios" class="genderradio" value="female">
+                      <label for='gen2' class='pointable'>Female</label>   
+                    </td>
+                    <td>
+                     <input id='gen3' type="radio" name="optionsRadios" class="genderradio" value="dis">
+                     <label for='gen3' class='pointable'>Prefer not to disclose</label>
+                   </td>
+                 </tr>
+               </table>
+             </div>
+           </form>
+
+
+      </div>
+      <div class="form-group">
+        <label  class="control-label">￼Which networks are you going to use to move the message towards its destination?
+        </label>
+        <div class="">
+          <div class="table-responsive q2s2">
+            <table class="table">
+
+              <tr>
+
+
+                <td>                
+
+                  <div class="checkbox " >
+                    <label>
+                      <input type="checkbox" value="1">
+                      <img src="img/facebook.png" alt="Facebook" />
+                    </label>
+                  </div>
+                </td>
+
+                <td> 
+
+                  <div class="checkbox " >
+                    <label>
+                      <input type="checkbox" value="2">
+                      <img src="img/twitter.png" alt="twitter" />
+                    </label>
+                  </div>
+
+                </td>
+
+                <td>
+                  <div class="checkbox" >
+                    <label>
+                      <input type="checkbox" value="3">
+                      <img src="img/tumblr.png" alt="tumblr" />
+                    </label>
+                  </div>
+
+
+
+                </td>
+                <td>
+
+                  <div class="checkbox " >
+
+                    <label>
+                      <input type="checkbox" value="4">
+                      <img src="img/linkedin.png" alt="linkedin" />
+                    </label>
+
+                  </div>
+                </td> 
+              </tr>
+
+
+              <tr>
+                <td> 
+
+                  <div class="checkbox " >
+                    <label>
+                      <input type="checkbox" value="5">
+                      <img src="img/whatsapp.png" alt="whatsapp" />
+                    </label>
+                  </div>
+
+
+
+                </td>
+                <td>
+                  <div class="checkbox " >
+                    <label>
+                      <input type="checkbox" value="6">
+                      <img src="img/wechat.png" alt="wechat" />
+                    </label>
+                  </div>
+
+
+                </td>
+                <td>
+                  <div class="checkbox " >
+                    <label>
+                      <input type="checkbox" value="7">
+                      <img src="img/skype.png" alt="skype" />
+                    </label>
+                  </div>
+
+                </td>
+                <td>
+                 <div class="checkbox " >
+                  <label>
+                    <input type="checkbox" value="8">
+                    <img src="img/telegram.png" alt="telegram" />
+                  </label>
+                </div>
+              <!--
+              <div class="checkbox" >
+                <label>
+                  <input type="checkbox" value="">
+                  <img src="img/qq.png" alt="foursquare" />
+                </label>
+              </div>
+            -->
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="checkbox" >
+              <label>
+                <input type="checkbox" value="9">
+                <img src="img/instagram.png" alt="instagram" />
+              </label>
+            </div>
+
+          </td>
+          <td>
+
+            <div class="checkbox" >
+              <label>
+                <input type="checkbox" value="10">
+                <img src="img/four.png" alt="foursquare" />
+              </label>
+            </div>
+
+          </td>
+          <td>
+
+
+           <div class="checkbox" >
+            <label>
+              <input type="checkbox" value="11">
+              <?php echo $PP_OP1; ?>
+            </label>
+          </div>
+
+        </td>
+        <td>
+
+          <div class="checkbox" >
+            <label>
+              <input type="checkbox" value="12">
+              <?php echo $PP_OP2; ?>
+
+            </label>
+          </div>
+
+
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="checkbox" >
+            <label>
+              <input type="checkbox" value="13">
+              <img src="img/gplus.png" alt="gplus" />
+            </label>
+          </div>
+        </td>
+        <td>
+          <div class="checkbox" >
+            <label>
+              <input type="checkbox" value="14">
+              <img src="img/weibo.png" alt="weibo" />
+
+            </label>
+          </div>
+        </td>
+        <td>
+          <div class="checkbox" >
+            <label>
+              <input  type="checkbox" value="15">
+              <img src="img/renren.png" alt="renren" />
+            </label>
+          </div>
+        </td>
+        <td>
+          <div class="checkbox" >
+            <input type='text' class='form-control alt_social'   placeholder=<?php echo $PP_OP3; ?> />
+          </div>
+        </td>
+      </tr>
+
+    </table>
+  </div><!-- /.table-responsive -->
+</div>
+</div>
+
+
+</form>
+</div>
               </div>
 
 
