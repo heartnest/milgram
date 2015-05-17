@@ -85,7 +85,8 @@ body {
 }
 .text-muted a{
   text-decoration: none;
-  color: #999999;
+  /*color: #999999;*/
+  color: rgb(51,51,51);
 }
 
 /* Global Devices

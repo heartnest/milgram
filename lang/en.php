@@ -41,7 +41,7 @@ know him personally please forward the message to T, otherwise, please forward t
 
 $P_BODYPARATWO ="<label>By participating you get a chance to win an iPad Air.</label>";
 
-$P_BODY_LOW = "Please feel free to contact us for any question : <strong>connect@cs.unibo.it</strong> ";
+$P_BODY_LOW = "Please feel free to contact us for any question : <strong>milgram.contact@gmail.com</strong> ";
 
 /***************  PAGE TWO ******************/
 
@@ -64,7 +64,7 @@ $PPP_MAIN = "Please copy and paste the following message and send it to your con
 $PPP_LETTER = "Hi , 
 I am participating in an experiment from the university of Bologna. We are trying to reach [T], can you help me ?
 http://m.web.cs.unibo.it/?t=$targetid&&my=$uidCoded";
-$PPP_LAST = "Thank you for your help! (and good luck)";
+$PPP_LAST = "Thank you for your help! (and good luck for the lucky draw prize)";
 
 
 

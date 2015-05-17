@@ -142,10 +142,10 @@ function ajaxTrace(arg1,arg2,arg3,socials){
                 var array=str.split("?lan=");
                 var lan = array[1];
                 if (lan == null) {
-                    window.document.location.href='form2.php'; //ricarica una pagina               
+                    window.document.location.href='end.php'; //ricarica una pagina               
                 }
                 else{
-                    window.document.location.href='form2.php?lan='+lan;
+                    window.document.location.href='end.php?lan='+lan;
                 }
             }else{
                 alert(x)

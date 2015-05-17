@@ -153,8 +153,8 @@ All are welcome to participate in the study.
 </p>
 
 <p>
-<label>Potential benefits of the study</label><br/>
-Participating in the study might not benefit you directly, but your participation in the study will contribute to building knowledge surrounding social media use in education, and will lead to an understanding of successful strategies towards integrating social media in education, assessing social media with respect to teaching and learning, and contributing to ongoing discourse and research in the fields of e-learning, learning analytics, and social media.
+<label>Aim of the study</label><br/>
+The main GOAL of this experiment is to understand the effect of presence of multiple social networks on the navigation process. The aim of the data collection using the experiment is solely for the research purpose. We have no commercial purpose in gathering this data.  It is important to note that, the aim of the experiment is not to perform individual analysis. However, rather quantitative analysis of the whole dataset. As a motivation to participate, we introduce reward in the form of two prizes which are drawn at the end of the experiment. These two prizes will be awarded to two participants, selected randomly from all the participants who have participated in the experiment. These two participants will be awarded <a href="make a link to http://www.apple.com/ipad/" target='_blank' >iPads</a>. Following we explain about the rules and the process of drawing of the lucky draws for the prizes.
 </p>
 
 <p>
@@ -177,10 +177,7 @@ This online survey is hosted by university of Bologna, Italy and as such is subj
 <p>
 <label>Contact for information about the study</label>
 <br/>
-If you have any questions or concerns about what we are asking of you, please contact:
-Rajesh Sharma
-connect@cs.unibo.it
-University of Bologna, Italy
+If you have any questions or concerns about the experiment, please contact us at connect@cs.unibo.it 
 </p>
 <p>
 <label>Participant Consent</label>
@@ -190,6 +187,30 @@ Taking part in this study is entirely up to you. You have the right to refuse to
 Please indicate that you understand the information presented above, and consent to participate in this study.
 </p>
 <p>
+<p>
+
+<label>Rules for Lucky draw</label>
+The platform (web page) will be available for users (across the globe) to participate in the experiment. We will draw two prizes in total. Following are the Lucky Draw Rules:
+<ul>
+<li> The Estimated time period of the draw is 3 months* from the start of the experiment.</li>
+<li> We will update the users in advance about the exact date of the lucky draw through their contact information (email id or phone no)</li>
+<li> We will also update all the users if they have won the draw or not.</li>
+<li> The name of the winners will be posted on the site to make it fair.</li>
+<li> No immediate known of the people associated with this experiment can be considered for lucky draw.</li>
+<li> The decision of the experiment organizers will be final. No claims or counter claims can be made through public courts.</li>
+<li> By participating you agree to the above rules of the lucky draw.</li>
+</ul>
+*: This time period can be extended depending on the response to the experiment. We will keep posted about this to all the concerned people.
+
+</p>
+
+<label>Methodology to draw winners in Lucky Draw</label>
+<p>All the users who have participated in the experiment, will be assigned a unique numeric value. 
+	These numbers will be incremental in numbers. For the first draw, we will draw uniform at random a number.
+	 The number corresponds to the unique numeric id of the user being selected for the first prize. For the second prize,
+	  we select all the users excluding the winner of the first draw. We will again assign new incremental numeric values 
+	  to this set of users. Again, a random number is selected from the set. The number corresponds to the second winner 
+	  of the draw.</p>
 <label>References</label>
 <br/>
 <ul>

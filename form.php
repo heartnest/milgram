@@ -86,7 +86,7 @@ if ($_GET['action'] == 'rf') {
               <h3 class="brand"><a href="http://unibo.it" target='_blank'><img src='img/unibo.png' alt='unibo logo' /></a></h3>
               <ul class="nav">
                 <li><?php echo $HEAD_TITLE_RIGHT_INTRO; ?></li>
-                <li class="active"><?php echo $HEAD_TITLE_RIGHT_REPLY; ?>1/2</li>
+                <li class="active"><?php echo $HEAD_TITLE_RIGHT_REPLY; ?></li>
                 <li><?php echo $HEAD_TITLE_RIGHT_END; ?></li>
               </ul>
             
@@ -320,7 +320,7 @@ if ($_GET['action'] == 'rf') {
 
       </div>
       <div class="form-group">
-        <label  class="control-label">￼Which networks are you going to use to move the message towards its destination?
+        <label  class="control-label">Which networks are you going to use to forward the message towards its destination?
         </label>
         <div class="">
           <div class="table-responsive q2s2">
@@ -525,12 +525,16 @@ if ($_GET['action'] == 'rf') {
 
   </div>
   <div class="clearfix"></div>
-  <div class="page_num pull-right">2/4</div>
+  <div class="page_num pull-right">2/3</div>
   </div>
 
   <div id="footer">
     <div class="container">
-      <div class="text-muted pull-left"><a href='#'>Legal</a> | <a href='http://en.wikipedia.org/wiki/Small-world_experiment' target='_blank'>Milgram</a> | <a href='info.php' target='_blank'>Milgram Reloaded</a></div>
+      <div class="text-muted pull-left">
+      <a href='info.php' target='_blank'>Milgram Reloaded</a>
+       | <a href='http://en.wikipedia.org/wiki/Small-world_experiment' target='_blank'>Milgram</a> 
+       | <a href='PrivacyStatement.pdf'  target='_blank'> Privacy Statement </a>
+      </div>
       <div class="text-muted pull-right"><?php echo $FOOT_COPYRIGHT; ?></div>
     </div>
   </div>
