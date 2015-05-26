@@ -41,7 +41,7 @@ know him personally please forward the message to T, otherwise, please forward t
 
 $P_BODYPARATWO ="<label>By participating you get a chance to win an iPad Air.</label>";
 
-$P_BODY_LOW = "Please feel free to contact us for any question : <strong>milgram.contact@gmail.com</strong> ";
+$P_BODY_LOW = "Please feel free to contact us for any question : <strong>connect@cs.unibo.it</strong> ";
 
 /***************  PAGE TWO ******************/
 

@@ -19,21 +19,32 @@ $(function(){
         e.preventDefault();
 
 
-        var socials = "";
+        //Social Collections
 
-        $(".checkbox").find("input").each(function(){
+        var socials= "";
+        var socials2 = "";
+
+        $(".arrivalNetworks").find("input:checked").each(function(){
             if ($(this).attr('checked')) {
                 var val = $(this).attr('value');
-                //alert(val)
                 socials += val + ";";
             }
         })
 
-        var altSocial = $.trim($(".alt_social").val());
-
-        if (altSocial != "") { socials += normalize(altSocial) + ";"; };
         
+
+        $(".outwardNetworks").find("input:checked").each(function(){
+            socials2 += $(this).val()+ ";";
+        })
+
+        var altSocial = $.trim($(".arrivalNetworks .alt_social").val());
+        var altSocial2 = $.trim($(".outwardNetworks .alt_social").val());
+        if (altSocial != "") { socials += normalize(altSocial) + ";"; };
+        if (altSocial2 != "") { socials2 += normalize(altSocial2) + ";"; };
+
         var checkCkbox = socials.indexOf(";");
+
+         //alert(altSocial2 +" "+checkCkbox2)
 
         if (!verify($("#whoareyou").val())) { 
             inputOK = false;
@@ -41,28 +52,42 @@ $(function(){
             $(".warning1").append("<span>"+msgFORMAT+"</span>");
 
         }else if(checkCkbox == -1){
+
             $(".warning2").removeClass("hidden");
             $(".q2s2").addClass("bs-callout-warning")
         }
         else{
+            //SEND REQUEST
+
+            var userid = $("#whoareyou").val();
+            var age = $("#howoldareyou").val();
+            var gender = $(".genderradio:checked").val();
+
+            var arrivalNetworks = socials;
+            var outwardNetworks = socials2;
+
+            //passed!
+            ajaxTrace(userid,age,gender,arrivalNetworks,outwardNetworks);       
+            //ajaxTrace($("#whoareyou").val(),$("#whichnetwork").val(),socials);
+
+
             $(".q2s2").removeClass("bs-callout-warning")
             $(".warning2").addClass("hidden");
-             ajaxTrace($("#whoareyou").val(),$("#whosthat").val(),$("#whichnetwork").val(),socials);
         }
 })
 
-        $("#go2").click(function(e){
+//         $("#go2").click(function(e){
    
-                    if (typeof lan === 'undefined') {
+//                     if (typeof lan === 'undefined') {
                        
-                  window.document.location.href='end.php'; //ricarica una pagina               
+//                   window.document.location.href='end.php'; //ricarica una pagina               
                    
-              }
-              else{
+//               }
+//               else{
      
-                 window.document.location.href='end.php?lan='+lan;
-            }
-})
+//                  window.document.location.href='end.php?lan='+lan;
+//             }
+// })
   
 })
 
@@ -120,20 +145,21 @@ function ValidPhone(v) {
 //     })
 // }
 
-function ajaxTrace(arg1,arg2,arg3,socials){
-    var trimed1 = $.trim(arg1);
-    var trimed2 = $.trim(arg2);
-    var trimed3 = $.trim(arg3);
-
-
+function ajaxTrace(userid,age,gender,arrivalNetworks,outwardNetworks){
+    userid = $.trim(userid);
+    age = $.trim(age);
+    gender = $.trim(gender);
+    arrivalNetworks = $.trim(arrivalNetworks);
+    outwardNetworks = $.trim(outwardNetworks);
     $.ajax({
         type: 'POST',
         url:  'php/trace.php',
         data: {
-            yourid:trimed1,
-            senderid:trimed2,
-            network:trimed3,
-            socials:socials
+            yourid: userid,
+            age:age,
+            gender:gender,
+            arrivalNetworks:arrivalNetworks,
+            outwardNetworks:outwardNetworks
         },
         contentType: 'application/x-www-form-urlencoded',
         success: function(x) {
