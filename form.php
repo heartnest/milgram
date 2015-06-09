@@ -85,13 +85,33 @@ if ($_GET['action'] == 'rf') {
 
       <h3 class="brand"><a href="http://unibo.it" target='_blank'><img src='img/unibo.png' alt='unibo logo' /></a></h3>
       <ul class="nav">
-        <li><?php echo $HEAD_TITLE_RIGHT_INTRO; ?></li>
-        <li class="active"><?php echo $HEAD_TITLE_RIGHT_REPLY; ?></li>
-        <li><?php echo $HEAD_TITLE_RIGHT_END; ?></li>
+                        <li><a href='info.php' target='_blank'>Milgram Reloaded</a>
+                <li><a href='http://en.wikipedia.org/wiki/Small-world_experiment' target='_blank'>Milgram</a></li>
+                <li> <a href='PrivacyStatement.pdf'  target='_blank'> Privacy Statement </a></li></li>
       </ul>
 
     </div>
     <div class="content">
+
+
+            <div class="stepwizard col-md-offset-3">
+    <div class="stepwizard-row setup-panel">
+          <div class="stepwizard-step">
+        <a href="index.php" type="button" class="btn btn-primary btn-circle">1</a>
+        <p><?php echo $HEAD_TITLE_RIGHT_INTRO; ?></p>
+      </div>
+          <div class="stepwizard-step">
+        <a href="#step-2" type="button" class="btn btn-primary btn-circle">2</a>
+        <p><?php echo $HEAD_TITLE_RIGHT_REPLY; ?></p>
+      </div>
+          <div class="stepwizard-step">
+        <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+        <p><?php echo $HEAD_TITLE_RIGHT_END; ?></p>
+      </div>
+        </div>
+  </div>
+
+
       <h3 class="form1-heading text-center"><?php echo $PP_QONE; ?></h3>
       <div>
         <form id = "form1" role="form" action="end.php" method="POST">
@@ -103,7 +123,7 @@ if ($_GET['action'] == 'rf') {
           </div>
           <div class="form-group">
             <label  class="control-label"><?php echo $PP_QFOUR; ?></label>
-            <div><small class="alert-warning warning2 hidden">Please select at least one network on which you received the message.</small></div>
+            <div><small class="alert-warning warning2 hidden"><?php echo $PP_WARNING2;?></small></div>
             <div class="">
               <div class="table-responsive arrivalNetworks q2s2">
                 <table class="table inputnetwork">
@@ -285,26 +305,26 @@ if ($_GET['action'] == 'rf') {
 <div>
   <form id = "form1" role="form" action="end.php" method="POST">
     <div class="form-group wru">
-      <label for="howoldareyou">In which year are you born?</label>
+      <label for="howoldareyou"><?php echo "$PP_WHICHYEAR";?></label>
       <input id="howoldareyou" type="text" class="form-control"  placeholder="example: 1978" name="yourid">
 
       <br />
       <form>
         <div class="table-responsive">
-          <label for="whoareyou">Gender</label>
+          <label for="whoareyou"><?php echo "$PP_SEX1";?></label>
           <table class="table">
             <tr>
               <td>   
                 <input id='gen1' type="radio" name="optionsRadios" class="genderradio" value="male">
-                <label for='gen1' class='pointable'>Male</label>             
+                <label for='gen1' class='pointable'><?php echo "$PP_SEX2";?></label>             
               </td>
               <td>   
                 <input id='gen2' type="radio" name="optionsRadios" class="genderradio" value="female">
-                <label for='gen2' class='pointable'>Female</label>   
+                <label for='gen2' class='pointable'><?php echo "$PP_SEX3";?></label>   
               </td>
               <td>
                <input id='gen3' type="radio" name="optionsRadios" class="genderradio" value="dis">
-               <label for='gen3' class='pointable'>Prefer not to disclose</label>
+               <label for='gen3' class='pointable'><?php echo "$PP_SEX4";?></label>
              </td>
            </tr>
          </table>
@@ -314,7 +334,7 @@ if ($_GET['action'] == 'rf') {
 
    </div>
    <div class="form-group">
-    <label  class="control-label">Which networks are you going to use to forward the message towards its destination?
+    <label  class="control-label"><?php echo "$PP_WHICHNET";?>
     </label>
     <div class="">
       <div class="table-responsive q2s2 outwardNetworks">

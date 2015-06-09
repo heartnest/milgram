@@ -5,7 +5,12 @@ $(function(){
  //   msgFORMAT = "<span>please insert a correct email address or cellphone number</span>";
 
 
-    $('#targ').popover();  
+    $('#targ').hover(
+      function() {
+        $('#dialog').modal('show');
+      }
+    );
+
  
     $("#go1").click(function(e){
 

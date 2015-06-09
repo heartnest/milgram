@@ -107,6 +107,7 @@ else{
 	<link rel="shortcut icon" href="favicon.ico">
 	<script type='text/javascript' src='js/lib/jquery-1.7.2.min.js'></script>
 	<script type='text/javascript' src='js/lib/jquery.cookie.js'></script>
+	<script type='text/javascript' src='js/lib/bootstrap.min.js'></script>
 	<link type='text/css' href='css/bootstrap.css' rel='stylesheet' />
 	<link href="css/style.css" rel="stylesheet">
 	<style>
@@ -116,19 +117,23 @@ else{
 		.agreeCheckBox{
 			font-size:200%;
 		}
+
+
 	</style>
 </head>
 
 <body >		
+	<!-- Large modal -->
+
 	<div class='container'>
 		<div class="head clearfix">
 
               <h3 class="brand"><a href="http://unibo.it" target='_blank'><img src='img/unibo.png' /></a></h3>
 
               <ul class="nav">
-                <li class="active"><?php echo $HEAD_TITLE_RIGHT_INTRO; ?></li>
-                <li><?php echo $HEAD_TITLE_RIGHT_REPLY; ?></li>
-                <li><?php echo $HEAD_TITLE_RIGHT_END; ?></li>
+                <li><a href='info.php' target='_blank'>Milgram Reloaded</a>
+                <li><a href='http://en.wikipedia.org/wiki/Small-world_experiment' target='_blank'>Milgram</a></li>
+                <li> <a href='PrivacyStatement.pdf'  target='_blank'> Privacy Statement </a></li></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src='img/lang.png' alt='lang'><b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -151,6 +156,24 @@ else{
 
           	
           	<div class="intro">
+
+      <div class="stepwizard col-md-offset-3">
+    <div class="stepwizard-row setup-panel">
+          <div class="stepwizard-step">
+        <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+        <p><?php echo $HEAD_TITLE_RIGHT_INTRO; ?></p>
+      </div>
+          <div class="stepwizard-step">
+        <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+        <p><?php echo $HEAD_TITLE_RIGHT_REPLY; ?></p>
+      </div>
+          <div class="stepwizard-step">
+        <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+        <p><?php echo $HEAD_TITLE_RIGHT_END; ?></p>
+      </div>
+        </div>
+  </div>
+
 			<h1><?php echo $P_TITLE; ?></h1>
 			<p class="lead">
 				<?php echo $P_BODYPARAONE; ?>
@@ -163,11 +186,8 @@ else{
 
 			</div>
 
-					<div class="text-justify">Taking part in this study is entirely up to you. You have the right to refuse to participate in this study. If you decide to take part, you may choose to pull out of the study at any time without giving a reason and without any negative impact. If you choose to participate in the survey, you understand that your responses to the survey questions will be stored in the severs of the University of Bologna. All information is kept confidential. That means it is accessible only by the investigators (i.e., password-protected) and is not published. Your anonymity will be achieved by not associating your name with data collected during the study. Participants will not be identified in any reports or publications.
-				<br />
-By completing the survey you are providing your consent to use the data for purposes of research.
- 				<br />
-Please indicate that you understand the information presented above, and consent to participate in this study.
+					<div class="text-justify">
+						<?php echo "$P_BODYPARATHREE";?>
 				</div>
 
 		 <div class="clearfix"></div>
@@ -176,7 +196,9 @@ Please indicate that you understand the information presented above, and consent
 
 	<div class='form-decision'>
 		<label>
-      <input class="agreeCheckBox" type="checkbox"> I understand and consent to participate in this study.
+
+      <input class="agreeCheckBox" type="checkbox"> 
+      <?php echo $P_CONSUS ;?>
     </label>
       <a href=<?php echo $lango; ?> ><button  class="nextbutton btn btn-primary pull-right disabled" name="action" value="ac"><?php echo $P_BUTTON_ACCEPT; ?></button></a>
     </div>
@@ -201,9 +223,22 @@ Please indicate that you understand the information presented above, and consent
 		</div>
 	</div>
 
-	<script type='text/javascript' src='js/lib/bootstrap.min.js'></script>
-	<script src="js/lib/bootstrap-tooltip.js"></script>  
-	<script src="js/lib/bootstrap-popover.js"></script> 
+	<div id="dialog" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title"><?php echo $targ_title;?></h4>
+        </div>
+        <div class="modal-body">
+				<?php echo $targ_description; ?>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+	
 	<script src="js/load.js"></script> 
 
 

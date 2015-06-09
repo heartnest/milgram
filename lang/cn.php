@@ -3,13 +3,28 @@
 /******** added 29/07/2014 *********/
 
 $targetid = $_SESSION['target_id'];
+$uid = $_SESSION['userid'];
+$uidCoded = $_SESSION['useridcoded'];
 
-if ($targetid == '123') {
+
+if ($targetid == '1') {
 	$targ_description = "Target T is fashion designer XYZ.";
 	$targ_title = "About the target";
-}else if ($targetid == '321') {
-	$targ_description = "Target T is studente";
-	$targ_title = "About the target";
+}else if ($targetid == '311') {
+	$targ_description = "我原先在Norwich住，开始学习，然后在East Anglia大学的competition policy中心搞了2年科研。之后在Warwick大学Leamington做博士后。我祖籍是希腊人，32岁，我是足球迷，热爱利物浦队。我热爱社交，我现实生活中有很多朋友，facebook上面也是，我linked上面的是一部分朋友，英国的朋友都叫我Tony。";
+	$targ_title = "Antony Karatzas";
+}else if ($targetid == '322') {
+	$targ_description = "Deepak Subramanian是法国的研究员，现在在Rennes住，他原先住在新加坡，但是在印度出生，他不用facebook，也不用whatsap，但是用skype，email，还有推特twitter";
+	$targ_title = "Deepak Subramanian";
+}else if ($targetid == '333') {
+	$targ_description = "我在成都理工学物联网, 当过是电子学生协会的主席，管理计算机室，一般来讲，我用微信，微博还有qq";
+	$targ_title = "姜山";
+}else if ($targetid == '344') {
+	$targ_description = "xxx";
+	$targ_title = "Mr abc";
+}else if ($targetid == '355') {
+	$targ_description = "xxx";
+	$targ_title = "Mr abc";
 }
 
 
@@ -21,49 +36,59 @@ $HEAD_TITLE_LEFT = "网联测试";
 $HEAD_TITLE_RIGHT_INTRO = "介绍";
 $HEAD_TITLE_RIGHT_REPLY = "答复";
 $HEAD_TITLE_RIGHT_END = "最终";
-$FOOT_COPYRIGHT = "2014©博洛尼亚大学计算机工程系版权所有";
+$FOOT_COPYRIGHT = "2014－2015©博洛尼亚大学计算机工程系版权所有";
 
 
 /***************  PAGE ONE ******************/
 
-$P_TITLE= "欢迎参加我们的测验";
-$P_BUTTON_REFUSE = "拒绝";
-$P_BUTTON_ACCEPT = "接受";
-$P_BODYPARAONE="我们实验的目的是测量科技对我们沟通渠道的影响。 
-我们想请您帮助我们寻找一个人 &quot;<span id='targ' class='btn btn-default' data-placement='top' data-content='$targ_description' data-original-title='$targ_title'>T</span>&quot;. 如果你认识他，那就请把这个消息发给他,
-否则,  <strong>请</strong> 请把消息发给身边您觉得可能认识他的朋友.
-			";
-$P_BODYPARATWO ="参加我们的测试您就可以获得一个<strong><a target='_blank' href='luckydraw.php?lan=cn'>抽奖</a></strong>的机会. 在测验中您只需回答几个小问题 (非常简单). 您的个人信息会被安全保护，绝不外露。";
-$P_BODY_LOW = "如果有问题就请联系我们 : <strong>connect@cs.unibo.it</strong> <br />我们会非常乐意的回答";
+$P_TITLE= "欢迎参加我们的网联测验";
+$P_BUTTON_ACCEPT = "下一步";
 
+$P_BODYPARAONE="我们希望通过您的帮助，逐渐得联系上 &quot;<span id='targ'  class='btn btn-default' data-toggle='modal' data-target='#dialog'>$targ_title</span>&quot;.  如果您认识ta，并且告诉ta我们的实验，否则的话，请把这个消息转发给您身边的可能认识ta的朋友 (直接或间接).";
+$P_BODYPARATWO ="<label>参与我们的活动，您会自动参加一个抽奖，并且有机会赢取 iPad Air 2.</label>";
+$P_BODY_LOW = "如果有问题就请联系我们 : <strong>connect@cs.unibo.it</strong>";
+
+$P_BODYPARATHREE = "活动的参与完全是自愿的. 您可以拒绝参加. 如果您同意参加这个活动，您的信息将会以匿名的方式被博洛尼亚大学保留，只有法律授权的人才能阅读，并且您的信息不会被发表。
+<br/>
+同意参加我们的活动，就意味着同意我们将您的信息匿名，并且同意我们将您的数据用在科研上. 
+<br/>
+请打勾，来表示同意参加我们的活动";
+
+$P_CONSUS = "我了解了，并且同意参加活动";
 
 /***************  PAGE TWO ******************/
 
 
 $PP_QONE = "请描述下您怎么得到的这个消息";
-$PP_QTWO = "您是谁? (您的邮箱或者手机将作为账号)";
+$PP_QTWO = "请填写您的邮箱或者手机号码";
 $PP_QTHREE = "请用您的真实信息，我们会在抽奖环节联系您的";
 $PP_QFOUR = "您从哪个网络得到这个消息的呢？";
 $PP_QFIVE = "谁联系的您呢？ (请你填写ta的邮箱或手机)";
 $PP_QSIX = "转告这个消息，您将采用哪个渠道呢？";
 $PP_OP1 = "邮件";
 $PP_OP2 = "当面告诉";
-$PP_OP3 = "<input type='text' class='form-control' placeholder='others(optional)' />";
+$PP_OP3 = "其他(选填)";
 $PP_BUTT1= "返回";
 $PP_BUTT2= "下一页";
 
+$PP_WARNING2 = "请至少选择一个您转发信息的途径";
+$PP_WHICHYEAR = "您出生的年份是？";
+$PP_WHICHNET = "您会用哪些途径转发这个信息呢?";
+$PP_SEX1 = "性别";
+$PP_SEX2 = "男";
+$PP_SEX3 = "女";
+$PP_SEX4 = "保密";
 
 
 /***************  PAGE THREE ******************/
 
-$PPP_FIRST = "谢谢！最后一件事儿：";
-$PPP_MAIN = "为了提高您的中奖概率，请您转发类似信息给朋友，帮助我们一起寻找目标.";
-$PPP_NOTE = "希望您修改下面的样本";
-$PPP_LETTER = "姓名 , 
-博洛尼亚大学正在做一项有趣的实验. 他们设置了2个抽奖，只要你帮助我们寻找目标就可以参加. 下面就是实验的连接. 快来看看吧，祝我们好运哦！ 
-http://m.web.cs.unibo.it/?t=$targetid
-我的账户ID是 :";
-$PPP_LAST = "我们同时也会给您发一封备忘邮件";
+$PPP_FIRST = "马上结束来：";
+$PPP_MAIN = "请复制下面的信息，转发给您的朋友，您可以任意修改短信，但是请不要删除链接。";
+
+$PPP_LETTER = "朋友 , 
+我正在参与博洛尼亚大学的一项实验. 我们正在尝试和 $targ_title 取得联系，你能帮助一下我吗？ 
+http://milgram.cs.unibo.it/?t=$targetid&&my=$uidCoded";
+$PPP_LAST = "感谢您的帮助！（祝您顺利赢得抽奖）";
 
 
 // NEW ADDED 27/07/2014
