@@ -352,3 +352,27 @@ body {
 .social .fa-youtube-play:hover {
     background: #DF192A;
 }
+
+.social .fa-yelp:hover {
+    background: rgb(206,0,0);
+}
+
+.social .fa-xing:hover {
+    background: rgb(0,104,102);
+}
+
+.social .fa-qq:hover {
+    background: rgb(0,152,231);
+}
+
+.social .fa-renren:hover {
+    background: rgb(0,121,200);
+}
+
+.social .fa-tencent-weibo:hover {
+    background: rgb(0,118,194);
+}
+
+.social .fa-weixin:hover {
+    background: rgb(0,189,17);
+}

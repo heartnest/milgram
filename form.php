@@ -94,7 +94,9 @@ if ($_GET['action'] == 'rf') {
     <div class="content">
 
 
-            <div class="stepwizard col-md-offset-3">
+      <h3 class="form1-heading text-center"><?php echo $PP_QONE; ?></h3>
+
+    <div class="stepwizard col-md-offset-3">
     <div class="stepwizard-row setup-panel">
           <div class="stepwizard-step">
         <a href="index.php" type="button" class="btn btn-primary btn-circle">1</a>
@@ -111,8 +113,6 @@ if ($_GET['action'] == 'rf') {
         </div>
   </div>
 
-
-      <h3 class="form1-heading text-center"><?php echo $PP_QONE; ?></h3>
       <div>
         <form id = "form1" role="form" action="end.php" method="POST">
           <div class="form-group wru">

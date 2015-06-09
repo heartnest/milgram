@@ -28,7 +28,7 @@ $time = time();
 $ip = getRealIpAddr();
 $ref = $_SESSION['referer']; 
 
-$operation = "INSERT INTO trace (senderid,receiverid,receiverip,ref_network,time,socials,receiveridoriginal) VALUES('$sid','$uid','$ip','$ref','$time','$outwardNetworks','$uidoriginal')";
+$operation = "INSERT INTO trace (senderid,receiverid,receiverip,ref_network,time,socials,receiveridoriginal) VALUES('$sid','$uid','$ip','$ref','$time','$arrivalNetworks','$uidoriginal')";
 $res = mysql_query($operation);
 
 

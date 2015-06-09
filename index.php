@@ -157,6 +157,10 @@ else{
           	
           	<div class="intro">
 
+
+
+			<h1><?php echo $P_TITLE; ?></h1>
+
       <div class="stepwizard col-md-offset-3">
     <div class="stepwizard-row setup-panel">
           <div class="stepwizard-step">
@@ -174,7 +178,7 @@ else{
         </div>
   </div>
 
-			<h1><?php echo $P_TITLE; ?></h1>
+
 			<p class="lead">
 				<?php echo $P_BODYPARAONE; ?>
 			</p>

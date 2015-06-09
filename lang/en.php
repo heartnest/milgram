@@ -37,9 +37,9 @@ if ($targetid == '1') {
 
 $lan = 'en';
 
-$HEAD_TITLE_RIGHT_INTRO = "Intro";
-$HEAD_TITLE_RIGHT_REPLY = "Reply";
-$HEAD_TITLE_RIGHT_END = "End";
+$HEAD_TITLE_RIGHT_INTRO = "Welcome";
+$HEAD_TITLE_RIGHT_REPLY = "Fill the Form";
+$HEAD_TITLE_RIGHT_END = "Forward the link";
 $FOOT_COPYRIGHT = "Copyright© 2014 －2015 CSE UNIBO";
 
 /***************  PAGE ONE ******************/
