@@ -17,7 +17,7 @@ $uidoriginal = $_SESSION['uidoriginal'];
 
 //echo "1";
 
-$operation = "UPDATE trace2 SET socials=concat(socials, ',$newsocial') WHERE realid ='$uidoriginal' ";
+$operation = "UPDATE trace2 SET socials=concat(socials, ';$newsocial') WHERE realid ='$uidoriginal' ";
 $res = mysql_query($operation);
 
 if (!$res) {

@@ -96,11 +96,11 @@ else
          <div class="stepwizard col-md-offset-3">
           <div class="stepwizard-row setup-panel">
             <div class="stepwizard-step">
-              <a href="index.php" type="button" class="btn btn-primary btn-circle">1</a>
+              <a href="index.php" type="button" class="btn btn-primary btn-circle">1</a><span class="arrow glyphicon glyphicon-chevron-right"></span>
               <p><?php echo $HEAD_TITLE_RIGHT_INTRO; ?></p>
             </div>
             <div class="stepwizard-step">
-              <a href="form.php" type="button" class="btn btn-primary btn-circle" >2</a>
+              <a href="form.php" type="button" class="btn btn-primary btn-circle" >2</a><span class="arrow glyphicon glyphicon-chevron-right"></span>
               <p><?php echo $HEAD_TITLE_RIGHT_REPLY; ?></p>
             </div>
             <div class="stepwizard-step">

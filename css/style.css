@@ -18,6 +18,9 @@ body {
   box-shadow: inset 0 0 110px rgba(0,0,0,.5);
 }
 
+.arrow{
+  margin-left: 25px;
+}
 .container {
  max-width: 70%;
 }
@@ -186,6 +189,7 @@ body {
   display: table-row;
 }
 .stepwizard {
+  margin-top: 30px;
   display: table;
   width: 50%;
   position: relative;
@@ -198,7 +202,7 @@ body {
   top: 14px;
   bottom: 0;
   position: absolute;
-  content: " ";
+  /*content: " ";*/
   width: 100%;
   height: 1px;
   background-color: #ccc;
@@ -235,7 +239,7 @@ body {
 }
 
 .social ul li {
-    margin: 5px;
+    margin: 15px;
     list-style: none outside none;
     display: inline-block;
 }
@@ -259,7 +263,7 @@ body {
     -ms-transition: all ease 0.3s;
 }
 
-.social i:hover {
+.social i  {
     color: #FFF;
     text-decoration: none;
     transition: all ease 0.3s;
@@ -269,110 +273,110 @@ body {
     -ms-transition: all ease 0.3s;
 }
 
-.social .fa-facebook:hover {
+.social .fa-facebook  {
     background: #4060A5;
 }
 
-.social .fa-twitter:hover {
+.social .fa-twitter  {
     background: #00ABE3;
 }
 
-.social .fa-google-plus:hover {
+.social .fa-google-plus  {
     background: #e64522;
 }
 
-.social .fa-github:hover {
+.social .fa-github  {
     background: #343434;
 }
 
-.social .fa-pinterest:hover {
+.social .fa-pinterest  {
     background: #cb2027;
 }
 
-.social .fa-linkedin:hover {
+.social .fa-linkedin  {
     background: #0094BC;
 }
 
-.social .fa-flickr:hover {
+.social .fa-flickr  {
     background: #FF57AE;
 }
 
-.social .fa-instagram:hover {
+.social .fa-instagram  {
     background: #375989;
 }
 
-.social .fa-vimeo-square:hover {
+.social .fa-vimeo-square  {
     background: #83DAEB;
 }
 
-.social .fa-stack-overflow:hover {
+.social .fa-stack-overflow  {
     background: #FEA501;
 }
 
-.social .fa-dropbox:hover {
+.social .fa-dropbox  {
     background: #017FE5;
 }
 
-.social .fa-tumblr:hover {
+.social .fa-tumblr  {
     background: #3a5876;
 }
 
-.social .fa-dribbble:hover {
+.social .fa-dribbble  {
     background: #F46899;
 }
 
-.social .fa-skype:hover {
+.social .fa-skype  {
     background: #00C6FF;
 }
 
-.social .fa-stack-exchange:hover {
+.social .fa-stack-exchange  {
     background: #4D86C9;
 }
 
-.social .fa-youtube:hover {
+.social .fa-youtube  {
     background: #FF1F25;
 }
 
-.social .fa-weibo:hover {
+.social .fa-weibo  {
     background: #FF1F25;
 }
 
-.social .fa-xing:hover {
+.social .fa-xing  {
     background: #005C5E;
 }
 
-.social .fa-rss:hover {
+.social .fa-rss  {
     background: #e88845;
 }
 
-.social .fa-foursquare:hover {
+.social .fa-foursquare  {
     background: #09B9E0;
 }
 
-.social .fa-youtube-play:hover {
+.social .fa-youtube-play  {
     background: #DF192A;
 }
 
-.social .fa-yelp:hover {
+.social .fa-yelp  {
     background: rgb(206,0,0);
 }
 
-.social .fa-xing:hover {
+.social .fa-xing  {
     background: rgb(0,104,102);
 }
 
-.social .fa-qq:hover {
+.social .fa-qq  {
     background: rgb(0,152,231);
 }
 
-.social .fa-renren:hover {
+.social .fa-renren  {
     background: rgb(0,121,200);
 }
 
-.social .fa-tencent-weibo:hover {
+.social .fa-tencent-weibo  {
     background: rgb(0,118,194);
 }
 
-.social .fa-weixin:hover {
+.social .fa-weixin  {
     background: rgb(0,189,17);
 }

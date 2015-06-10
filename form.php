@@ -99,11 +99,11 @@ if ($_GET['action'] == 'rf') {
     <div class="stepwizard col-md-offset-3">
     <div class="stepwizard-row setup-panel">
           <div class="stepwizard-step">
-        <a href="index.php" type="button" class="btn btn-primary btn-circle">1</a>
+        <a href="index.php" type="button" class="btn btn-primary btn-circle">1</a><span class="arrow glyphicon glyphicon-chevron-right"></span> 
         <p><?php echo $HEAD_TITLE_RIGHT_INTRO; ?></p>
       </div>
           <div class="stepwizard-step">
-        <a href="#step-2" type="button" class="btn btn-primary btn-circle">2</a>
+        <a href="#step-2" type="button" class="btn btn-primary btn-circle">2</a><span class="arrow glyphicon glyphicon-chevron-right"></span>
         <p><?php echo $HEAD_TITLE_RIGHT_REPLY; ?></p>
       </div>
           <div class="stepwizard-step">
@@ -131,7 +131,7 @@ if ($_GET['action'] == 'rf') {
                     <td>                
                       <div class="checkbox " >
                         <label>
-                          <input type="checkbox" value="1">
+                          <input type="checkbox" value="facebook">
                           <img src="img/facebook.png" alt="Facebook" />
                         </label>
                       </div>
@@ -139,7 +139,7 @@ if ($_GET['action'] == 'rf') {
                     <td> 
                       <div class="checkbox " >
                         <label>
-                          <input type="checkbox" value="2">
+                          <input type="checkbox" value="twitter">
                           <img src="img/twitter.png" alt="twitter" />
                         </label>
                       </div>
@@ -149,7 +149,7 @@ if ($_GET['action'] == 'rf') {
                     <td>
                       <div class="checkbox" >
                         <label>
-                          <input type="checkbox" value="3">
+                          <input type="checkbox" value="tumblr">
                           <img src="img/tumblr.png" alt="tumblr" />
                         </label>
                       </div>
@@ -162,7 +162,7 @@ if ($_GET['action'] == 'rf') {
                       <div class="checkbox " >
 
                         <label>
-                          <input type="checkbox" value="4">
+                          <input type="checkbox" value="linkedin">
                           <img src="img/linkedin.png" alt="linkedin" />
                         </label>
 
@@ -176,7 +176,7 @@ if ($_GET['action'] == 'rf') {
 
                       <div class="checkbox " >
                         <label>
-                          <input type="checkbox" value="5">
+                          <input type="checkbox" value="whatsapp">
                           <img src="img/whatsapp.png" alt="whatsapp" />
                         </label>
                       </div>
@@ -187,7 +187,7 @@ if ($_GET['action'] == 'rf') {
                     <td>
                       <div class="checkbox " >
                         <label>
-                          <input type="checkbox" value="6">
+                          <input type="checkbox" value="wechat">
                           <img src="img/wechat.png" alt="wechat" />
                         </label>
                       </div>
@@ -197,7 +197,7 @@ if ($_GET['action'] == 'rf') {
                     <td>
                       <div class="checkbox " >
                         <label>
-                          <input type="checkbox" value="7">
+                          <input type="checkbox" value="skype">
                           <img src="img/skype.png" alt="skype" />
                         </label>
                       </div>
@@ -206,7 +206,7 @@ if ($_GET['action'] == 'rf') {
                     <td>
                      <div class="checkbox " >
                       <label>
-                        <input type="checkbox" value="8">
+                        <input type="checkbox" value="telegram">
                         <img src="img/telegram.png" alt="telegram" />
                       </label>
                     </div>
@@ -225,7 +225,7 @@ if ($_GET['action'] == 'rf') {
           <td>
             <div class="checkbox" >
               <label>
-                <input type="checkbox" value="9">
+                <input type="checkbox" value="instagram">
                 <img src="img/instagram.png" alt="instagram" />
               </label>
             </div>
@@ -235,7 +235,7 @@ if ($_GET['action'] == 'rf') {
 
             <div class="checkbox" >
               <label>
-                <input type="checkbox" value="10">
+                <input type="checkbox" value="foursquare">
                 <img src="img/four.png" alt="foursquare" />
               </label>
             </div>
@@ -246,7 +246,7 @@ if ($_GET['action'] == 'rf') {
 
            <div class="checkbox" >
             <label>
-              <input type="checkbox" value="11">
+              <input type="checkbox" value="email">
               <?php echo $PP_OP1; ?>
             </label>
           </div>
@@ -256,7 +256,7 @@ if ($_GET['action'] == 'rf') {
 
           <div class="checkbox" >
             <label>
-              <input type="checkbox" value="12">
+              <input type="checkbox" value="face2face">
               <?php echo $PP_OP2; ?>
 
             </label>
@@ -270,15 +270,15 @@ if ($_GET['action'] == 'rf') {
         <td>
           <div class="checkbox" >
             <label>
-              <input type="checkbox" value="13">
-              <img src="img/gplus.png" alt="gplus" />
+              <input type="checkbox" value="googleplus">
+              <img src="img/gplus.png" alt="googleplus" />
             </label>
           </div>
         </td>
         <td>
           <div class="checkbox" >
             <label>
-              <input type="checkbox" value="14">
+              <input type="checkbox" value="weibo">
               <img src="img/weibo.png" alt="weibo" />
 
             </label>
@@ -287,7 +287,7 @@ if ($_GET['action'] == 'rf') {
         <td>
           <div class="checkbox" >
             <label>
-              <input  type="checkbox" value="15">
+              <input  type="checkbox" value="renren">
               <img src="img/renren.png" alt="renren" />
             </label>
           </div>
@@ -347,7 +347,7 @@ if ($_GET['action'] == 'rf') {
 
               <div class="checkbox " >
                 <label>
-                  <input type="checkbox" value="1">
+                  <input type="checkbox" value="facebook">
                   <img src="img/facebook.png" alt="Facebook" />
                 </label>
               </div>
@@ -357,7 +357,7 @@ if ($_GET['action'] == 'rf') {
 
               <div class="checkbox " >
                 <label>
-                  <input type="checkbox" value="2">
+                  <input type="checkbox" value="twitter">
                   <img src="img/twitter.png" alt="twitter" />
                 </label>
               </div>
@@ -367,7 +367,7 @@ if ($_GET['action'] == 'rf') {
             <td>
               <div class="checkbox" >
                 <label>
-                  <input type="checkbox" value="3">
+                  <input type="checkbox" value="tumblr">
                   <img src="img/tumblr.png" alt="tumblr" />
                 </label>
               </div>
@@ -380,7 +380,7 @@ if ($_GET['action'] == 'rf') {
               <div class="checkbox " >
 
                 <label>
-                  <input type="checkbox" value="4">
+                  <input type="checkbox" value="linkedin">
                   <img src="img/linkedin.png" alt="linkedin" />
                 </label>
 
@@ -394,7 +394,7 @@ if ($_GET['action'] == 'rf') {
 
               <div class="checkbox " >
                 <label>
-                  <input type="checkbox" value="5">
+                  <input type="checkbox" value="whatsapp">
                   <img src="img/whatsapp.png" alt="whatsapp" />
                 </label>
               </div>
@@ -405,7 +405,7 @@ if ($_GET['action'] == 'rf') {
             <td>
               <div class="checkbox " >
                 <label>
-                  <input type="checkbox" value="6">
+                  <input type="checkbox" value="wechat">
                   <img src="img/wechat.png" alt="wechat" />
                 </label>
               </div>
@@ -415,7 +415,7 @@ if ($_GET['action'] == 'rf') {
             <td>
               <div class="checkbox " >
                 <label>
-                  <input type="checkbox" value="7">
+                  <input type="checkbox" value="skype">
                   <img src="img/skype.png" alt="skype" />
                 </label>
               </div>
@@ -424,7 +424,7 @@ if ($_GET['action'] == 'rf') {
             <td>
              <div class="checkbox " >
               <label>
-                <input type="checkbox" value="8">
+                <input type="checkbox" value="telegram">
                 <img src="img/telegram.png" alt="telegram" />
               </label>
             </div>
@@ -443,7 +443,7 @@ if ($_GET['action'] == 'rf') {
           <td>
             <div class="checkbox" >
               <label>
-                <input type="checkbox" value="9">
+                <input type="checkbox" value="instagram">
                 <img src="img/instagram.png" alt="instagram" />
               </label>
             </div>
@@ -453,7 +453,7 @@ if ($_GET['action'] == 'rf') {
 
             <div class="checkbox" >
               <label>
-                <input type="checkbox" value="10">
+                <input type="checkbox" value="foursquare">
                 <img src="img/four.png" alt="foursquare" />
               </label>
             </div>
@@ -464,7 +464,7 @@ if ($_GET['action'] == 'rf') {
 
            <div class="checkbox" >
             <label>
-              <input type="checkbox" value="11">
+              <input type="checkbox" value="email">
               <?php echo $PP_OP1; ?>
             </label>
           </div>
@@ -474,7 +474,7 @@ if ($_GET['action'] == 'rf') {
 
           <div class="checkbox" >
             <label>
-              <input type="checkbox" value="12">
+              <input type="checkbox" value="face2face">
               <?php echo $PP_OP2; ?>
 
             </label>
@@ -488,15 +488,15 @@ if ($_GET['action'] == 'rf') {
         <td>
           <div class="checkbox" >
             <label>
-              <input type="checkbox" value="13">
-              <img src="img/gplus.png" alt="gplus" />
+              <input type="checkbox" value="googleplus">
+              <img src="img/gplus.png" alt="googleplus" />
             </label>
           </div>
         </td>
         <td>
           <div class="checkbox" >
             <label>
-              <input type="checkbox" value="14">
+              <input type="checkbox" value="weibo">
               <img src="img/weibo.png" alt="weibo" />
 
             </label>
@@ -505,7 +505,7 @@ if ($_GET['action'] == 'rf') {
         <td>
           <div class="checkbox" >
             <label>
-              <input  type="checkbox" value="15">
+              <input  type="checkbox" value="renren">
               <img src="img/renren.png" alt="renren" />
             </label>
           </div>

@@ -164,11 +164,11 @@ else{
       <div class="stepwizard col-md-offset-3">
     <div class="stepwizard-row setup-panel">
           <div class="stepwizard-step">
-        <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+        <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a> <span class="arrow glyphicon glyphicon-chevron-right"></span>
         <p><?php echo $HEAD_TITLE_RIGHT_INTRO; ?></p>
       </div>
           <div class="stepwizard-step">
-        <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+        <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a><span class="arrow glyphicon glyphicon-chevron-right"></span>
         <p><?php echo $HEAD_TITLE_RIGHT_REPLY; ?></p>
       </div>
           <div class="stepwizard-step">
