@@ -93,5 +93,11 @@ $LUCKDRAWINSTRUCTIONS = "to do .. ";
 $ERR_SENDER = "to do ...";
 $ERR_FORMAT = "to do ...";
 
+/******** new added, 10 - 09 - 2015 ***************/
+
+$PPP_CLICKEICON = "Click icons to share on various networks";
+$PALL_EXPINFO = "Experiment Information";
+$PALL_STATEMENT = "Privacy Statement";
+
 
 ?>

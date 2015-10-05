@@ -69,12 +69,16 @@ if ($_GET['action'] == 'rf') {
   <style>
   .bs-callout-warning{
     border-color: #eee;
-    border-left-color: #d9534f;
+    border-left-color: red;
     border-style: solid;
     border-width: 1px 1px 1px 5px;
     padding: 20px;
     /* margin: 20px 0;*/
   }
+  .push {
+  height: 20px;  
+}
+
 
   </style>
 </head>
@@ -85,9 +89,8 @@ if ($_GET['action'] == 'rf') {
 
       <h3 class="brand"><a href="http://unibo.it" target='_blank'><img src='img/unibo.png' alt='unibo logo' /></a></h3>
       <ul class="nav">
-                        <li><a href='info.php' target='_blank'>Milgram Reloaded</a>
-                <li><a href='http://en.wikipedia.org/wiki/Small-world_experiment' target='_blank'>Milgram</a></li>
-                <li> <a href='PrivacyStatement.pdf'  target='_blank'> Privacy Statement </a></li></li>
+                        <li><a href='info.php' target='_blank'><?php echo $PALL_EXPINFO; ?></a>
+                <li> <a href='PrivacyStatement.pdf'  target='_blank'><?php echo "$PALL_STATEMENT";?></a></li></li>
       </ul>
 
     </div>
@@ -95,6 +98,7 @@ if ($_GET['action'] == 'rf') {
 
 
       <h3 class="form1-heading text-center"><?php echo $PP_QONE; ?></h3>
+
 
     <div class="stepwizard col-md-offset-3">
     <div class="stepwizard-row setup-panel">
@@ -113,7 +117,10 @@ if ($_GET['action'] == 'rf') {
         </div>
   </div>
 
+<div class="push"></div>
       <div>
+          <div class='text-center warningtop hidden'><label><?php echo $PP_WARNINGTOP;?></label></div>
+
         <form id = "form1" role="form" action="end.php" method="POST">
           <div class="form-group wru">
             <label for="whoareyou"><?php echo $PP_QTWO; ?></label>
@@ -125,7 +132,7 @@ if ($_GET['action'] == 'rf') {
             <label  class="control-label"><?php echo $PP_QFOUR; ?></label>
             <div><small class="alert-warning warning2 hidden"><?php echo $PP_WARNING2;?></small></div>
             <div class="">
-              <div class="table-responsive arrivalNetworks q2s2">
+              <div class="table-responsive arrivalNetworks q2s1">
                 <table class="table inputnetwork">
                   <tr>
                     <td>                
@@ -242,26 +249,25 @@ if ($_GET['action'] == 'rf') {
 
           </td>
           <td>
-
-
-           <div class="checkbox" >
-            <label>
-              <input type="checkbox" value="email">
-              <?php echo $PP_OP1; ?>
-            </label>
-          </div>
-
-        </td>
-        <td>
-
           <div class="checkbox" >
             <label>
-              <input type="checkbox" value="face2face">
-              <?php echo $PP_OP2; ?>
-
+              <input  type="checkbox" value="renren">
+              <img src="img/renren.png" alt="renren" />
             </label>
           </div>
 
+
+
+        </td>
+
+        <td>
+          <div class="checkbox" >
+            <label>
+              <input type="checkbox" value="weibo">
+              <img src="img/weibo.png" alt="weibo" />
+
+            </label>
+          </div>
 
         </td>
       </tr>
@@ -275,22 +281,19 @@ if ($_GET['action'] == 'rf') {
             </label>
           </div>
         </td>
-        <td>
-          <div class="checkbox" >
-            <label>
-              <input type="checkbox" value="weibo">
-              <img src="img/weibo.png" alt="weibo" />
 
-            </label>
-          </div>
-        </td>
         <td>
-          <div class="checkbox" >
+
+        </td>
+
+                <td>
+                     <div class="checkbox" >
             <label>
-              <input  type="checkbox" value="renren">
-              <img src="img/renren.png" alt="renren" />
+              <input type="checkbox" value="email">
+              <?php echo $PP_OP1; ?>
             </label>
           </div>
+
         </td>
         <td>
           <div class="checkbox" >
@@ -311,8 +314,8 @@ if ($_GET['action'] == 'rf') {
       <br />
       <form>
         <div class="table-responsive">
-          <label for="whoareyou"><?php echo "$PP_SEX1";?></label>
-          <table class="table">
+          <label for="whatgender"><?php echo "$PP_SEX1";?></label>
+          <table id= 'whatgender' class="table">
             <tr>
               <td>   
                 <input id='gen1' type="radio" name="optionsRadios" class="genderradio" value="male">
@@ -472,13 +475,6 @@ if ($_GET['action'] == 'rf') {
         </td>
         <td>
 
-          <div class="checkbox" >
-            <label>
-              <input type="checkbox" value="face2face">
-              <?php echo $PP_OP2; ?>
-
-            </label>
-          </div>
 
 
         </td>
@@ -545,9 +541,8 @@ if ($_GET['action'] == 'rf') {
 <div id="footer">
   <div class="container">
     <div class="text-muted pull-left">
-      <a href='info.php' target='_blank'>Milgram Reloaded</a>
-      | <a href='http://en.wikipedia.org/wiki/Small-world_experiment' target='_blank'>Milgram</a> 
-      | <a href='PrivacyStatement.pdf'  target='_blank'> Privacy Statement </a>
+      <a href='info.php' target='_blank'><?php echo $PALL_EXPINFO; ?></a>
+      | <a href='PrivacyStatement.pdf'  target='_blank'><?php echo "$PALL_STATEMENT";?></a>
     </div>
     <div class="text-muted pull-right"><?php echo $FOOT_COPYRIGHT; ?></div>
   </div>

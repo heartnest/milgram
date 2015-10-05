@@ -7,40 +7,24 @@ $targetid = $_SESSION['target_id'];
 $uid = $_SESSION['userid'];
 $uidCoded = $_SESSION['useridcoded'];
 
-if ($targetid == '300') {
-	$targ_description = "Mostafa Salehi received his PhD degree in computer engineering from Sharif University of Technology, Iran, in November 2012. On February 2013, he joined the University of Tehran as an assistant professor. From February 2014 to September 2014, he was a postdoctoral researcher at the University of Bologna, Italy. ";
-	$targ_title = "Mostafa Salehi";
+if ($targetid == '1') {
+	$targ_description = "Target T is fashion designer XYZ.";
+	$targ_title = "About the target";
 }else if ($targetid == '311') {
-	$targ_description = "Payam Siyari received his BSc degree in computer science from Shahid Beheshti Univeristy, Tehran, Iran, in 2011, and the MSc degree in computer engineering from Sharif University of Technology, Tehran, Iran, in 2013. He is currently working toward the PhD degree in computer science at Georgia Institute of Technology, Atlanta. ";
-	$targ_title = "Payam Siyari";
-}else if ($targetid == '322') {
-	$targ_description = "Alessandro Rioli started his PhD in quantum computing in January 2012 and he is waiting to defend his PhD Thesis. He is a physicist and is currently teaching Mathematics and Physics at High school. He is from Bologna, Italy.";
-	$targ_title = "Alessandro Rioli";
-}else if ($targetid == '333') {
-	$targ_description = "Antony Karatzas was living in Norwich, UK for the 8 yrs. First for study and for the last 2 years work as a research associate at the Center for Competition Policy, University of East Anglia. Since October 2014 he is living in Leamington Spa doing his post-doc at the Warwick manufacturing group, University of Warwick. He is originally from Greece, male, almost 32 years of age. He is a big sports fan, especially football. He is an avid Liverpool FC supporter. Most people in the UK know him by 'Tony'.";
+	$targ_description = "I was living in Norwich, UK for the 8 yrs. First for study and for the last 2 years work as a research associate at the Centre for Competition Policy, University of East Anglia. Since October i live Leamington Spa doing a post-doc at the Warwick manufacturing group,University of Warwick. I am originally from Greece, male, almost 32 years of age. I am a big sports fan, especially football. I am an avid Liverpool FC supporter. I am very sociable, I go out often and I have a lot of friends both in real life and on Facebook. I do not use any other social network much and all my contacts on Linkdin or twitter are a sub-set of my Facebook contacts. Most people in the UK know me as and call me 'Tony'.";
 	$targ_title = "Antony Karatzas";
-}else if ($targetid == '344') {
-	$targ_description = "Amrith has been living in Singapore since August 2008, initially as a PhD student at NTU and then as an entrepreneur setting up an online portal to help companies hire data scientists. He is a 30 year old Indian and is from Kerala, India.";
-	$targ_title = "Amrith";
-}else if ($targetid == '355') {
-	$targ_description = "Deepak Subramanian is a PhD student in CentraleSupelec, Rennes, France. He has lived in Singapore and is originally from Chennai, India.";
+}else if ($targetid == '322') {
+	$targ_description = "Deepak Subramanian is a researcher in France and currently lives in Rennes. He has lived in Singapore and is an Indian by birth. He is not on facebook or WhatsApp but is available on Skype or email or on twitter.";
 	$targ_title = "Deepak Subramanian";
-}
-else if ($targetid == '366') {
-	$targ_description = "Prithee Maga is a senior lecturer in advanced informatics school, University Technology Malaysia , Malaysia. She did her PhD from RMIT University, Melbourne, Australia. She is a Malaysian from Skudai, Johor. She loves hiking, touring and camping. Her hobbies are playing badminton and cycling.";
-	$targ_title = "Prithee";
-}
-else if ($targetid == '377') {
-	$targ_description = "Sandeep Ranjan is from Jalandhar, India. He is a Ph.D scholar in Punjab Technical University and completed his bachelors degree from DAV Institute of Engineering and Technology. He worked at Lovely Professional University for 7 years. Presently, he is working as an Assistant Professor in Computer Science Department in Lyallpur Khalsa College of Engineering, Jalandhar from last two years.";
-	$targ_title = "Sandeep Ranjan";
-}
-else if ($targetid == '388') {
-	$targ_description = "Jiang Shan is currently the last year student in Chengdu University of Technology, China, where he studies internet of things. He used to be the head of student association for computer science study. He used to be the responsible for computer lab in 2014. He is basically from Qinhuangdao, Hebei China. He is a tall boy, very social and open minded. ";
-	$targ_title = "Jiang Shan";
-}
-else if ($targetid == '399') {
-	$targ_description = "Jessica Liebig is a PhD candidate at RMIT University in Melbourne, Australia. She was born in Bremen, Germany, but came to Australia in 2007. Before commencing her Bachelor degree in 2009 she was traveling around Australia. People usually call her Jessi or Jess. In her free time she likes to read, draw and go jogging. ";
-	$targ_title = "Jessica Liebig";
+}else if ($targetid == '333') {
+	$targ_description = "I study in Chengdu University of Technology, I used to be the head of student association for computer science study and at that time I supervised the usage of our computer lab. I’m active in Wechat, QQ and Weibo";
+	$targ_title = "jiang shan";
+}else if ($targetid == '344') {
+	$targ_description = "xxx";
+	$targ_title = "Mr abc";
+}else if ($targetid == '355') {
+	$targ_description = "xxx";
+	$targ_title = "Mr abc";
 }
 
 
@@ -103,12 +87,8 @@ $PP_SEX4 = "Prefer not to disclose";
 /***************  PAGE THREE ******************/
 
 $PPP_FIRST = "You are almost done!";
-
-$PPP_MAIN = "Please copy and paste the following message and send it to your contacts through your preferred network(s). Feel free to edit the message (but do not remove the link!).";
-
-$PPP_MAIN1 = "Please convert the following message in the language which your friends can understand.";
-
-
+$PPP_MAIN = "Please copy and paste the following message and send it to your contacts through your preferred network(s). Feel free to edit the message (but do not remove the link!).
+";
 $PPP_LETTER = "Hi , 
 I am participating in an experiment from the university of Bologna. We are trying to reach $targ_title, can you help me ?
 http://milgram.cs.unibo.it/?t=$targetid&&my=$uidCoded";

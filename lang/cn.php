@@ -33,15 +33,15 @@ if ($targetid == '1') {
 
 $lan = 'cn';
 $HEAD_TITLE_LEFT = "网联测试";
-$HEAD_TITLE_RIGHT_INTRO = "介绍";
-$HEAD_TITLE_RIGHT_REPLY = "答复";
-$HEAD_TITLE_RIGHT_END = "最终";
+$HEAD_TITLE_RIGHT_INTRO = "欢迎";
+$HEAD_TITLE_RIGHT_REPLY = "填写";
+$HEAD_TITLE_RIGHT_END = "传递";
 $FOOT_COPYRIGHT = "2014－2015©博洛尼亚大学计算机工程系版权所有";
 
 
 /***************  PAGE ONE ******************/
 
-$P_TITLE= "欢迎参加我们的网联测验";
+$P_TITLE= "欢迎";
 $P_BUTTON_ACCEPT = "下一步";
 
 $P_BODYPARAONE="我们希望通过您的帮助，逐渐得联系上 &quot;<span id='targ'  class='btn btn-default' data-toggle='modal' data-target='#dialog'>$targ_title</span>&quot;.  如果您认识ta，并且告诉ta我们的实验，否则的话，请把这个消息转发给您身边的可能认识ta的朋友 (直接或间接).";
@@ -82,13 +82,16 @@ $PP_SEX4 = "保密";
 
 /***************  PAGE THREE ******************/
 
-$PPP_FIRST = "马上结束来：";
+$PPP_FIRST = "马上结束了：";
 $PPP_MAIN = "请复制下面的信息，转发给您的朋友，您可以任意修改短信，但是请不要删除链接。";
+
+$PPP_MAIN1 = "请尽量修改下段文字，便于您朋友理解";
+
 
 $PPP_LETTER = "朋友 , 
 我正在参与博洛尼亚大学的一项实验. 我们正在尝试和 $targ_title 取得联系，你能帮助一下我吗？ 
 http://milgram.cs.unibo.it/?t=$targetid&&my=$uidCoded";
-$PPP_LAST = "感谢您的帮助！（祝您顺利赢得抽奖）";
+$PPP_LAST = "感谢您的帮助！如果您的转发，最终到达寻找的人，您将被选为抽奖候选人。所以请把连接发给更多的人，这样您获胜的概率会更高。";
 
 
 // NEW ADDED 27/07/2014
@@ -107,13 +110,16 @@ $PAGE3TITLE = "最后一步 | Disi Unibo";
 $PAGESTITLE = "好遗憾 | Disi Unibo";
 $PAGEDRAWTITLE = "抽奖说明 | Disi Unibo";
 
-/**************** LUCKY DRAW  *******************/
-
-$LUCKDRAWINSTRUCTIONS = " to do ...";
 
 /***************  JS ******************/
 
 $ERR_SENDER = "请仔细查询，并且输入正确的联系您的人的邮箱或手机号码";
 $ERR_FORMAT = "请正确输入邮箱或手机号码";
+
+
+/******** new added, 10 - 09 - 2015 ***************/
+$PPP_CLICKEICON = "请点击以下社交链接来传递活动信息";
+$PALL_EXPINFO = "实验介绍";
+$PALL_STATEMENT = "隐私声明";
 
 ?>

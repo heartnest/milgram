@@ -78,9 +78,8 @@ else
     <div class="head clearfix">
       <h3 class="brand"><a href="http://unibo.it" target='_blank'><img src='img/unibo.png' alt='unibo logo' /></a></h3>
       <ul class="nav">
-        <li><a href='info.php' target='_blank'>Milgram Reloaded</a>
-          <li><a href='http://en.wikipedia.org/wiki/Small-world_experiment' target='_blank'>Milgram</a></li>
-          <li> <a href='PrivacyStatement.pdf'  target='_blank'> Privacy Statement </a></li></li>
+        <li><a href='info.php' target='_blank'><?php echo $PALL_EXPINFO; ?></a>
+          <li> <a href='PrivacyStatement.pdf'  target='_blank'> <?php echo  $PALL_STATEMENT; ?></a></li></li>
         </ul>
       </ul>
     </div>
@@ -115,7 +114,7 @@ else
           <?php echo $PPP_MAIN; ?>
 
         </h3>
-
+        <h4><?php echo $PPP_MAIN1; ?></h4>
         <textarea class="form-control" rows="6"><?php echo $PPP_LETTER; ?>
         </textarea>
         <br />
@@ -123,6 +122,8 @@ else
 
         <h4><?php echo $PPP_LAST; ?></h4>
       </p>
+
+      <p class='lead text-center'><?php echo $PPP_CLICKEICON; ?></p>
 
       <p><div class="social">
         <ul>
@@ -159,9 +160,8 @@ else
 <div id="footer">
   <div class="container">
     <div class="text-muted pull-left">
-      <a href='info.php' target='_blank'>Milgram Reloaded</a>
-      | <a href='http://en.wikipedia.org/wiki/Small-world_experiment' target='_blank'>Milgram</a> 
-      | <a href='PrivacyStatement.pdf'  target='_blank'> Privacy Statement </a>
+      <a href='info.php' target='_blank'><?php echo $PALL_EXPINFO; ?></a>
+      | <a href='PrivacyStatement.pdf'  target='_blank'><?php echo  $PALL_STATEMENT; ?></a>
     </div>
     <div class="text-muted pull-right"><?php echo $FOOT_COPYRIGHT; ?></div>
   </div>

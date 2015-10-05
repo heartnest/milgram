@@ -111,7 +111,7 @@ else{
 
 <body >
  <div class="container">
- 	<h1 class="text-center"><a href='index.php' class='texth'>Welcome to Milgram Reloaded!</a></h1>
+ 	<h1 class="text-center"><a href='index.php' class='texth'>Welcome to the Experiment</a></h1>
 
  		<p class="text-center lead">
 Thank you for participating in the experiment.
@@ -138,7 +138,7 @@ IMPACT Project, FIRB 2010-Ref:RBFR107725-001
 
 <p>
 <h3>Introduction</h3>
-A lot of efforts have been made in the past to understand the process of navigation in a small world. We briefly describe the two important and related works. First is the Travers and Milgram experiment [1], which is a seminal work and secondly, a follow up work by Dodds et al. [3] before describing our approach in section 2.
+A lot of efforts have been made in the past to understand the process of navigation in a small world. We briefly describe the two important and related works. First is the Travers and <a href='http://en.wikipedia.org/wiki/Small-world_experiment' target='_blank'>Milgram experiment</a> [1], which is a seminal work and secondly, a follow up work by Dodds et al. [3] before describing our approach in section 2.
 The classic 1969 field experiment by Travers and Milgram [1], was a huge step in the direction of understanding the navigation problem in the small world community. Arbitrarily (and as well as varying) individuals (from Nebraska and Boston) were asked to generate acquaintance chains for a single target person in Massachusetts, employing the small world method [2]. Only single medium of communication among acquaintances, the postcards were used to reach the target person.
 On similar lines to that of Travers and Milgram experiment, an experiment was conducted by Dodds et al. in 2003 [3]. Instead of postcards, an email tracking system was employed to understand the navigation process. This web-based experiment was different from the previous experiment [1] in two ways. Firstly, it was on a global scale (compared to just the experiment in [1], which was just conducted in America) with participants covering 13 countries. Secondly, multiple targets (18) were selected (compared to just the experiment in [1], which had just 1 target).
 The advancement of technology in the last decade has introduced various communication channels at the disposal of users. The presence of an individual at more than one network, assist in the formation of multilayer networks [4] so as to say.

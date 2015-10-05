@@ -131,9 +131,8 @@ else{
               <h3 class="brand"><a href="http://unibo.it" target='_blank'><img src='img/unibo.png' /></a></h3>
 
               <ul class="nav">
-                <li><a href='info.php' target='_blank'>Milgram Reloaded</a>
-                <li><a href='http://en.wikipedia.org/wiki/Small-world_experiment' target='_blank'>Milgram</a></li>
-                <li> <a href='PrivacyStatement.pdf'  target='_blank'> Privacy Statement </a></li></li>
+                <li><a href='info.php' target='_blank'><?php echo "$PALL_EXPINFO";?></a>
+                <li> <a href='PrivacyStatement.pdf'  target='_blank'><?php echo "$PALL_STATEMENT";?></a></li></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src='img/lang.png' alt='lang'><b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -164,11 +163,11 @@ else{
       <div class="stepwizard col-md-offset-3">
     <div class="stepwizard-row setup-panel">
           <div class="stepwizard-step">
-        <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a> <span class="arrow glyphicon glyphicon-chevron-right"></span>
+        <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a> <span class="arrow arrow1 glyphicon glyphicon-chevron-right"></span>
         <p><?php echo $HEAD_TITLE_RIGHT_INTRO; ?></p>
       </div>
           <div class="stepwizard-step">
-        <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a><span class="arrow glyphicon glyphicon-chevron-right"></span>
+        <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a><span class="arrow arrow2 glyphicon glyphicon-chevron-right"></span>
         <p><?php echo $HEAD_TITLE_RIGHT_REPLY; ?></p>
       </div>
           <div class="stepwizard-step">
@@ -219,9 +218,8 @@ else{
 	<div id="footer">
 		<div class="container">
 			 <div class="text-muted pull-left">
-			<a href='info.php' target='_blank'>Milgram Reloaded</a>
-			 | <a href='http://en.wikipedia.org/wiki/Small-world_experiment' target='_blank'>Milgram</a> 
-			 | <a href='PrivacyStatement.pdf'  target='_blank'> Privacy Statement </a>
+			<a href='info.php' target='_blank'> <?php echo "$PALL_EXPINFO";?> </a>
+			 | <a href='PrivacyStatement.pdf'  target='_blank'> <?php echo "$PALL_STATEMENT";?> </a>
 			</div>
 			<div class="text-muted pull-right"><?php echo $FOOT_COPYRIGHT; ?></div>
 		</div>

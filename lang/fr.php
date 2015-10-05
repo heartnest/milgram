@@ -5,15 +5,45 @@ session_start();
 /******** added 29/07/2014 *********/
 
 $targetid = $_SESSION['target_id'];
+$uid = $_SESSION['userid'];
+$uidCoded = $_SESSION['useridcoded'];
 
-if ($targetid == '123') {
-	$targ_description = "Target T is fashion designer XYZ.";
-	$targ_title = "About the target";
-}else if ($targetid == '321') {
-	$targ_description = "Target T is studente";
-	$targ_title = "About the target";
+if ($targetid == '300') {
+	$targ_description = "Mostafa Salehi a reçu son diplôme de doctorat en génie informatique de l'Université Technologie Sharif en Iran, en Novembre 2012. En Février 2013, il a travaillé l'Université de Téhéran en tant que professeur assistant. De Février 2014 à Septembre 2014,
+	il a été chercheur postdoctoral à l'Université de Bologne, Italie. ";
+	$targ_title = "Mostafa Salehi";
+}else if ($targetid == '311') {
+	$targ_description = "Payam Siyari a reçu son baccalauréat èn sciences informatique de l'université de Shahid Beheshti Univeristy àTéhéran, en 2011, et de la maîtrise en génie informatique de l'Université de Technologie Sharif, à Téhéran, en 2013. Il travaille actuellement pour conquerir le doctorat en informatique au Georgia Institute of Technology, à Atlanta.";
+	$targ_title = "Payam Siyari";
+}else if ($targetid == '322') {
+	$targ_description = "Alessandro Rioli a commencé son doctorat en calcul quantique en Janvier 2012 et il est en attente à défendre sa thèse de doctorat. Il est un physicien et est actuellement professeur de mathématiques et de physique à l'école secondaire. Il est originaire de Bologne, Italie.";
+	$targ_title = "Alessandro Rioli";
+}else if ($targetid == '333') {
+	$targ_description = "Antony Karatzas a veçu à Norwich, Royaume-Uni pour 8 ans. D'abord pour étudier, et pour les dernièrs 2 ans il a travaillé comme un associé de recherche au Centre pour la politique de la concurrence chez l'Université d'East Anglia. Depuis Octobre il vit dans Leamington Spa en faisant son post­doc sur le groupe de fabrication Warwick, Université de Warwick. Il est originaire de la Grèce, de sexe masculin, près de 32 ans d'âge. Il est un grand fan de sport, surtout le football. Il est un fervent défenseur du Liverpool FC. La plupart des gens au Royaume­Uni le connaissent par 'Tony'.";
+	$targ_title = "Antony Karatzas";
+}else if ($targetid == '344') {
+	$targ_description = "Amrith a vécu à Singapour depuis Août 2008, d'abord comme un étudiant au doctorat à NTU et puis comme la mise en place d'un portail en ligne pour aider les entreprises à louer les données  scientifiques. Il a 30 ans et il est Indien et est originaire du Kerala, en Inde.";
+	$targ_title = "Amrith";
+}else if ($targetid == '355') {
+	$targ_description = "Deepak Subramanian est un étudiant au doctorat en Centrale Supelec, Rennes, France. Il a vécu à Singapour et il est originaire de Chennai, en Inde.";
+	$targ_title = "Deepak Subramanian";
 }
-
+else if ($targetid == '366') {
+	$targ_description = "Prithee Maga est maître de conférences à l'école de l'informatique avancée pour la technologie, à l'Université de Malaisie, Malaisie. Elle a fait son doctorat de l'Université RMIT, Melbourne, Australie. Elle est  Malaisienne de Skudai, Johor. Elle aime la randonnée, et le camping. Ses hobbies sont le badminton et le cyclisme.";
+	$targ_title = "Prithee Maga";
+}
+else if ($targetid == '377') {
+	$targ_description = "Sandeep Ranjan vient de Jalandhar, Inde. Il a reçu son doctorat en Punjab Technical University et a obtenu son diplôme de baccalauréat de DAV Institut d'Ingénierie et de Technologie. Il a travaillé à l'Université de professionnel Belle pendant 7 ans. Actuellement, il travaille comme professeur adjoint au Département Computer Science dans Lyallpur Khalsa College of Engineering à Jalandhar, depuis deux années.";
+	$targ_title = "Sandeep Ranjan";
+}
+else if ($targetid == '388') {
+	$targ_description = "Jiang Shan frequente actuellement la dernière année d'études à l'Université de technologie de Chengdu, en Chine, où il étudie l'Internet des objets. Il a été à la tête de l'association des étudiants pour l'étude de la science informatique. Il a été aussi  le responsable de la salle informatique en 2014. Il est de Qinhuangdao, Hebei en Chine. Il est haut, très social et ouvert d'esprit.";
+	$targ_title = "Jiang Shan";
+}
+else if ($targetid == '399') {
+	$targ_description = "Jessica Liebig est un candidat au doctorat à l'Université RMIT de Melbourne, en Australie. Elle est née à Brême, en Allemagne, mais elle est venue en Australie en 2007. Avant de commencer son baccalauréat en 2009, elle était en voyage autour de l'Australie. Les gens l'appellent habituellement Jessi ou Jess. Dans son temps libre, elle aime lire, dessiner et faire du jogging. ";
+	$targ_title = "Jessica Liebig";
+}
 
 /******** end 29/07/2014 *********/
 
@@ -94,6 +124,11 @@ $LUCKDRAWINSTRUCTIONS = "to do .. ";
 $ERR_SENDER = "to do ...";
 $ERR_FORMAT = "to do ...";
 
+/******** new added, 10 - 09 - 2015 ***************/
+
+$PPP_CLICKEICON = "Click icons to share on various networks";
+$PALL_EXPINFO = "Experiment Information";
+$PALL_STATEMENT = "Privacy Statement";
 
 
 ?>

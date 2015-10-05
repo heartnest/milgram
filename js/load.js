@@ -14,15 +14,21 @@ $(function(){
  
     $("#go1").click(function(e){
 
-        var inputOK = true;
+        e.preventDefault();
 
+        /* remove error alter */
         $(".wru").removeClass("has-error");
         $(".wst").removeClass("has-error");
         $(".warning2 span").remove();
         $(".warning1 span").remove();
+        $("#howoldareyou").removeClass("bs-callout-warning");
+        $("#whatgender").removeClass("bs-callout-warning");
+        $(".q2s2").removeClass("bs-callout-warning");
+        $(".q2s1").removeClass("bs-callout-warning");
 
-        e.preventDefault();
 
+        
+        var inputOK = true;
 
         //Social Collections
 
@@ -37,7 +43,6 @@ $(function(){
         })
 
         
-
         $(".outwardNetworks").find("input:checked").each(function(){
             socials2 += $(this).val()+ ";";
         })
@@ -47,52 +52,73 @@ $(function(){
         if (altSocial != "") { socials += normalize(altSocial) + ";"; };
         if (altSocial2 != "") { socials2 += normalize(altSocial2) + ";"; };
 
-        var checkCkbox = socials.indexOf(";");
+        var checkSocial1 = socials.indexOf(";");
+        var checkSocial2 = socials2.indexOf(";");
 
-         //alert(altSocial2 +" "+checkCkbox2)
 
-        if (!verify($("#whoareyou").val())) { 
+        /* check social */
+        if(checkSocial1 == -1){
+            $(".warning2").removeClass("hidden");
+            $(".q2s1").addClass("bs-callout-warning");
+
             inputOK = false;
+        }
+
+        if(checkSocial2 == -1){
+            $(".q2s2").addClass("bs-callout-warning");
+            inputOK = false;
+        }
+
+        /* check user id */
+        var userid = $("#whoareyou").val();
+        if (!verify(userid)) { 
+            
             $(".wru").addClass("has-error");
             $(".warning1").append("<span>"+msgFORMAT+"</span>");
 
-        }else if(checkCkbox == -1){
-
-            $(".warning2").removeClass("hidden");
-            $(".q2s2").addClass("bs-callout-warning")
+            inputOK = false;
         }
-        else{
-            //SEND REQUEST
 
-            var userid = $("#whoareyou").val();
-            var age = $("#howoldareyou").val();
-            var gender = $(".genderradio:checked").val();
+        /* check age */
+        var age = $("#howoldareyou").val();
+        if (!verify(age)) { 
+            
+            $("#howoldareyou").addClass("bs-callout-warning");
+            inputOK = false;
+        }
+
+        /* check gender */
+        var gender = $(".genderradio:checked").val();
+        if (gender == undefined) { 
+            
+            $("#whatgender").addClass("bs-callout-warning");
+            inputOK = false;
+        }
+        
+
+        if (inputOK == true)
+        {
+            //SEND REQUEST
 
             var arrivalNetworks = socials;
             var outwardNetworks = socials2;
 
             //passed!
             ajaxTrace(userid,age,gender,arrivalNetworks,outwardNetworks);       
-            //ajaxTrace($("#whoareyou").val(),$("#whichnetwork").val(),socials);
 
-
-            $(".q2s2").removeClass("bs-callout-warning")
+            $("#howoldareyou").removeClass("bs-callout-warning");
+            $("#whatgender").removeClass("bs-callout-warning");
+            $(".q2s2").removeClass("bs-callout-warning");
+            $(".q2s1").removeClass("bs-callout-warning");
             $(".warning2").addClass("hidden");
+            $(".warningtop").addClass("hidden");
+
+        }else{
+            $(".warningtop").removeClass("hidden");
+            $("html, body").animate({ scrollTop: 10 }, "slow");
         }
 })
 
-//         $("#go2").click(function(e){
-   
-//                     if (typeof lan === 'undefined') {
-                       
-//                   window.document.location.href='end.php'; //ricarica una pagina               
-                   
-//               }
-//               else{
-     
-//                  window.document.location.href='end.php?lan='+lan;
-//             }
-// })
   
 })
 
@@ -119,36 +145,7 @@ function ValidPhone(v) {
     return false;
 }
 
-// function validSocial(v) {
-//     var r = new RegExp("^[a-zA-Z'_ ]*$");
-//     return (v.match(r) == null) ? false : true;
-// }
 
-
-// function ajaxVerify(arg){
-//     var trimed = $.trim(arg);
-//     $.ajax({
-//         type: 'GET',
-//         url:  'php/verifyid.php',
-//         data: {
-//             senderid:trimed
-//         },
-//         contentType: 'application/x-www-form-urlencoded',
-//         success: function(x) {
-//            // alert(x);
-//             if (x == 0) {
-//                 $(".warning2").append("<span>"+msgSENDER+"</span>");
-//                 $(".wst").addClass("has-error");
-//             }else if (x == 1) {
-//                 ajaxTrace($("#whoareyou").val(),$("#whosthat").val(),$("#whichnetwork").val());
-//             }
-            
-//         },
-//         error: function(r) { 
-//             alert("Error "+r.status+" on resource '"+this.url+"':\n"+r.statusText); 
-//         }
-//     })
-// }
 
 function ajaxTrace(userid,age,gender,arrivalNetworks,outwardNetworks){
     userid = $.trim(userid);

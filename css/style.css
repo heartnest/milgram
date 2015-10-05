@@ -20,6 +20,19 @@ body {
 
 .arrow{
   margin-left: 25px;
+  margin-top: 20px;
+    font-size: 1.5em;
+
+}
+.arrow1{
+  margin-left: 40px;
+    font-size: 1.5em;
+
+}
+.arrow2{
+  margin-left: 50px;
+    font-size: 1.5em;
+
 }
 .container {
  max-width: 70%;
@@ -79,6 +92,7 @@ body {
   color: rgb(82,82,82);
 }
 .form-decision{
+  font-size: 16px;
   margin-top: 20px;
 }
 
@@ -178,6 +192,10 @@ body {
   cursor: pointer;
 }
 
+.warningtop{
+  color: red;
+}
+
 /*  Steps
 --------------------------- */
 /* labels  */
@@ -239,7 +257,7 @@ body {
 }
 
 .social ul li {
-    margin: 15px;
+    margin: 20px;
     list-style: none outside none;
     display: inline-block;
 }
