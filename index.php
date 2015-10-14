@@ -84,6 +84,13 @@ else if ($_GET['lan'] == 'ar') {
 	$lango = "form.php?lan=ar";
 	$langs = "sorry.php?lan=ar";
 }
+else if ($_GET['lan'] == 'jp') {
+	include "lang/jp.php";
+	//$cacheEx = "$.cookie('setting_lang','ar');";
+	//$langt = "?lan=ar&&t=$targetid";
+	$lango = "form.php?lan=jp";
+	$langs = "sorry.php?lan=jp";
+}
 else{
 	include "lang/en.php";
 	//$cacheEx = "$.cookie('setting_lang','en');";
@@ -136,16 +143,17 @@ else{
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src='img/lang.png' alt='lang'><b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                      <li><a href="?lan=en" class=""><img class='flagimg' src='img/flags/en.png'>  English</a></li>
-                      <li><a href="?lan=it" class=""><img class='flagimg' src='img/flags/it.png'>  Italiano</a></li>
-                      <li><a href="?lan=de" class=""><img class='flagimg' src='img/flags/de.png'>  Deutsch</a></li>
-                      <li><a href="?lan=fr" class=""><img class='flagimg' src='img/flags/fr.png'>  Français</a></li>
-                      <li><a href="?lan=es" class=""><img class='flagimg' src='img/flags/es.png'>  Español</a></li>
-                      <li><a href="?lan=pt" class=""><img class='flagimg' src='img/flags/pt.png'>  Português</a></li>
-                      <li><a href="?lan=ru" class=""><img class='flagimg' src='img/flags/ru.png'>  Русский</a></li>
-                      <li><a href="?lan=pr" class=""><img class='flagimg' src='img/flags/pr.png'>  فارسی</a></li>
-                      <li><a href="?lan=ar" class=""><img class='flagimg' src='img/flags/ar.png'>  العربية</a></li>
-                      <li><a href="?lan=cn" class=""><img class='flagimg' src='img/flags/cn.png'>  汉语</a></li>
+                      <li><a href="?lan=en" class="">English</a></li>
+                      <li><a href="?lan=it" class="">Italiano</a></li>
+                      <li><a href="?lan=de" class="">Deutsch</a></li>
+                      <li><a href="?lan=fr" class="">Français</a></li>
+                      <li><a href="?lan=es" class="">Español</a></li>
+                      <li><a href="?lan=pt" class="">Português</a></li>
+                      <li><a href="?lan=ru" class="">Русский</a></li>
+                      <li><a href="?lan=pr" class="">فارسی</a></li>
+                      <li><a href="?lan=ar" class="">العربية</a></li>
+                      <li><a href="?lan=cn" class="">汉语</a></li>
+                      <li><a href="?lan=jp" class="">日本語</a></li>
                     </ul>
                   </li>
               </ul>

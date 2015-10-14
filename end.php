@@ -45,6 +45,9 @@ else if ($_GET['lan'] == 'it') {
 else if ($_GET['lan'] == 'fr') {
   include "lang/fr.php";
 }
+else if ($_GET['lan'] == 'jp') {
+  include "lang/jp.php";
+}
 else
   include "lang/en.php";
 

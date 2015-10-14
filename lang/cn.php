@@ -72,6 +72,7 @@ $PP_BUTT1= "返回";
 $PP_BUTT2= "下一页";
 
 $PP_WARNING2 = "请至少选择一个您转发信息的途径";
+$PP_WARNINGTOP = "请答全用红线标出的问题";
 $PP_WHICHYEAR = "您出生的年份是？";
 $PP_WHICHNET = "您会用哪些途径转发这个信息呢?";
 $PP_SEX1 = "性别";

@@ -1,5 +1,5 @@
 <?php
-session_start(); 
+session_start();
 
 /******** added 29/07/2014 *********/
 
@@ -8,112 +8,108 @@ $uid = $_SESSION['userid'];
 $uidCoded = $_SESSION['useridcoded'];
 
 if ($targetid == '300') {
-	$targ_description = "Mostafa Salehi received his PhD degree in computer engineering from Sharif University of Technology, Iran, in November 2012. On February 2013, he joined the University of Tehran as an assistant professor. From February 2014 to September 2014, he was a postdoctoral researcher at the University of Bologna, Italy. ";
-	$targ_title = "Mostafa Salehi";
+	$targ_description = "Μοσταφά Σαλέχι, έχει ολοκληρώσει το διδακτορικό της στη μηχανική υπολογιστών από το Sharif University of Technology το Νοέμβριο του 2012. Από τον Φεβρουάριο του 2013 εργάζεται ως Επίκουρος Καθηγητής στο Πανεπιστήμιο της Τεχεράνης και κατά τη περίοδο Φεβρουάριος 2014- Σεπτέμβριος 2014 αποτελούσε μεταδιδακτορικό ερευνητή στο Πανεπιστήμιο της Μπολόνιας στην Ιταλία. ";
+$targ_title = "Μοσταφά Σαλέχι";
 }else if ($targetid == '311') {
-	$targ_description = "Payam Siyari received his BSc degree in computer science from Shahid Beheshti Univeristy, Tehran, Iran, in 2011, and the MSc degree in computer engineering from Sharif University of Technology, Tehran, Iran, in 2013. He is currently working toward the PhD degree in computer science at Georgia Institute of Technology, Atlanta. ";
-	$targ_title = "Payam Siyari";
+	$targ_description = "Πάγιαμ Σιγιάρι έλαβε το πτυχίο του στην επιστήμη των υπολογιστών από το Πανεπιστήμιο Shahid Beheshti, της Τεχεράνη στο Ιράν, το 2011, και το μεταπτυχιακό στη μηχανική υπολογιστών από Sharif University of Technology της Τεχεράνη, στο Ιράν, το 2013. Αυτή τη περίοδο, ασχολείται με το διδακτορικό του στην επιστήμη των υπολογιστών σε συνεργασία με το  Georgia Institute of Technology της Ατλάντα";
+	$targ_title = "Πάγιαμ Σιγιάρι";
 }else if ($targetid == '322') {
-	$targ_description = "Alessandro Rioli started his PhD in quantum computing in January 2012 and he is waiting to defend his PhD Thesis. He is a physicist and is currently teaching Mathematics and Physics at High school. He is from Bologna, Italy.";
-	$targ_title = "Alessandro Rioli";
+	$targ_description = "Ο Αλεσάντρο Ριόλι ξεκίνησε το διδακτορικό του στου κβαντικούς υπολογιστές, τον Ιανουάριο του 2012 και είναι σε αναμονή για τη παρουσίαση της Διδακτορικής Διατριβής του.  Ο ίδιος είναι φυσικός και διδάσκει μαθηματικά και φυσική σε Λύκειο. Προέρχεται από τη Μπολόνια της Ιταλίας. ";
+	$targ_title = "Αλεσάντρο Ριόλι";
 }else if ($targetid == '333') {
-	$targ_description = "Antony Karatzas was living in Norwich, UK for the 8 yrs. First for study and for the last 2 years work as a research associate at the Center for Competition Policy, University of East Anglia. Since October 2014 he is living in Leamington Spa doing his post-doc at the Warwick manufacturing group, University of Warwick. He is originally from Greece, male, almost 32 years of age. He is a big sports fan, especially football. He is an avid Liverpool FC supporter. Most people in the UK know him by 'Tony'.";
-	$targ_title = "Antony Karatzas";
+	$targ_description = "Ο Άντονι Κάρατζας ζούσε στο Νόργουιτς του Ηνωμένο Βασίλειο για 8 έτη. Τα πρώτα 6 χρόνια του εκεί σπούδαζε και τα επόμενα 2 χρόνια εργαζόταν ως επιστημονικός συνεργάτης στο Κέντρο για την Πολιτική Ανταγωνισμού,  στο University of East Anglia. Από το Οκτώβριο του 2014 ζει στο Leamington Spa όπου ασχολείται με τη μεταδιδακτορική του στην ομάδα παραγωγής του Warwick στο Πανεπιστήμιο του Warwick. Κατάγεται από την Ελλάδα, και είναι σχεδόν 32 ετών. Είναι μεγάλος λάτρης των σπορ, ιδιαίτερα του ποδοσφαίρου και συγκεκριμένα είναι υποστηρικτής της Liverpool FC. Στο Ηνωμένο Βασίλειο οι περισσότεροι τον φωνάζουν Τόνι.";
+	$targ_title = "Άντονι Κάρατζας";
 }else if ($targetid == '344') {
-	$targ_description = "Amrith has been living in Singapore since August 2008, initially as a PhD student at NTU and then as an entrepreneur setting up an online portal to help companies hire data scientists. He is a 30 year old Indian and is from Kerala, India.";
-	$targ_title = "Amrith";
+	$targ_description = "Ο Έιμριθ ζει στη Σιγκαπούρη από τον Αύγουστο του 2008 και αποτελούσε αρχικά διδακτορικός φοιτητής στο NTU και στη συνέχεια ως επιχειρηματίας δημιουργόντας μια διαδικτυακή πύλη για να βοηθήσει τις εταιρείες να προσλαμβάνουν επιστήμονες δεδομένων. Είναι 30 ετών και κατάγεται από την Κεράλα της Ινδίας";
+	$targ_title = "Έιμριθ";
 }else if ($targetid == '355') {
-	$targ_description = "Deepak Subramanian is a PhD student in CentraleSupelec, Rennes, France. He has lived in Singapore and is originally from Chennai, India.";
-	$targ_title = "Deepak Subramanian";
+	$targ_description = "Ο Ντίπακ Σαμπράμιαν είναι διδακτορικός φοιτητής στο CentraleSupelec, Rennes της Γαλλίας. Έχει ζήσει στη Σιγκαπούρη και κατάγεται από το Chennai της Ινδίας. ";
+	$targ_title = "Ντίπακ Σαμπράμιαν";
 }
 else if ($targetid == '366') {
-	$targ_description = "Prithee Maga is a senior lecturer in advanced informatics school, University Technology Malaysia , Malaysia. She did her PhD from RMIT University, Melbourne, Australia. She is a Malaysian from Skudai, Johor. She loves hiking, touring and camping. Her hobbies are playing badminton and cycling.";
-	$targ_title = "Prithee";
+	$targ_description = "Η Πρίνθι Μάγκα είναι λέκτορας στην Ανωτάτη Σχολή Πληροφορικής του Πανεπιστημίου Τεχνολογίας της Μαλαισίας στη Μαλαισία. Έκανε το διδακτορικό της στο RMIT University της, Μελβούρνης στην Αυστραλία. Είναι μαλαισιανής καταγωγής και συγκεκριμένα από το Skudai, Johor. Αγαπά τη πεζοπορία, τις περιηγήσεις και το κάμπινγκ. Τα χόμπι της είναι το να παίζει μπάντμιντον και η ποδηλασία.";
+	$targ_title = "Πρίνθι Μάγκα";
 }
 else if ($targetid == '377') {
-	$targ_description = "Sandeep Ranjan is from Jalandhar, India. He is a Ph.D scholar in Punjab Technical University and completed his bachelors degree from DAV Institute of Engineering and Technology. He worked at Lovely Professional University for 7 years. Presently, he is working as an Assistant Professor in Computer Science Department in Lyallpur Khalsa College of Engineering, Jalandhar from last two years.";
-	$targ_title = "Sandeep Ranjan";
+	$targ_description = "Ο Σαντίπ Ραντζάν είναι από το Jalandhar της Ινδία. Είναι  Διδάκτωρ στο Punjab Technical University και ολοκλήρωσε το πτυχίο του από το DAV Institute of Engineering and Technology.. Εργάστηκε στο Lovely Professional University για 7 χρόνια. Σήμερα, εργάζεται ως Επίκουρος Καθηγητής στο Τμήμα Επιστήμων Υπολογιστών στο Lyallpur Khalsa College of Engineering, Jalandhar για 2 έτη.";
+	$targ_title = "Σαντίπ Ραντζάν";
 }
 else if ($targetid == '388') {
-	$targ_description = "Jiang Shan is currently the last year student in Chengdu University of Technology, China, where he studies internet of things. He used to be the head of student association for computer science study. He used to be the responsible for computer lab in 2014. He is basically from Qinhuangdao, Hebei China. He is a tall boy, very social and open minded. ";
-	$targ_title = "Jiang Shan";
+	$targ_description = "Γιανγκ Σαν είναι τελειόφοιτος φοιτητής στο Chengdu University of Technology στη Κίνα, όπου σπουδάζει internet of things.. Συνήθιζε να είναι ο επικεφαλής του φοιτητικού συλλόγου για τη μελέτη της επιστήμης των υπολογιστών. Επιπλέον είναι ο υπεύθυνος για το εργαστήριο υπολογιστών για το 2014. Είναι από το Qinhuangdao, Hebei China της Κίνας. Είναι ένα ψηλό αγόρι, πολύ κοινωνικός και ανοιχτόμυαλος.";
+	$targ_title = "Γιανγκ Σαν";
 }
 else if ($targetid == '399') {
-	$targ_description = "Jessica Liebig is a PhD candidate at RMIT University in Melbourne, Australia. She was born in Bremen, Germany, but came to Australia in 2007. Before commencing her Bachelor degree in 2009 she was traveling around Australia. People usually call her Jessi or Jess. In her free time she likes to read, draw and go jogging. ";
-	$targ_title = "Jessica Liebig";
+	$targ_description = "Η Τσέσικα Λιμπιγκ είναι υποψήφια διδάκτορας στο RMIT University της Μελβούρνης στην Αυστραλία. Γεννήθηκε στη Βρέμη της Γερμανίας, αλλά έφτασε στην Αυστραλία το 2007. Πριν από την έναρξη του πτυχίου της το 2009 ταξίδευσε σε όλη την Αυστραλία. Οι άνθρωποι συνηθίζουν να το αποκαλούν Jessi ή Jess. Στον ελεύθερο χρόνο της, της αρέσει να διαβάζει, να σχεδιάζει και να κάνει τζόκινγκ. ";
+	$targ_title = "Τσέσικα Λιμπιγκ";
 }
 
-
-
 /******** end 29/07/2014 *********/
-
-
 
 /***************  COMMON ******************/
 
 $lan = 'en';
 
-$HEAD_TITLE_RIGHT_INTRO = "Welcome";
-$HEAD_TITLE_RIGHT_REPLY = "Fill in the Form";
-$HEAD_TITLE_RIGHT_END = "Forward the link";
+$HEAD_TITLE_RIGHT_INTRO = "Καλωσόρισες"; 
+$HEAD_TITLE_RIGHT_REPLY = "Συμπληρώστε τη φόρμα"; 
+$HEAD_TITLE_RIGHT_END = "Προώθησε το σύνδεσμο"; 
 $FOOT_COPYRIGHT = "Copyright© 2014 －2015 CSE UNIBO";
 
 /***************  PAGE ONE ******************/
 
-$P_TITLE= "Welcome";
-$P_BUTTON_ACCEPT = "Next";
+$P_TITLE= "Καλωσόρισες"; 
+$P_BUTTON_ACCEPT = "Επόμενο"; 
 
 
-$P_BODYPARAONE="With your help we are trying to reach the target &quot;<span id='targ' data-toggle='modal' data-target='#dialog'>$targ_title</span>&quot;.  In case you
-know him personally please forward the message to $targ_title, otherwise, please forward the message to someone you know personally who might know $targ_title (directly or indirectly).";
-$P_BODYPARATWO ="<label>By participating you get a chance to win an iPad Air.</label>";
-$P_BODY_LOW = "Please feel free to contact us for any question : <strong>connect@cs.unibo.it</strong> ";
+$P_BODYPARAONE="Με τη βοήθειά σας, προσπαθούμε να φθάσουν&quot;<span id='targ' data-toggle='modal' data-target='#dialog'>$targ_title</span>&quot;. Σε περίπτωση που τον γνωρίζω προσωπικά σας παρακαλούμε να στείλετε το μήνυμα σε $targ_title, Αλλιώς, παρακαλούμε να προωθήσετε το μήνυμα σε κάποιον που γνωρίζετε προσωπικά, που ίσως γνωρίζετε $targ_title (άμεσα ή έμμεσα) ";
+$P_BODYPARATWO ="<label>Με τη συμμετοχή σας θα έχετε την ευκαιρία να κερδίσετε ένα iPad Air </label>";
+$P_BODY_LOW = "Παρακαλώ μη διστάσετε να επικοινωνήσετε μαζί μας για οποιαδήποτε ερώτηση: : <strong>connect@cs.unibo.it</strong> ";
 
 
-$P_BODYPARATHREE = "Taking part in this study is entirely up to you. You have the right to refuse to participate in this study. If you decide to take part, you may choose to pull out of the study at any time without giving a reason and without any negative impact. If you choose to participate in the survey, you understand that your responses to the survey questions will be stored in the severs of the University of Bologna. All information is kept confidential. That means it is accessible only by the investigators (i.e., password-protected) and is not published. Your anonymity will be achieved by not associating your name with data collected during the study. Participants will not be identified in any reports or publications.
+$P_BODYPARATHREE = "Το να λάβετε μέρος σε αυτή τη μελέτη είναι εξ ολοκλήρου δική σας απόφαση. Έχετε το δικαίωμα να αρνηθείτε να συμμετάσχετε σε αυτή τη μελέτη. Αν αποφασίσετε να πάρετε μέρος, μπορείτε να επιλέξετε να αποχωρήσετε από τη μελέτη οποιαδήποτε στιγμή χωρίς αιτιολόγηση και χωρίς αρνητικές επιπτώσεις. Αν επιλέξετε να συμμετάσχετε στην έρευνα, καταλαβαίνετε ότι οι απαντήσεις σας στις ερωτήσεις της έρευνας θα αποθηκεύονται από το Πανεπιστημίου της Μπολόνια. Όλες οι πληροφορίες παραμένουν εμπιστευτικές. Αυτό σημαίνει ότι είναι προσβάσιμη μόνο από τους ερευνητές (δηλαδή, προστατεύονται με κωδικό πρόσβασης) και δεν δημοσιεύονται. Η ανωνυμία σας θα πιτευχθεί με το να μην συνδέθει το όνομά σας με τα δεδομένα που συλλέγονται κατά τη διάρκεια της μελέτης. Οι συμμετέχοντες δεν θα αναφέρονται σε οποιεσδήποτε αναφορές ή δημοσιεύσεις.
+
 <br/>
-By completing the survey you are providing your consent to use the data for purposes of research. 
+Με την ολοκλήρωση της έρευνας, παρέχετε τη συγκατάθεσή σας για τη χρήση των δεδομένων για τους σκοπούς της έρευνας.
 <br/>
-Please indicate that you understand the information presented above, and consent to participate in this study.";
+Παρακαλείστε να αναφέρετε ότι έχετε κατανοήσει τις πληροφορίες που παρουσιάζονται παραπάνω, και συναινείται στο να συμμετάσχεται σε αυτή τη μελέτη " 
 
-$P_CONSUS = "I understand and consent to participate in this study.";
+$P_CONSUS = "Καταλαβαίνω και συναινώ για να συμμετάσχω  σε αυτή τη μελέτη"; 
 
 /***************  PAGE TWO ******************/
 
-$PP_QONE = "Please tell us how you received the message.";
-$PP_QTWO = "Please enter your email or mobile phone number.";
-$PP_QTHREE = "We will use this information to contact you for the results of our lucky draw.";
-$PP_QFOUR = "Select the network(s) from where you received the message.";
-$PP_QSIX = "Which networks are you going to use to move the message towards its destination?";
+$PP_QONE = "Παρακαλώ πείτε μας πώς λάβατε το μήνυμα"; 
+$PP_QTWO = "Παρακαλώ εισάγετε το email σας ή τον αριθμό του κινητού τηλεφώνου "; $PP_QTHREE = "Θα χρησιμοποιήσουμε αυτές τις πληροφορίες για να επικοινωνήσουμε μαζί σας για τα αποτελέσματα της κλήρωσης του τυχερού."; 
+$PP_QFOUR = "Επιλέξτε το δίκτυο (-α) από όπου λάβατε το μήνυμα";
+$PP_QSIX = "Ποια δίκτυα θα πας να χρησιμοποιήσετε για να μετακινήσετε το μήνυμα προς τον προορισμό του ?"; 
 $PP_OP1 = "Email";
 $PP_OP2 = "Face2Face";
-$PP_OP3 = "others(optional)";
-$PP_BUTT1= "Back";
-$PP_BUTT2= "Next";
+$PP_OP3 = "άλλα (προαιρετικό) "; 
+$PP_BUTT1= "πίσω"; 
+$PP_BUTT2= "Επόμενο" 
 
-$PP_WARNING2 = "Please select at least one network on which you received the message.";
-$PP_WARNINGTOP = "One or more fields are empty. Please fill all the fields to go to next page";
-$PP_WHICHYEAR = "In which year are you born?";
-$PP_WHICHNET = "Which networks are you going to use to forward the message towards its destination?";
-$PP_SEX1 = "Gender";
-$PP_SEX2 = "Male";
-$PP_SEX3 = "Female";
-$PP_SEX4 = "Prefer not to disclose";
+$PP_WARNING2 = "Επιλέξτε τουλάχιστον ένα δίκτυο από το οποίο λάβατε το μήνυμα"; 
+$PP_WARNINGTOP = "Ένα ή περισσότερα πεδία είναι κενά. Παρακαλούμε συμπληρώστε όλα τα πεδία για να μεταβείτε στην επόμενη σελίδα"; 
+$PP_WHICHYEAR = "Σε ποιο έτος έχετε γεννηθεί?"; 
+$PP_WHICHNET = "Ποια δίκτυα θα χρησιμοποιήσετε για να προωθήσετε το μήνυμα προς τον προορισμό του?"; 
+
+$PP_SEX1 = "Φύλο"; 
+$PP_SEX2 = "Άνδρας"; 
+$PP_SEX3 = "Γυναίκα"; 
+$PP_SEX4 = " Προτιμώ να μην το συμπληρώσω ";
 
 /***************  PAGE THREE ******************/
 
-$PPP_FIRST = "You are almost done!";
+$PPP_FIRST = "Έχετε σχεδόν τελειώσει!"; 
 
-$PPP_MAIN = "Please copy and paste the following message and send it to your contacts through your preferred network(s). Feel free to edit the message (but do not remove the link!).";
+$PPP_MAIN = " Παρακαλώ αντιγράψτε και επικολλήστε το ακόλουθο μήνυμα και να το στείλετε στις επαφές σας μέσω του προτιμώμενου δικτύου σας. Μη διστάσετε να επεξεργαστείτε το μήνυμα (αλλά μην αφαιρείτε το σύνδεσμο)
+";
+$PPP_MAIN1 = " Παρακαλούμε να μετατρέψετε το ακόλουθο μήνυμα στη γλώσσα όπου οι φίλοι σας μπορούν να το καταλάβου";
 
-$PPP_MAIN1 = "Please convert the following message in the language which your friends can understand.";
-
-
-$PPP_LETTER = "Hi , 
-I am participating in an experiment from the university of Bologna. We are trying to reach $targ_title, can you help me ?
+$PPP_LETTER = "Γεια , 
+Συμμετέσχω σε ένα πείραμα από το Πανεπιστήμιο της Μπολόνια. Προσπαθούμε να φθάσουμε  $targ_title, Μπορείς να με βοηθήσεις; ? 
 http://milgram.cs.unibo.it/?t=$targetid&&my=$uidCoded";
 
-$PPP_LAST = "Thank you for your help! If you are part of a successful chain to the target, you will be considered for lucky draw prizes. So please try your best in forwarding the above link to as many people as possible.";
+$PPP_LAST = "Σας ευχαριστώ για τη βοήθειά σας! Αν είστε μέρος μιας επιτυχημένης αλυσίδας  θα λάβετα μέρος στη κλήρωση των δώρων.  Έτσι, δώστε το καλύτερό σας εαυτό προωθώνταςτον παραπάνω σύνδεσμο σε όσο το δυνατόν περισσότερους ανθρώπους.";
+
 
 
 
@@ -123,7 +119,6 @@ $PPP_LAST = "Thank you for your help! If you are part of a successful chain to t
 /***************  PAGE SORRY ******************/
 
 $PPPP_SORRYCONTENT = "We would appreciate if you can try to do it. Otherwise also, thanks anyways !";
-
 
 
 /***************  SEO HTML TITLES ******************/
@@ -141,8 +136,8 @@ $ERR_FORMAT = "please insert a correct email address or cellphone number";
 
 
 /******** new added, 10 - 09 - 2015 ***************/
-$PPP_CLICKEICON = "Click icons to share on various networks";
-$PALL_EXPINFO = "Experiment Information";
-$PALL_STATEMENT = "Privacy Statement";
+$PPP_CLICKEICON = "Κάντε κλικ στα εικονίδια για να μοιραστούν σε διάφορα δίκτυα";
+$PALL_EXPINFO = "πείραμα Πληροφορίες";
+$PALL_STATEMENT = "Δήλωση Προστασίας Προσωπικών Δεδομένων";
 
 ?>
