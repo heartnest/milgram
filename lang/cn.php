@@ -7,26 +7,6 @@ $uid = $_SESSION['userid'];
 $uidCoded = $_SESSION['useridcoded'];
 
 
-if ($targetid == '1') {
-	$targ_description = "Target T is fashion designer XYZ.";
-	$targ_title = "About the target";
-}else if ($targetid == '311') {
-	$targ_description = "我原先在Norwich住，开始学习，然后在East Anglia大学的competition policy中心搞了2年科研。之后在Warwick大学Leamington做博士后。我祖籍是希腊人，32岁，我是足球迷，热爱利物浦队。我热爱社交，我现实生活中有很多朋友，facebook上面也是，我linked上面的是一部分朋友，英国的朋友都叫我Tony。";
-	$targ_title = "Antony Karatzas";
-}else if ($targetid == '322') {
-	$targ_description = "Deepak Subramanian是法国的研究员，现在在Rennes住，他原先住在新加坡，但是在印度出生，他不用facebook，也不用whatsap，但是用skype，email，还有推特twitter";
-	$targ_title = "Deepak Subramanian";
-}else if ($targetid == '333') {
-	$targ_description = "我在成都理工学物联网, 当过是电子学生协会的主席，管理计算机室，一般来讲，我用微信，微博还有qq";
-	$targ_title = "姜山";
-}else if ($targetid == '344') {
-	$targ_description = "xxx";
-	$targ_title = "Mr abc";
-}else if ($targetid == '355') {
-	$targ_description = "xxx";
-	$targ_title = "Mr abc";
-}
-
 
 if ($targetid == '300') {
 	$targ_description = "Mostafa Salehi 在2012年从伊朗沙力夫理工大学读取的博士, 2013年在德黑兰大学当助理教授。2014年2月到9月，他在意大利博洛尼亚读的博士后。";
