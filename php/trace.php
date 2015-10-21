@@ -17,10 +17,35 @@ $gender = $_POST['gender'];
 $arrivalNetworks = $_POST['arrivalNetworks'];
 $outwardNetworks = $_POST['outwardNetworks'];
 $sid = $_SESSION['sender_id'];
-$uid = substr(md5($uidoriginal), 4, 7);
+
+
+//safe code generation mode
+$uid = substr(md5($uidoriginal."$cnt"), 4, 7);
+$cnt = 1;
+$taskdone = false;
+while (!$taskdone) {
+
+	$testq = "SELECT * FROM trace WHERE senderid = '$uid' ";
+	$resq = mysql_query($testq);
+	$res = mysql_fetch_row($resq);
+	if ($res != NULL) {
+		$uid = $uid."$cnt";
+		// echo "gonna repeate ... ";
+	}else{
+		$taskdone = true;
+		// echo "ok";
+	}
+	$cnt++;
+
+	if ($cnt >= 100) {
+		$taskdone = true;
+		break;
+	}
+}
 
 $_SESSION['uidoriginal']=$uidoriginal;
 $_SESSION['useridcoded']= $uid;
+
 
 //echo "uidoriginal:$uidoriginal, age:$age, gender:$gender, arrivalNetworks:$arrivalNetworks, outwardNetworks:$outwardNetworks, sid:$sid";
 
