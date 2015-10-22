@@ -25,8 +25,6 @@ while (!$taskdone) {
 	$resq = mysql_query($testq);
 	$res = mysql_fetch_row($resq);
 	if ($res != NULL) {
-		// $uid = NULL;
-		// var_dump($res);
 		$uid = $uid."$cnt";
 		echo "gonna repeate ... ";
 	}else{
