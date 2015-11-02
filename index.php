@@ -14,87 +14,79 @@ if (isset($_GET['my'])) {
 }
 
 
-if ($_GET['lan'] == 'cn') {
-	include "lang/cn.php";
-	//$cacheEx = "$.cookie('setting_lang','cn');";
-	//$langt = "?lan=cn&&t=$targetid";
-	$lango = "form.php?lan=cn";
-	$langs = "sorry.php?lan=cn";
-}
-else if ($_GET['lan'] == 'it') {
-	include "lang/it.php";
-	//$cacheEx = "$.cookie('setting_lang','it');";
-	//$langt = "?lan=it&&t=$targetid";
-	$lango = "form.php?lan=it";
-	$langs = "sorry.php?lan=it";
-}
-else if ($_GET['lan'] == 'fr') {
-	include "lang/fr.php";
-	//$cacheEx = "$.cookie('setting_lang','fr');";
-	//$langt = "?lan=fr&&t=$targetid";
-	$lango = "form.php?lan=fr";
-	$langs = "sorry.php?lan=fr";
-}
-else if ($_GET['lan'] == 'pt') {
-	include "lang/pt.php";
-	//$cacheEx = "$.cookie('setting_lang','pt');";
-	//$langt = "?lan=pt&&t=$targetid";
-	$lango = "form.php?lan=pt";
-	$langs = "sorry.php?lan=pt";
-}
-else if ($_GET['lan'] == 'es') {
-	include "lang/es.php";
-	//$cacheEx = "$.cookie('setting_lang','es');";
-	//$langt = "?lan=es&&t=$targetid";
-	$lango = "form.php?lan=es";
-	$langs = "sorry.php?lan=es";
-}
-else if ($_GET['lan'] == 'de') {
-	include "lang/de.php";
-	//$cacheEx = "$.cookie('setting_lang','de');";
-	//$langt = "?lan=de&&t=$targetid";
-	$lango = "form.php?lan=de";
-	$langs = "sorry.php?lan=de";
-}
- else if ($_GET['lan'] == 'ru') {
-	include "lang/ru.php";
-	//$cacheEx = "$.cookie('setting_lang','ru');";
-	//$langt = "?lan=ru&&t=$targetid";
-	$lango = "form.php?lan=ru";
-	$langs = "sorry.php?lan=ru";
-}
-else if ($_GET['lan'] == 'pr') {
-	include "lang/pr.php";
-	//$cacheEx = "$.cookie('setting_lang','pr');";
-	//$langt = "?lan=pr&&t=$targetid";
-	$lango = "form.php?lan=pr";
-	$langs = "sorry.php?lan=pr";
-}
-else if ($_GET['lan'] == 'pt') {
-	include "lang/pt.php";
-	//$cacheEx = "$.cookie('setting_lang','pt');";
-	//$langt = "?lan=pt&&t=$targetid";
-	$lango = "form.php?lan=pt";
-	$langs = "sorry.php?lan=pt";
-}
-else if ($_GET['lan'] == 'ar') {
+if ($_GET['lan'] == 'ar') {
 	include "lang/ar.php";
-	//$cacheEx = "$.cookie('setting_lang','ar');";
-	//$langt = "?lan=ar&&t=$targetid";
 	$lango = "form.php?lan=ar";
 	$langs = "sorry.php?lan=ar";
 }
+else if ($_GET['lan'] == 'cn') {
+	include "lang/cn.php";
+	$lango = "form.php?lan=cn";
+	$langs = "sorry.php?lan=cn";
+}
+else if ($_GET['lan'] == 'es') {
+	include "lang/es.php";
+	$lango = "form.php?lan=es";
+	$langs = "sorry.php?lan=es";
+}
+else if ($_GET['lan'] == 'fr') {
+	include "lang/fr.php";
+	$lango = "form.php?lan=fr";
+	$langs = "sorry.php?lan=fr";
+}
+else if ($_GET['lan'] == 'gk') {
+	include "lang/gk.php";
+	$lango = "form.php?lan=gk";
+	$langs = "sorry.php?lan=gk";
+}
+else if ($_GET['lan'] == 'gr') {
+	include "lang/gr.php";
+	$lango = "form.php?lan=gr";
+	$langs = "sorry.php?lan=gr";
+}
+else if ($_GET['lan'] == 'it') {
+	include "lang/it.php";
+	$lango = "form.php?lan=it";
+	$langs = "sorry.php?lan=it";
+}
 else if ($_GET['lan'] == 'jp') {
 	include "lang/jp.php";
-	//$cacheEx = "$.cookie('setting_lang','ar');";
-	//$langt = "?lan=ar&&t=$targetid";
 	$lango = "form.php?lan=jp";
 	$langs = "sorry.php?lan=jp";
 }
+else if ($_GET['lan'] == 'ml') {
+	include "lang/ml.php";
+	$lango = "form.php?lan=ml";
+	$langs = "sorry.php?lan=ml";
+}
+else if ($_GET['lan'] == 'pr') {
+	include "lang/pr.php";
+	$lango = "form.php?lan=pr";
+	$langs = "sorry.php?lan=pr";
+}
+
+else if ($_GET['lan'] == 'pt') {
+	include "lang/pt.php";
+	$lango = "form.php?lan=pt";
+	$langs = "sorry.php?lan=pt";
+}
+ else if ($_GET['lan'] == 'rm') {
+	include "lang/rm.php";
+	$lango = "form.php?lan=rm";
+	$langs = "sorry.php?lan=rm";
+}
+ else if ($_GET['lan'] == 'ru') {
+	include "lang/ru.php";
+	$lango = "form.php?lan=ru";
+	$langs = "sorry.php?lan=ru";
+}
+else if ($_GET['lan'] == 'tm') {
+	include "lang/tm.php";
+	$lango = "form.php?lan=tm";
+	$langs = "sorry.php?lan=tm";
+}
 else{
 	include "lang/en.php";
-	//$cacheEx = "$.cookie('setting_lang','en');";
-	//$langt = "?lan=en&&t=$targetid";
 	$lango = "form.php?lan=en";
 	$langs = "sorry.php?lan=en";
 }
@@ -145,13 +137,17 @@ else{
                     <ul class="dropdown-menu">
                       <li><a href="?lan=en" class="">English</a></li>
                       <li><a href="?lan=it" class="">Italiano</a></li>
-                      <li><a href="?lan=de" class="">Deutsch</a></li>
+                      <li><a href="?lan=gr" class="">Deutsch</a></li>
                       <li><a href="?lan=fr" class="">Français</a></li>
                       <li><a href="?lan=es" class="">Español</a></li>
+                      <li><a href="?lan=rm" class="">Română</a></li>
                       <li><a href="?lan=pt" class="">Português</a></li>
+                      <li><a href="?lan=gk" class="">Ελληνικά</a></li>
                       <li><a href="?lan=ru" class="">Русский</a></li>
                       <li><a href="?lan=pr" class="">فارسی</a></li>
                       <li><a href="?lan=ar" class="">العربية</a></li>
+                      <li><a href="?lan=ml" class="">മലയാളം</a></li>
+                      <li><a href="?lan=tm" class="">தமிழ்</a></li>
                       <li><a href="?lan=cn" class="">汉语</a></li>
                       <li><a href="?lan=jp" class="">日本語</a></li>
                     </ul>

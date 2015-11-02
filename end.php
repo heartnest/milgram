@@ -18,39 +18,51 @@ if($pos === false){
 
 
 
-if ($_GET['lan'] == 'cn') {
+if ($_GET['lan'] == 'ar') {
+  include "lang/ar.php";
+}
+else if ($_GET['lan'] == 'cn') {
   include "lang/cn.php";
-}
-else if ($_GET['lan'] == 'de') {
-  include "lang/de.php";
-}
-else if ($_GET['lan'] == 'pt') {
-  include "lang/pt.php";
-}
-else if ($_GET['lan'] == 'pr') {
-  include "lang/pr.php";
 }
 else if ($_GET['lan'] == 'es') {
   include "lang/es.php";
 }
-else if ($_GET['lan'] == 'ru') {
-  include "lang/ru.php";
+else if ($_GET['lan'] == 'fr') {
+  include "lang/fr.php";
 }
-else if ($_GET['lan'] == 'ar') {
-  include "lang/ar.php";
+else if ($_GET['lan'] == 'gk') {
+  include "lang/gk.php";
+}
+else if ($_GET['lan'] == 'gr') {
+  include "lang/gr.php";
 }
 else if ($_GET['lan'] == 'it') {
   include "lang/it.php";
 }
-else if ($_GET['lan'] == 'fr') {
-  include "lang/fr.php";
-}
 else if ($_GET['lan'] == 'jp') {
   include "lang/jp.php";
 }
-else
+else if ($_GET['lan'] == 'ml') {
+  include "lang/ml.php";
+}
+else if ($_GET['lan'] == 'pr') {
+  include "lang/pr.php";
+}
+else if ($_GET['lan'] == 'pt') {
+  include "lang/pt.php";
+}
+ else if ($_GET['lan'] == 'rm') {
+  include "lang/rm.php";
+}
+ else if ($_GET['lan'] == 'ru') {
+  include "lang/ru.php";
+}
+else if ($_GET['lan'] == 'tm') {
+  include "lang/tm.php";
+}
+else{
   include "lang/en.php";
-
+}
 
 
 ?>
