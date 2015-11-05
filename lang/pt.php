@@ -62,19 +62,24 @@ $P_TITLE= "Bem-vindo";
 $P_BUTTON_ACCEPT = "Next";
 
 
-$P_BODYPARAONE="Com a tua ajuda vamos tentar chegar à pessoa objetivo &quot;<span id='targ' data-toggle='modal' data-target='#dialog'>$targ_title</span>&quot;. No caso de que tu a/o conheça pessoalmente encaminhe a mensagem a $targ_title,de outra maneira envia a mensagem a alguém que conheçes pessoalmente e que talvez conheça (diretamente ou não) $targ_title .";
-$P_BODYPARATWO ="<label>Com a tua adesão poderás ganhar um iPad Air.</label>";
+$P_BODYPARAONE="Precisamos da sua ajuda para contatar a pessoa &quot;<span id='targ' data-toggle='modal' data-target='#dialog'>$targ_title</span>&quot;. Caso você conheça esse individuo pessoalmente, por favor encaminhe essa mensagem diretamente para ele/ela. De outro modo, solicitamos que você envie essa mensagem a alguém que conheça essa pessoa (direta ou indiretamente).";
+
+/*$P_BODYPARAONE="Com a tua ajuda vamos tentar chegar à pessoa objetivo . No caso de que tu a/o conheça pessoalmente encaminhe a mensagem a $targ_title,de outra maneira envia a mensagem a alguém que conheçes pessoalmente e que talvez conheça (diretamente ou não) $targ_title .";*/
+
+
+$P_BODYPARATWO ="<label>vSua participação nessa pesquisa lhe dará direito à participação no sorteio de um iPad Air.</label>";
+
 $P_BODY_LOW = "Tem a liberdade de nos contactar para qualquer dúvida:  <strong>connect@cs.unibo.it</strong> ";
 
 
-$P_BODYPARATHREE = "A participação a esse estudo è absolutamente voluntária. Podes sem dúvida recusar participar. No caso participar, poderás resolver abandonar sem fornecer nenhuma razão e sem consequências. No caso participar, as tuas respostas às questões do formulário vão ser registadas nos server da Universidade de Bologna. Todas as informações terão carácter confidencial, o que significa que as informações serão accessiveis exclusivamente aos pesquisadores (quer dizer protegidas por password) e não serão publicadas. O anonimato está garantido pois o teu nome não será associado aos dados recolhidos durante o estudo. Aliás, os participantes não serão identificaveis em nenhum report ou publicação.
+$P_BODYPARATHREE = "Sua participação nessa pesquisa é absolutamente voluntária, podendo você recusar-se a participar, ou mesmo desistir a qualquer momento sem fornecer qualquer razão e sem quaisquer consequências para sua pessoa. Caso decida participar, suas respostas às questões do formulário serão registadas nos servidores da Universidade de Bologna. Todas as informações são confidenciais, o que significa que as informações serão accessíveis exclusivamente pelos pesquisadores e protegidas por senha. Nenhuma informação sobre os participantes será publicada. O anonimato dos participantes é preservado em todas as etapas da coleta de dados, uma vez que seu nome não será associado aos dados recolhidos durante a pesquisa nem será identificado em qualquer momento dessa pesquisa.
 
 <br/>
-Preenchendo o formulário forneces o consentimento à utilização dos dados às finalidades da pesquisa.
+O preenchimento do formulário implica que você concorda com a utilização dos dados para finalidades de pesquisa.
 <br/>
-Para manifestar o consentimento a participar nesse estudo, demonstre ter compreendido o que foi explicado em cima.";
+Por favor assinale a opção abaixo para indicar seu consentimento com a participação nessa pesquisa e compreensão sobre o que foi exposto acima.";
 
-$P_CONSUS = "compreendi e consento participar nesse estudo";
+$P_CONSUS = " compreendi e aceito participar da pesquisa.";
 
 /***************  PAGE TWO ******************/
 

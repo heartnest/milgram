@@ -46,59 +46,71 @@ else if ($targetid == '399') {
 }
 
 /******** end 29/07/2014 *********/
-
-
-/***************  COMMON ******************/
+***************  COMMON ******************/
 
 $lan = 'en';
-$HEAD_TITLE_LEFT = "Milgram Reloaded !";
-$HEAD_TITLE_RIGHT_INTRO = "Intro";
-$HEAD_TITLE_RIGHT_REPLY = "répondre";
-$HEAD_TITLE_RIGHT_END = "fin";
-$FOOT_COPYRIGHT = "Copyright © 2014 Milgram test CST Unibo";
+
+$HEAD_TITLE_RIGHT_INTRO = "Bienvenu";
+$HEAD_TITLE_RIGHT_REPLY = "Remplissez le formulaire";
+$HEAD_TITLE_RIGHT_END = "Suivez le lien";
+$FOOT_COPYRIGHT = "Copyright© 2014 －2015 CSE UNIBO";
+
 
 /***************  PAGE ONE ******************/
 
-$P_TITLE= "Bienvenue sur le projet de Milgram";
-$P_BUTTON_REFUSE = "refuser";
-$P_BUTTON_ACCEPT = "accepter";
-$P_BODYPARAONE="The aim of this experiment is to understand the impact of technology on our communication channels. 
-With your help we are trying to reach the target &quot;<span id='targ' class='btn btn-default' data-placement='top' data-content='$targ_description' data-original-title='$targ_title'>T</span>&quot;. In case you know him, please forward the message to T,
-otherwise,  <strong>please</strong> forward the message to your knowns who might know T <strong>directly or indirectly</strong>.
-			";
-$P_BODYPARATWO ="By participating you get a chance to win the <strong><a target='_blank' href='luckydraw.php?lan=fr'>LUCKY DRAW</a></strong>. You can contribute in this experiment by answering 
-few questions, which takes 2 minutes (trust us). Your data will be stored anonymously and no data will be 
-made public in future.";
-$P_BODY_LOW = "Please feel free to contact us for any queries : <strong>connect@cs.unibo.it</strong> <br />We will more than happy to answer, even if it is just a hi comes from you.";
+
+$P_TITLE= "Bienvenu";
+$P_BUTTON_ACCEPT = "Suivant";
+
+
+$P_BODYPARAONE="Avec votre aide nous essayons de rejoindre l'objectif &quot;<span id='targ' data-toggle='modal' data-target='#dialog'>$targ_title</span>&quot;.  Si vous le connaissez personnellement envoyez le message à $targ_title, directement, s'il vous  plaît, autrement, envoyez le message à quelqu'un que vous connaissez personnellement et qui pourrait connaître $targ_title (directement ou pas).";
+$P_BODYPARATWO ="<label>En participant vous avez la possibilité de gagner un iPad Air.</label>";
+$P_BODY_LOW = " N'hésitez pas nous contacter pour tout renseignement: <strong>connect@cs.unibo.it</strong> ";
+
+
+$P_BODYPARATHREE = "C'est à vous de choisir si participer ou pas à cet étude. Vous avez le droit de ne pas le faire et si vous choisirez de participer vous pourrez abandonner à tout moment en fournissant une raison, sans aucun impact négatif. Si vous choisissez de participer au sondage, vos réponses aux questions du sondage seront stockées dans les serveurs de l'université de Bologne. Toute information reste confidentielle (protégée par un mot de passe),  pas publiée et seulement les investigateurs pourront y accéder.  L’anonymat est préservé car les données collectées ne seront pas associées à votre nom. Les participants ne seront pas identifiés dans aucune publication ni rapport.
+<br/>
+En participant au sondage vous acceptez que les données que vous fournirez seront utilisées pour un but de recherche.
+<br/>
+S'il vous plaît, cochez la case pour indiquer que vous avez compris cette information et que vous souhaitez participer à cet étude.";
+
+$P_CONSUS = "Je comprends et j'accepte de participer à cet étude.";
 
 /***************  PAGE TWO ******************/
 
-$PP_QONE = "S'il vous plaît nous dire comment vous avez obtenu le message";
-$PP_QTWO = "Qui êtes-vous? (Utiliser le courrier électronique ou le numéro de téléphone portable que votre ID)";
-$PP_QTHREE = "S'il vous plaît utilisez votre vraie information, vous serez contacté pour la suite de notre tirage au sort.";
-$PP_QFOUR = "Sélectionnez l'une sur les réseaux de l'endroit où vous avez obtenu le message.";
-$PP_QFIVE = "Qui vous a contacté? (Insérez l'expéditeur ID dire email ou téléphone portable s'il vous plaît)";
-$PP_QSIX = "Quels sont les réseaux que vous allez essayer de transmettre cette information pour sélectionner vos amis";
+$PP_QONE = " S'il vous plaît, dites nous comment vous avez reçu le message";
+$PP_QTWO = "S'il vous plaît, rentrez votre émail ou votre mobile:";
+$PP_QTHREE = "Nous utiliseront cette information pour vous contacter pour le résultat du tirage au sort";
+$PP_QFOUR = "Sélectionnez le(s) réseau(x) social(aux) par lequel(s) vous avez reçu le message: ";
+$PP_QSIX = "Quel(s) réseau(x) vous allez utiliser pour envoyer le message à destination?";
 $PP_OP1 = "Email";
 $PP_OP2 = "Face2Face";
-$PP_OP3 = "<input type='text' class='form-control' placeholder='autres (facultatif)' />";
+$PP_OP3 = "others(optional)";
 $PP_BUTT1= "arrière";
 $PP_BUTT2= "suivant";
+
+$PP_WARNING2 = "S'il vous plaît sélectionner au moins un réseau sur lequel vous avez reçu le message.";
+$PP_WARNINGTOP = "Un ou plusieurs champs sont vides. S'il vous plaît remplir tous les champs pour aller à la page suivante.";
+$PP_WHICHYEAR = "En quelle année vous êtes né(e)?";
+$PP_WHICHNET = "Quel(s) réseau(x) vous allez utiliser pour envoyer le message à destination?";
+$PP_SEX1 = "Sexe:";
+$PP_SEX2 = "Homme";
+$PP_SEX3 = "Femme";
+$PP_SEX4 = "Je préfère ne pas répondre";
 
 /***************  PAGE THREE ******************/
 
 $PPP_FIRST = "Merci! Une dernière faveur";
-$PPP_MAIN = "Pour vous assurer que vous devenez obtenir la liste pour le tirage au sort, s'il vous plaît copiez collez le modèle de message suivant 
-         à vos amis qui pourraient être utiles dans la réalisation de cibler T. Nous saurons ce pour vous si vous avez 
-         transmis ce message ou pas;) Tout le meilleur pour le tirage au sort :)!!";
-$PPP_NOTE = "Bien que le modèle suivant est disponible, pourquoi ne pas vous envoyer un message personnel à vos amis.";
-$PPP_LETTER = "Salut , 
-Il s'agit d'une expérience intéressante en cours à l'Université de Bologne. La bonne chose est qu'il ya un tirage au sort (2 prix) si vous participez et le transmettre à vos amis. Voici le lien pour participer au projet. S'il vous plaît participons et nous gagnons les prix :)
-http://m.web.cs.unibo.it/?t=$targetid
-Mon ID est:";
-$PPP_LAST = "Nous allons de suite le message à votre e-mail en cas d'oubli. ";
+
+$PPP_MAIN = "Pour vous assurer que vous devenez obtenir la liste pour le tirage au sort, s'il vous plaît copiez collez le modèle de message suivant à vos amis qui pourraient être utiles dans la réalisation de cibler T. Nous saurons ce pour vous si vous avez transmis ce message ou pas;) Tout le meilleur pour le tirage au sort :)!!";
+
+$PPP_MAIN1 = "S'il vous plaît convertir le message suivant dans la langue que vos amis peuvent comprendre.";
+
+$PPP_LETTER = "Salut, Je participe à une expérience de l'université de Bologne. Nous essayons d'atteindre $targ_title, pouvez-vous me aider?
+http://milgram.cs.unibo.it/?t=$targetid&&my=$uidCoded";
 
 
+$PPP_LAST = "Merci pour votre aide Si vous faites partie d'une chaîne de succès à la cible, vous serez considéré pour des prix de tirage au sort Donc, s'il vous plaît essayez de votre mieux dans la transmission le lien ci-dessus pour autant de personnes que possible!..";
 
 
 // NEW ADDED 27/07/2014
@@ -106,29 +118,27 @@ $PPP_LAST = "Nous allons de suite le message à votre e-mail en cas d'oubli. ";
 
 /***************  PAGE SORRY ******************/
 
-$PPPP_SORRYCONTENT = "to do ...";
+$PPPP_SORRYCONTENT = "Nous apprécierions si vous pouvez essayer de le faire. Sinon aussi, grâce toute façon!";
 
 /***************  SEO HTML TITLES ******************/
-$PAGE1TITLE = "to do .. ";
-$PAGE2TITLE = "to do .. ";
-$PAGE3TITLE = "to do .. ";
-$PAGESTITLE = "to do ..  ";
-$PAGEDRAWTITLE = "to do .. ";
+$PAGE1TITLE = "Welcome | Milgram Experiment Project | Disi Unibo";
+$PAGE2TITLE = "Message | Milgram Experiment Project | Disi Unibo";
+$PAGE3TITLE = "Thank you | Milgram Experiment Project | Disi Unibo";
+$PAGESTITLE = "We hope ... | Milgram Experiment Project | Disi Unibo";
+$PAGEDRAWTITLE = "Lucky Draw | Milgram Experiment Project | Disi Unibo";
 
-/**************** LUCKY DRAW  *******************/
-
-$LUCKDRAWINSTRUCTIONS = "to do .. ";
 
 /***************  JS ******************/
 
-$ERR_SENDER = "to do ...";
-$ERR_FORMAT = "to do ...";
+$ERR_SENDER = "ID expéditeur est pas correcte s'il vous plaît vérifier à nouveau à partir du message que vous avez reçu.";
+$ERR_FORMAT = "s'il vous plaît insérer une adresse email correcte ou numéro de téléphone cellulaire.";
+
 
 /******** new added, 10 - 09 - 2015 ***************/
 
-$PPP_CLICKEICON = "Click icons to share on various networks";
-$PALL_EXPINFO = "Experiment Information";
-$PALL_STATEMENT = "Privacy Statement";
+$PPP_CLICKEICON = "Cliquez sur les icônes pour partager sur différents réseaux";
+$PALL_EXPINFO = "Informations Experiment";
+$PALL_STATEMENT = "Déclaration de confidentialité";
 
 
 ?>
